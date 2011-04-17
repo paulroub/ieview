@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Ogólne">
+<!ENTITY ieview.prefadvancedtab "Zaawansowane">
+<!ENTITY ieview.popup-ieview-do-view "Zobacz tę stronę w IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Otwórz odnośnik w IE">
+<!ENTITY ieview.places-view-in-ie "Otwórz w Internet Explorerze">
+<!ENTITY ieview.popup-ieview-force-page "Zawsze otwieraj tę stronę w IE">
+<!ENTITY ieview.edit-ieview-options "Edytuj ustawienia IE View">
+<!ENTITY ieview.label "Odinstaluj IE View">
+<!ENTITY ieview.prefdialogtitle "Ustawienia IE View">
+<!ENTITY ieview.prefdialogloclabel "Lokalizacja IE">
+<!ENTITY ieview.prefdialogarglabel "Argumenty (opcjonalnie)">
+<!ENTITY ieview.prefdialoglocchoose "Znajdź">
+<!ENTITY ieview.prefdialoglocdesc1 "Wybrana poniżej lokalizacja, jeśli jest, będzie użyta, gdy IE View uruchomi IE.">
+<!ENTITY ieview.prefdialoglocdesc2 "Jeśli pole pozostanie niewypełnione, IE View będzie próbowało samodzielnie zlokalizować IE.">
+<!ENTITY ieview.prefdialoglocgroup "Lokalizacja Internet Explorera">
+<!ENTITY ieview.prefdialogpatgroup "Strony otwierane zawsze w IE">
+<!ENTITY ieview.prefdialogpatdesc "Strony umieszczone tutaj, po kliknięciu w odnośnik, będą zawsze otwierane w IE.">
+<!ENTITY ieview.prefdialogdeletebutton "Usuń">
+<!ENTITY ieview.prefdialogeditbutton "Edytuj">
+<!ENTITY ieview.prefdialogaddbutton "Dodaj">
+<!ENTITY ieview.prefdialogpatlabel "Dodaj stronę">
+<!ENTITY ieview.editAlwaysPrompt "Edytuj strony otwierane zawsze w IE">
+<!ENTITY ieview.disable-always-ie "Wyłącz &quot;Zawsze otwieraj tę stronę w IE&quot;">
+<!ENTITY ieview.disable-always-desc "Zaznaczenie tej opcji spowoduje, że funkcja &quot;Zawsze otwieraj tę stronę w IE&quot; będzie niedostępna.">
+<!ENTITY ieview.close-after-redir "Zamknij kartę/okno po otwarciu w IE">
+<!ENTITY ieview.close-after-desc "Zaznaczenie tej opcji spowoduje, że strona &quot;zawsze otwierana w IE&quot;, po otwarciu w IE, zostanie automatycznie zamknięta w aktualnej przeglądarce.">

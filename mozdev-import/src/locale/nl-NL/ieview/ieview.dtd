@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Hoofd">
+<!ENTITY ieview.prefadvancedtab "Geavanceerd">
+<!ENTITY ieview.popup-ieview-do-view "Deze pagina in IE bekijken">
+<!ENTITY ieview.popup-ieview-do-viewlink "Koppeling in IE bekijken">
+<!ENTITY ieview.places-view-in-ie "In Internet Explorer openen">
+<!ENTITY ieview.popup-ieview-force-page "Deze pagina altijd in IE bekijken">
+<!ENTITY ieview.edit-ieview-options "IE View-instellingen bewerken">
+<!ENTITY ieview.label "IE View verwijderen">
+<!ENTITY ieview.prefdialogtitle "IE View-instellingen">
+<!ENTITY ieview.prefdialogloclabel "IE-locatie">
+<!ENTITY ieview.prefdialogarglabel "Argumenten (optioneel)">
+<!ENTITY ieview.prefdialoglocchoose "Zoeken">
+<!ENTITY ieview.prefdialoglocdesc1 "De locatie die hieronder gekozen is (indien ingevuld) wordt gebruikt wanneer IE View Internet Explorer opent.">
+<!ENTITY ieview.prefdialoglocdesc2 "Als hier niets staat zal IE View zelf proberen Internet Explorer te vinden.">
+<!ENTITY ieview.prefdialoglocgroup "Internet Explorer-locatie">
+<!ENTITY ieview.prefdialogpatgroup "Altijd-in-IE sites">
+<!ENTITY ieview.prefdialogpatdesc "Sites hier getoond zullen altijd in IE laden wanneer als er op een pagina geklikt wordt.">
+<!ENTITY ieview.prefdialogdeletebutton "Verwijderen">
+<!ENTITY ieview.prefdialogeditbutton "Bewerken">
+<!ENTITY ieview.prefdialogaddbutton "Toevoegen">
+<!ENTITY ieview.prefdialogpatlabel "Site toevoegen">
+<!ENTITY ieview.editAlwaysPrompt "Altijd-in-IE ingave bewerken">
+<!ENTITY ieview.disable-always-ie "Altijd-in-IE-bekijken uitschakelen">
+<!ENTITY ieview.disable-always-desc "Als deze optie aangevinkt is, zijn de ‘Altijd-in-IE-bekijken’-functies uitgeschakeld.">
+<!ENTITY ieview.close-after-redir "Tabblad/venster sluiten na herladen">
+<!ENTITY ieview.close-after-desc "Als deze optie aangevinkt is, zal de ‘deze pagina is geopend in Internet Explorer’-pagina automatisch sluiten als IE opent.">

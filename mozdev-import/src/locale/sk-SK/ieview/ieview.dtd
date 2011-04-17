@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Hlavné">
+<!ENTITY ieview.prefadvancedtab "Rozšírené">
+<!ENTITY ieview.popup-ieview-do-view "Zobraziť túto stránku v IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Otvoriť cieľ odkazu v IE">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+<!ENTITY ieview.popup-ieview-force-page "Túto stránku vždy otvoriť v IE">
+<!ENTITY ieview.edit-ieview-options "Upraviť nastavenia rozšírenia IE View">
+<!ENTITY ieview.label "Odinštalovať IE View">
+<!ENTITY ieview.prefdialogtitle "Nastavenia rozšírenia IE View">
+<!ENTITY ieview.prefdialogloclabel "Umiestnenie IE:">
+<!ENTITY ieview.prefdialogarglabel "Parametre (voliteľné):">
+<!ENTITY ieview.prefdialoglocchoose "Prehľadávať">
+<!ENTITY ieview.prefdialoglocdesc1 "Umiestnenie vybrané nižšie bude použité, keď sa IE View pokúsi spustiť Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Ak je toto pole prázdne, IE View sa pokúsi sám nájsť umiestnenie Internet Explorera.">
+<!ENTITY ieview.prefdialoglocgroup "Umiestnenie Internet Explorera">
+<!ENTITY ieview.prefdialogpatgroup "Stránky vždy otvárané v IE">
+<!ENTITY ieview.prefdialogpatdesc "Stránky v tomto zozname budú vždy načítané v IE">
+<!ENTITY ieview.prefdialogdeletebutton "Odstrániť">
+<!ENTITY ieview.prefdialogeditbutton "Upraviť">
+<!ENTITY ieview.prefdialogaddbutton "Pridať">
+<!ENTITY ieview.prefdialogpatlabel "Pridať stránku">
+<!ENTITY ieview.editAlwaysPrompt "Upraviť položku Stránky vždy otvárané v IE">
+<!ENTITY ieview.disable-always-ie "Vypnúť funkciu Stránky vždy otvárané v IE">
+<!ENTITY ieview.disable-always-desc "Ak je táto možnosť označená, funkcia &apos;Stránky vždy otvárané v IE&apos; bude vypnutá.">
+<!ENTITY ieview.close-after-redir "Zavrieť kartu/okno po načítaní">
+<!ENTITY ieview.close-after-desc "Ak je táto možnosť označená, stránka &apos;IEView otvoril túto stránku v prehliadači Internet Explorer&apos; bude po načítaní požadovanej stránky v IE automaticky zatvorená.">

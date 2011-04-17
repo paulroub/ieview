@@ -1,0 +1,57 @@
+<?php
+
+$pageTitle = "IE View - Launch pages in IE from Firefox";
+
+$purl = "";
+
+if ($_SERVER['REQUEST_URI'])
+{
+  $purl = strtolower($_SERVER['REQUEST_URI']);
+}
+
+switch ($purl)
+{
+  case '/installation.html':
+    $pageTitle = "IE View - Installation";
+    break;
+
+  case '/hsitory.html':
+    $pageTitle = "IE View - History";
+    break;
+
+  case '/list.html':
+    $pageTitle = "IE View - Mailing List";
+    break;
+
+  case '/ieview-linux.html':
+    $pageTitle = "IE View - Using IE View under Linux";
+    break;
+
+  case '/source.html':
+    $pageTitle = "IE View - Source Code";
+    break;
+
+  case '/members.html':
+    $pageTitle = "IE View - Project Team Members";
+    break;
+
+  case '/bugs.html':
+    $pageTitle = "IE View - Bugs";
+    break;
+
+  case '/screenshots.html':
+    $pageTitle = "IE View - Screen Shots";
+    break;
+
+  case '/faq.html':
+    $pageTitle = "IE View - Frequently Asked Questions";
+    break;
+}
+
+ ?>
+
+<link rel="stylesheet" href="/project.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title><?php print($pageTitle); ?></title>
+<link rel="alternate" type="application/atom+xml" href="http://roub.net/blahg/archives/categories/ieview/atom.xml" title="IE View blog updates" />

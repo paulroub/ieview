@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Haadmenu">
+<!ENTITY ieview.prefadvancedtab "Avansearre">
+<!ENTITY ieview.popup-ieview-do-view "Toan Dizze Side yn IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Iepenje Keppelingsdoel yn IE">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+<!ENTITY ieview.popup-ieview-force-page "Toan Dizze Side Altyd yn IE">
+<!ENTITY ieview.edit-ieview-options "Bewurkje IE Byldynstellings">
+<!ENTITY ieview.label "IE View De-ynstallaasje">
+<!ENTITY ieview.prefdialogtitle "IE View Foarkarren">
+<!ENTITY ieview.prefdialogloclabel "IE Lokaasje">
+<!ENTITY ieview.prefdialogarglabel "Arguminten (opsjoneel)">
+<!ENTITY ieview.prefdialoglocchoose "Fyn">
+<!ENTITY ieview.prefdialoglocdesc1 "De Lokaasje hjirûnder sil brûkt wurde as IE View Internet Explorer start.">
+<!ENTITY ieview.prefdialoglocdesc2 "As dit leech litten wurdt, sil IE View probearje IE sels te finen.">
+<!ENTITY ieview.prefdialoglocgroup "Internet Explorer lokaasje">
+<!ENTITY ieview.prefdialogpatgroup "Altyd-yn-IE-sides">
+<!ENTITY ieview.prefdialogpatdesc "Sides dy&apos;t hjir stean sille altyd yn IE laden wurde as jo op in side klikke.">
+<!ENTITY ieview.prefdialogdeletebutton "Fuortsmite">
+<!ENTITY ieview.prefdialogeditbutton "Bewurkje">
+<!ENTITY ieview.prefdialogaddbutton "Tafoegje">
+<!ENTITY ieview.prefdialogpatlabel "Side Tafoegje">
+<!ENTITY ieview.editAlwaysPrompt "Bewurkje Altyd-yn-IE item">
+<!ENTITY ieview.disable-always-ie "Altyd-yn-IE Utskeakelje">
+<!ENTITY ieview.disable-always-desc "As dizze opsje selektearre is, sil de &apos;Altyd-yn-IE&apos; mooglikheid útskeakele wêze.">
+<!ENTITY ieview.close-after-redir "Slút ljepblêd/skerm nei op &apos;e nij laden">
+<!ENTITY ieview.close-after-desc "As dizze opsje selektearre is,sil de &apos;dizze side is op &apos;e nij laden yn IE&apos; side automatysk slute as IE starten is.">

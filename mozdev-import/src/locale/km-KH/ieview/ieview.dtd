@@ -1,0 +1,28 @@
+<!ENTITY ieview.prefmaintab "សំខាន់">
+<!ENTITY ieview.prefadvancedtab "កម្រិតខ្ពស់">
+<!ENTITY ieview.popup-ieview-do-view "បង្ហាញទំព័រនេះក្នុង IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "បើកតំណគោលដៅក្នុង IE">
+<!ENTITY ieview.popup-ieview-force-page "តែងតែបង្ហាញទំព័រនេះក្នុង IE">
+<!ENTITY ieview.edit-ieview-options "កែប្រែការកំណត់របស់ IE View">
+<!ENTITY ieview.label "លុប IE View">
+<!ENTITY ieview.prefdialogtitle "ចំណូលចិត្តក្នុង IE View">
+<!ENTITY ieview.prefdialogloclabel "ទីតាំ IE">
+<!ENTITY ieview.prefdialogarglabel "អាគុយម៉ង់ (optional)">
+<!ENTITY ieview.prefdialoglocchoose "រក">
+<!ENTITY ieview.prefdialoglocdesc1 "ទីតាំងដែលបានជ្រើសខាងក្រោម នឹងត្រូវបានប្រើនៅពេលដែរ IE View បើកដំណើរការ Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "បើមិនបានកំណត់។ IE View នឹងធ្វើការរុករកទីតាំ Internet Explorer ដោយខ្លួនឯង">
+<!ENTITY ieview.prefdialoglocgroup "ទីតាំ Internet Explorer">
+<!ENTITY ieview.prefdialogpatgroup "តំបន់បណ្តាញដែលតែងតែបើកដោយ IE">
+<!ENTITY ieview.prefdialogpatdesc "តំបន់បណ្តាញក្នុងបញ្ជីនេះ នឹងផ្ទុកក្នុង IE នៅពេលបានចុចលើទំព័រ">
+<!ENTITY ieview.prefdialogdeletebutton "លុប">
+<!ENTITY ieview.prefdialogaddbutton "បន្ថែម">
+<!ENTITY ieview.prefdialogpatlabel "បន្ថែមតំបន់បណ្តាញ">
+<!ENTITY ieview.disable-always-ie "បិទ តំបន់បណ្តាញដែលតែងតែបើកដោយ IE">
+<!ENTITY ieview.disable-always-desc "បើជម្រើសនេះត្រូវបានគូសធីក &apos;តំបន់បណ្តាញដែលតែងតែបើកដោយ IE&apos; នោះលក្ខណះពិសេសនឹងត្រូវបិទ">
+<!ENTITY ieview.close-after-redir "បិទផ្ទាំង ឬបង្អួចក្រោយផ្ទុកឡើងវិញ">
+<!ENTITY ieview.close-after-desc "បើជម្រើសនេះត្រូវបានគូសធីក &apos;ទំព័រនេះត្រូវបានផ្ទុកឡើងវិញក្នុង Internet Explorer&apos; ទំព័រនឹងបិទដោយស្វ័យប្រវត្តិ ពេល IE បានដំណើការ">
+
+<!ENTITY ieview.prefdialogeditbutton "Edit">
+<!ENTITY ieview.editAlwaysPrompt "Edit Always-in-IE entry">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+

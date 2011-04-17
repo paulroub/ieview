@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "메인">
+<!ENTITY ieview.prefadvancedtab "고급">
+<!ENTITY ieview.popup-ieview-do-view "이 페이지를 IE로 보기">
+<!ENTITY ieview.popup-ieview-do-viewlink "이 링크를 IE로 열기">
+<!ENTITY ieview.places-view-in-ie "IE로 열기">
+<!ENTITY ieview.popup-ieview-force-page "이 페이지는 항상 IE로 보기">
+<!ENTITY ieview.edit-ieview-options "IE View 설정">
+<!ENTITY ieview.label "IE View 제거">
+<!ENTITY ieview.prefdialogtitle "IE View 설정">
+<!ENTITY ieview.prefdialogloclabel "IE 위치:">
+<!ENTITY ieview.prefdialogarglabel "인수 (선택사항)">
+<!ENTITY ieview.prefdialoglocchoose "찾아보기">
+<!ENTITY ieview.prefdialoglocdesc1 "아래의 위치는 IE View가 IE를 실행시키기 위해 사용됩니다.">
+<!ENTITY ieview.prefdialoglocdesc2 "이곳을 비워 놓으면 IE View가 자동으로 IE가 설치된 위치를 탐색합니다.">
+<!ENTITY ieview.prefdialoglocgroup "Internet Explorer 위치">
+<!ENTITY ieview.prefdialogpatgroup "항상 IE로 열 사이트">
+<!ENTITY ieview.prefdialogpatdesc "아래 목록의 사이트들은 항상 IE로 엽니다.">
+<!ENTITY ieview.prefdialogdeletebutton "삭제">
+<!ENTITY ieview.prefdialogeditbutton "편집">
+<!ENTITY ieview.prefdialogaddbutton "추가">
+<!ENTITY ieview.prefdialogpatlabel "주소 추가:">
+<!ENTITY ieview.editAlwaysPrompt "항상 IE로 열 항목 편집">
+<!ENTITY ieview.disable-always-ie "항상 IE로 보기 사용 안 함">
+<!ENTITY ieview.disable-always-desc "이 설정을 선택하면 &apos;항상 IE로 보기&apos; 기능은 사용할 수 없게 됩니다.">
+<!ENTITY ieview.close-after-redir "IE로 다시 열기 후 탭/창 닫기">
+<!ENTITY ieview.close-after-desc "이 설정을 선택하면 IE가 실행된 후 &apos;이 페이지는 Internet Explorer로 다시 열렸습니다.&apos; 페이지는 자동으로 닫힙니다.">

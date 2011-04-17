@@ -1,0 +1,3 @@
+#!/bin/sh
+cp -v locale/$1/ieview/ieview.* locale/en-US/ieview
+cp -v locale/$1/ieview/contents.rdf locale/en-US/ieview

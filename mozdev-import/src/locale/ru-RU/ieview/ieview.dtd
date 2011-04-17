@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Основные">
+<!ENTITY ieview.prefadvancedtab "Дополнительные">
+<!ENTITY ieview.popup-ieview-do-view "Просмотреть страницу в Internet Explorer">
+<!ENTITY ieview.popup-ieview-do-viewlink "Открыть ссылку в Internet Explorer">
+<!ENTITY ieview.places-view-in-ie "Открыть в Internet Explorer">
+<!ENTITY ieview.popup-ieview-force-page "Всегда открывать эту страницу в IE">
+<!ENTITY ieview.edit-ieview-options "Настройки IE View">
+<!ENTITY ieview.label "Деинсталляция IE View">
+<!ENTITY ieview.prefdialogtitle "Настройки IE View">
+<!ENTITY ieview.prefdialogloclabel "Расположение Internet Explorer">
+<!ENTITY ieview.prefdialogarglabel "Аргументы (опционально)">
+<!ENTITY ieview.prefdialoglocchoose "Найти">
+<!ENTITY ieview.prefdialoglocdesc1 "Расположение, выбранное ниже, будет использоваться IE View для открытия страниц в Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Для использования Internet Explorer по умолчанию, оставьте данное поле пустым.">
+<!ENTITY ieview.prefdialoglocgroup "Расположение Internet Explorer">
+<!ENTITY ieview.prefdialogpatgroup "Сайты &apos;Всегда-в-IE&apos;">
+<!ENTITY ieview.prefdialogpatdesc "Добавленные ниже сайты, будут всегда открываться в Internet Explorer.">
+<!ENTITY ieview.prefdialogdeletebutton "Удалить">
+<!ENTITY ieview.prefdialogeditbutton "Изменить">
+<!ENTITY ieview.prefdialogaddbutton "Добавить">
+<!ENTITY ieview.prefdialogpatlabel "Добавить сайт">
+<!ENTITY ieview.editAlwaysPrompt "Изменить запись &apos;Всегда-в-IE&apos;">
+<!ENTITY ieview.disable-always-ie "Отключить &apos;Сайты Всегда-в-IE&apos;">
+<!ENTITY ieview.disable-always-desc "Если эта опция отмечена, возможности функции &apos;Сайты Всегда-в-IE&apos; будут отключены.">
+<!ENTITY ieview.close-after-redir "Закрыть вкладку/окно после загрузки в IE">
+<!ENTITY ieview.close-after-desc "Если эта опция отмечена, то страница &apos;IE View открыл эту страницу в Internet Explorer&apos; будет закрываться автоматически после загрузки Internet Explorer.">

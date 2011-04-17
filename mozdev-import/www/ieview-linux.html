@@ -1,0 +1,93 @@
+<!-- MAIN CONTENT -->
+<div id="infoTabs">
+<div class="infoTab" id="ads">
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-0381746669982362";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_channel = "7968539211";
+google_ad_type = "text_image";
+google_color_border = "000000";
+google_color_bg = "F0F0F0";
+google_color_link = "0000FF";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+
+</div>
+
+
+<h5 class="page-header"><a id="content" name="content">IE View on Linux</a></h5>
+
+<p>IE View is only supported, built for, and tested under Windows.  Our user community has stepped
+   up with suggestions for making it work under various Linux setups.
+   
+<p>Jonathan Ernst offers setup notes on running IE from Firefox via <a href="http://www.winehq.com/">WINE</a>:</p>
+
+<blockquote>
+  <p>I reproduced what is made for mozilla on my distribution (gentoo):</p>
+
+  <ol>
+  <li>
+   put a script in /usr/libexec/iexplore-launcher with the following content:
+
+<pre>
+#!/bin/bash
+
+main() {
+  wine "c:\program files\Internet Explorer\IEXPLORE.exe" "$@" &
+  return 1;
+}
+
+# Call the main sub, which is defined at the top of this script
+main "$@"
+</pre>
+</li>
+
+          <li><p>put a link in <code>/usr/bin</code> that links to the script:</p>
+
+
+<pre>
+ln -s /usr/libexec/iexplore-launcher /usr/bin/iexplore
+</pre>
+   </li>
+
+   <li>
+       set <code>/usr/bin/iexplore</code> in ie view configuration - and everything works !
+   </li>
+ </ol>
+</blockquote>
+
+<p>And Adam Howard notes that this works for him under Crossover Office 3.x / Slackware 10.0:</p>
+
+<blockquote>
+    I had to adjust the line in <code>/usr/libexec/iexplore-launch</code> to this (all on one line):
+
+    <pre>"/opt/cxoffice/bin/wine" --check --cx-app "C:////Program Files////Internet Explorer////IEXPLORE.EXE" "$@" &amp;</pre> 
+</blockquote>
+
+<p>Most recently, David had this to say:</p>
+
+<blockquote cite="http://mozdev.org/pipermail/ieview/2006-December/000128.html">
+
+    <p>Many of us Linux web designers use <a href="http://www.tatanka.com.br/ies4linux/page/Main_Page">IEs4Linux</a> as a convenient way to
+    install and run IE 5.0, 5.5, and IE6 (IE7 support is in progress). One
+    difference is that IEs4Linux doesn't do a full WINE install and
+    configuration, it just does what's needed to run the different IE versions.</p>
+    
+    <p>I had to modify the iexplore-launcher script by replacing:</p>
+    
+    <p><code>wine "c:\Program Files\Internet Explorer\iexplore.exe" "$@" &amp;</code></p>
+    
+    <p>with the path and executable that IEs4Linux uses to launch IE6:</p>
+    
+    <p><code>/home/[your user id]/bin/ie6 "$@" &amp;</code></p>
+
+</blockquote>

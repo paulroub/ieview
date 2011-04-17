@@ -1,0 +1,2 @@
+#!/bin/sh
+perl -w adjustbuild.pl -noadjust

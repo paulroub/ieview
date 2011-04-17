@@ -1,0 +1,27 @@
+<!ENTITY ieview.prefmaintab "Orokorra">
+<!ENTITY ieview.prefadvancedtab "Aurreratua">
+<!ENTITY ieview.popup-ieview-do-view "Orri Hau IEn Ikusi">
+<!ENTITY ieview.popup-ieview-do-viewlink "Lotura Hau IEn Ireki">
+<!ENTITY ieview.popup-ieview-force-page "Orri Hau Beti IEn Ikusi">
+<!ENTITY ieview.edit-ieview-options "IE Viewren Ezarpenak Aldatu">
+<!ENTITY ieview.label "IE View Desinstalatu">
+<!ENTITY ieview.prefdialogtitle "IE Viewren Ezarpenak">
+<!ENTITY ieview.prefdialogloclabel "IEren Kokagunea">
+<!ENTITY ieview.prefdialogarglabel "Argumentuak (hautazkoa)">
+<!ENTITY ieview.prefdialoglocchoose "Arakatu">
+<!ENTITY ieview.prefdialoglocdesc1 "Azpian idatzitako kokagunea (ez bada hutsik uzten) erabiliko da IE Viewk Internet Explorer abiarazten duenean.">
+<!ENTITY ieview.prefdialoglocdesc2 "Hutsik utziz gero, IE View bere kasa saiatuko da Internet Explorer aurkitzen.">
+<!ENTITY ieview.prefdialoglocgroup "Internet Explorerren kokagunea">
+<!ENTITY ieview.prefdialogpatgroup "Beti IEn irekitzeko guneak">
+<!ENTITY ieview.prefdialogpatdesc "Hemen zerrendaturiko guneak beti irekiko dira IEn.">
+<!ENTITY ieview.prefdialogdeletebutton "Kendu">
+<!ENTITY ieview.prefdialogeditbutton "Editatu">
+<!ENTITY ieview.prefdialogaddbutton "Gehitu">
+<!ENTITY ieview.prefdialogpatlabel "Gunea Gehitu">
+<!ENTITY ieview.editAlwaysPrompt "Editatu Beti IEn irekitzeko guneak">
+<!ENTITY ieview.disable-always-ie "Ezgaitu gune batzuk beti IEn irekitzea">
+<!ENTITY ieview.disable-always-desc "Aukera hau hautaturik badago, gune batzuk beti IEn ikusteko gaitasuna kenduko da.">
+<!ENTITY ieview.close-after-redir "Itxi fitxa/leihoa berrirekitzean">
+<!ENTITY ieview.close-after-desc "Aukera hau hautaturik badago, &apos;IE View hedapenak orri hau Internet Explorerren berrireki du&apos; dioen orria automatikoki itxiko da IE abiaraztean:">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+

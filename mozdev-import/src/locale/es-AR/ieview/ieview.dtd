@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Principal">
+<!ENTITY ieview.prefadvancedtab "Avanzadas">
+<!ENTITY ieview.popup-ieview-do-view "Ver esta página en IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Abrir Enlace de Destino en IE">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+<!ENTITY ieview.popup-ieview-force-page "Ver siempre Ésta Página con IE">
+<!ENTITY ieview.edit-ieview-options "Editar las Opciones de IE View">
+<!ENTITY ieview.label "Desinstalar IE View">
+<!ENTITY ieview.prefdialogtitle "Preferencias de IE View">
+<!ENTITY ieview.prefdialogloclabel "Ubicación de IE">
+<!ENTITY ieview.prefdialogarglabel "Parámetros (opcional)">
+<!ENTITY ieview.prefdialoglocchoose "Buscar">
+<!ENTITY ieview.prefdialoglocdesc1 "La Ubicación elegida abajo (si la hubiera) será utilizada cuando IE View ejecute Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Si se deja en blanco, IE View intentará localizar Internet Explorer por sí mismo.">
+<!ENTITY ieview.prefdialoglocgroup "Ubicación de Internet Explorer">
+<!ENTITY ieview.prefdialogpatgroup "Ver-Siempre-Con-IE">
+<!ENTITY ieview.prefdialogpatdesc "Los sitios enumerados aquí se cargarán siempre con IE.">
+<!ENTITY ieview.prefdialogdeletebutton "Eliminar">
+<!ENTITY ieview.prefdialogeditbutton "Editar">
+<!ENTITY ieview.prefdialogaddbutton "Agregar">
+<!ENTITY ieview.prefdialogpatlabel "Agregar Sitio">
+<!ENTITY ieview.editAlwaysPrompt "Editar-Siempre-Con-IE">
+<!ENTITY ieview.disable-always-ie "Desactivar Ver-Siempre-Con-IE">
+<!ENTITY ieview.disable-always-desc "Si esta opción esta marcada, la opción &apos;Ver-Siempre-Con-IE&apos; estará siempre desactivada.">
+<!ENTITY ieview.close-after-redir "Cerrar pestaña/ventana después de recargarla">
+<!ENTITY ieview.close-after-desc "Si esta opción está marcada, se cerrará la pestaña/ventana una vez cargada en el Internet Explorer.">

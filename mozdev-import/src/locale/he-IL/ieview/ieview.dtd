@@ -1,0 +1,29 @@
+<!ENTITY ieview.prefmaintab "Main">
+<!ENTITY ieview.prefadvancedtab "Advanced">
+<!ENTITY ieview.popup-ieview-do-view "הצג דף זה ב־IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "פתח את יעד הקישור ב־IE">
+<!ENTITY ieview.popup-ieview-force-page "תמיד הצג דף זה ב־IE">
+
+<!ENTITY ieview.edit-ieview-options "Edit IE View Settings">
+<!ENTITY ieview.label "הסרת IE View">
+<!ENTITY ieview.prefdialogtitle "אפשרויות IE View">
+<!ENTITY ieview.prefdialogloclabel "מיקום IE">
+<!ENTITY ieview.prefdialogarglabel "Arguments (optional)">
+<!ENTITY ieview.prefdialoglocchoose "מצא את IE בדיסק">
+<!ENTITY ieview.prefdialoglocdesc1 "המיקום שנכתב למטה (אם נכתב מיקום) יהיה בשימוש בעת ש־IE View יפתח את אינטרנט אקספלורר.">
+<!ENTITY ieview.prefdialoglocdesc2 "אם לא נכתב מיקום, IE View ינסה לאתר את אינטרנט אקספלורר בעצמו.">
+<!ENTITY ieview.prefdialoglocgroup "מיקומו של אינטרנט אקספלורר">
+<!ENTITY ieview.prefdialogpatgroup "אתרים שתמיד ייפתחו ב־IE">
+<!ENTITY ieview.prefdialogpatdesc "האתרים הרשומים כאן תמיד ייפתחו ב־IE בלחיצה על הדף.">
+<!ENTITY ieview.prefdialogdeletebutton "מחק">
+<!ENTITY ieview.prefdialogaddbutton "הוסף">
+<!ENTITY ieview.prefdialogpatlabel "הוסף אתר">
+<!ENTITY ieview.disable-always-ie "Disable Always-view-in-IE">
+<!ENTITY ieview.disable-always-desc "If this option is checked, the &apos;always-view-in-IE&apos; features will be disabled.">
+<!ENTITY ieview.close-after-redir "Close tab/window after reload">
+<!ENTITY ieview.close-after-desc "If this option is checked, the &apos;this page has been reloaded in Internet Explorer&apos; page will close automatically once IE has launched.">
+
+<!ENTITY ieview.prefdialogeditbutton "Edit">
+<!ENTITY ieview.editAlwaysPrompt "Edit Always-in-IE entry">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+

@@ -1,0 +1,15 @@
+#ieview-button {
+  list-style-image: url("chrome://ieview/skin/ieview-button-24px.png");
+}
+
+toolbar #ieview-button[disabled="true"] {
+  list-style-image: url("chrome://ieview/skin/ieview-button-24px-disabled.png");
+}
+
+toolbar[iconsize="small"] #ieview-button {
+  list-style-image: url("chrome://ieview/skin/ieview-button-16px.png");
+}
+
+toolbar[iconsize="small"] #ieview-button[disabled="true"] {
+  list-style-image: url("chrome://ieview/skin/ieview-button-16px-disabled.png");
+}

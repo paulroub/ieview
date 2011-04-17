@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Βασικά">
+<!ENTITY ieview.prefadvancedtab "Για προχωρημένους">
+<!ENTITY ieview.popup-ieview-do-view "Εμφάνιση αυτής της σελίδας με IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Άνοιγμα προορισμού δεσμού με IE">
+<!ENTITY ieview.places-view-in-ie "Άνοιγμα στον Internet Explorer">
+<!ENTITY ieview.popup-ieview-force-page "Να εμφανίζεται πάντα αυτή η σελίδα με IE">
+<!ENTITY ieview.edit-ieview-options "Επεξεργασία ρυθμίσεων IE View">
+<!ENTITY ieview.label "Απεγκατάσταση IE View">
+<!ENTITY ieview.prefdialogtitle "Προτιμήσεις IE View">
+<!ENTITY ieview.prefdialogloclabel "Τοποθεσία IE">
+<!ENTITY ieview.prefdialogarglabel "Ορισμοί (προαιρετικά)">
+<!ENTITY ieview.prefdialoglocchoose "Εύρεση">
+<!ENTITY ieview.prefdialoglocdesc1 "Η παρακάτω επιλεγμένη τοποθεσία θα χρησιμοποιείται (αν υπάρχει) όταν το IE View φορτώνει τον Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Αν το πεδίο παραμείνει κενό, το IE View θα προσπαθήσει να εντοπίσει τον Internet Explorer αυτόματα.">
+<!ENTITY ieview.prefdialoglocgroup "Τοποθεσία Internet Explorer">
+<!ENTITY ieview.prefdialogpatgroup "Πάντα-με-ΙΕ">
+<!ENTITY ieview.prefdialogpatdesc "Οι Δικτυακοί τόποι αυτής της λίστας θα φορτώνονται πάντα στον IE όταν επιλεγούν για άνοιγμα.">
+<!ENTITY ieview.prefdialogdeletebutton "Διαγραφή">
+<!ENTITY ieview.prefdialogeditbutton "Επεξεργασία">
+<!ENTITY ieview.prefdialogaddbutton "Προσθήκη">
+<!ENTITY ieview.prefdialogpatlabel "Προσθήκη δικτυακού τόπου">
+<!ENTITY ieview.editAlwaysPrompt "Επεξεργασία εγραφής προβολής-πάντα-με-ΙΕ">
+<!ENTITY ieview.disable-always-ie "Απενεργοποίηση προβολής-πάντα-με-ΙΕ">
+<!ENTITY ieview.disable-always-desc "Αν ενεργοποιήσετε αυτή την επιλογή, το χαρακτηριστικό «Προβολή-πάντα-με-ΙΕ» θα απενεργοποιηθεί.">
+<!ENTITY ieview.close-after-redir "Κλείσιμο καρτέλας/παραθύρου μετά την επαναφόρτωση">
+<!ENTITY ieview.close-after-desc "Αν ενεργοποιήσετε αυτή την επιλογή, η σελίδα με το μήνυμα: «Η σελίδα αυτή επαναφορτώθηκε με τον Internet Explorer» θα κλείσει αυτόματα όταν φορτωθεί ο ΙΕ.">

@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Hoved">
+<!ENTITY ieview.prefadvancedtab "Avanceret">
+<!ENTITY ieview.popup-ieview-do-view "Vis denne side i IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Åbn linket i IE">
+<!ENTITY ieview.places-view-in-ie "Åbn i Internet Explorer">
+<!ENTITY ieview.popup-ieview-force-page "Vis altid denne side i IE">
+<!ENTITY ieview.edit-ieview-options "Rediger IE View indstillinger">
+<!ENTITY ieview.label "Afinstaller IE View">
+<!ENTITY ieview.prefdialogtitle "IE View præferencer">
+<!ENTITY ieview.prefdialogloclabel "Stien til IE">
+<!ENTITY ieview.prefdialogarglabel "Argumenter (valgfrit)">
+<!ENTITY ieview.prefdialoglocchoose "Find">
+<!ENTITY ieview.prefdialoglocdesc1 "Den nedenstående sti (hvis nogen) vil blive brugt til at starte Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Hvis feltet er tomt, vil IE View selv forsøge at finde Internet Explorers placering.">
+<!ENTITY ieview.prefdialoglocgroup "Internet Explorers placering">
+<!ENTITY ieview.prefdialogpatgroup "Sider der altid skal vises i IE">
+<!ENTITY ieview.prefdialogpatdesc "Disse sider vil altid blive vist i IE, når du klikker på et link til dem.">
+<!ENTITY ieview.prefdialogdeletebutton "Slet">
+<!ENTITY ieview.prefdialogeditbutton "Rediger">
+<!ENTITY ieview.prefdialogaddbutton "Tilføj">
+<!ENTITY ieview.prefdialogpatlabel "Tilføj site">
+<!ENTITY ieview.editAlwaysPrompt "Ret Altid-i-IE element">
+<!ENTITY ieview.disable-always-ie "Slå Vis-altid-i-IE fra">
+<!ENTITY ieview.disable-always-desc "Hvis denne mulighed er valgt, vil &apos;Vis-altid-i-IE&apos;-mulighederne være slået fra.">
+<!ENTITY ieview.close-after-redir "Luk faneblad/vindue efter genindlæsning">
+<!ENTITY ieview.close-after-desc "Hvis denne mulighed er valgt, vil &apos;denne side er blevet genindlæst i Internet Explorer&apos;-siden blive lukket automatisk så snart IE er startet.">

@@ -1,0 +1,137 @@
+<!-- MAIN CONTENT -->
+<div id="infoTabs">
+<div class="infoTab" id="ads">
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-0381746669982362";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_channel = "7968539211";
+google_ad_type = "text_image";
+google_color_border = "000000";
+google_color_bg = "F0F0F0";
+google_color_link = "0000FF";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+
+</div>
+
+<h5 class="page-header">Frequently Asked Questions</h5>
+
+<dl>
+
+<dt id="gieviewbundle"><a href="#gieviewbundle" class='perm' title='permalink'>Why am I seeing a "gIeviewBundle has no properties" error?</dt>
+<dd>
+  Read <a href="http://roub.net/blahg/archives/2008/03/help-wanted-tes.html">this blog entry</a> for more information.
+
+</dd>
+
+<dt id="wherecontext"><a href="#wherecontext" class='perma' title="permalink">What happened to the "Always View this page in IE" context menu link?</a></dt>
+<dd>It caused a <em>lot</em> of confusion and accidental IE "blacklisting".
+It's now relocated to the <b>Tools</b> menu.  See the 
+<a href="/screenshots.html">screenshots</a>.
+    </dd>
+
+<dt id="bookmarks"><a href="#bookmarks" class='perma' title='permalink'>How about adding the ability to open bookmarks in IE?</a></dt>
+<dd>Love to, but the bookmarks menus are built in a completely different
+way than normal Firefox menus -- a rather extension-unfriendly way.
+Watch <a href="http://mozdev.org/bugs/show_bug.cgi?id=5076">bug 5076</a> for further developments; 
+I really would like to get this feature in.  The new feature (always view in IE)
+described in <a href="http://mozdev.org/bugs/show_bug.cgi?id=9001">Bug 9001</a> helps out somewhat -- sites in the IE-always list
+do open in IE when loaded via bookmarks.</dd>
+
+
+<dt id="choosebrowser"><a href="#choosebrowser" class='perma' title='permalink'>How can I open Maxthon, Opera, Lynx, etc. instead of IE?</a></dt>
+<dd>In Firefox, go to Tools | Extensions, select IE View, then click the Options button.  Use the Find button
+    to find your browser of choice (Opera, etc.), select OK to close the Options dialog, and you're all set.
+</dd>
+
+
+<dt id="placeholder"><a href="#placeholder" class='perma' title='permalink'>What does "IE View reloaded this page in Internet Explorer" mean?</a></dt>
+<dd>
+You loaded a page that's in the Always-View-in-IE list, but by some means
+other than clicking a link or bookmark in Firefox.  The address bar, 
+clicking on a link in another application, etc. will cause this.  
+The page needs to load first in Firefox before IE View can see
+it and realize IE needs to run.  At that point, IE <em>does</em>
+run, and IE View replaces the page text in Firefox with this
+placeholder to avoid the confusion of having both copies
+open at once.
+</dd>
+
+<dt id="linuxieview"><a href="#linuxieview" class='perma' title='permalink'>How can I use IE View in Mac OSX?</a></dt>
+<dd>
+    That's not officially supported, but it can be done.  For solutions that have worked for other
+       users, see the <a href="ieview-linux.html">IE View on Linux</a> page.
+</dd>
+
+<dt id="macieview"><a href="#macieview" class='perma' title='permalink'>How can I use IE View in Mac OSX?</a></dt>
+<dd>
+<p>Courtesy of user Tim Hammerquist:</p>
+<p>To open sites in (for example) Safari, in the IE View | Options window, enter:</p>
+<table>
+  <tr>
+    <th>IE Location:</th>
+    <td>/usr/bin/open</td>
+  </tr>
+  <tr>
+    <th>Arguments:</th>
+    <td>-a Safari</td>
+  </tr>
+</table>
+</dd>
+
+<dt id="unblacklist"><a href="#unblacklist" class='perma' title='permalink'>How can I remove a site from the Always-View-in-IE list?</a></dt>
+<dd>
+<p>In Firefox, from the <strong>Tools</strong> menu, select <strong>Extensions</strong> (<strong>Add-Ons</strong> in Firefox 2).
+Pick IE View from the extensions list, then click the <strong>Options</strong> button.  Select the 
+site you wish to return to Firefox, click <strong>Delete</strong>, then <strong>OK</strong>.</p>
+
+<p>In Mozilla, select <strong>Edit IE View Settings</strong> from the Tools menu to open the options dialog.  Then follow the 
+instructions as for Firefox.</p>
+</dd>
+
+
+<dt id="disablealways"><a href="#disablealways" class='perma' title='permalink'>How can I disable the Always-View-in-IE list?</a></dt>
+<dd>
+<p>This is generally only necessary in unusual circumstances, such as when
+other extensions are interfering with IE View, causing bookmarks or 
+links to stop working.  TabBrowser Extensions is the usual culprit.  As of IE View 
+v1.2.2, you can turn off the always-view-in-IE list, which disables the code most likely
+to run into conflicts.</p>
+
+<p>To completely turn off this feature, you need to manually add a user preference:</p>
+
+<ol>
+<li>Load the about:config screen</li>
+
+<li>Right click, select New, then Boolean</li>
+
+<li>For the name, enter: ieview.disableForce  (case sensitive)</li>
+
+<li>For the value, select 'true' to disable all the force-in-IE stuff</li>
+
+<li>Restart Firefox</li>
+</ol>
+
+</dd>
+
+<dt id="gimme"><a href="#gimme" class='perma' title='permalink'>I love this thing!  Can I donate / contribute / thank you in some way?</a></dt>
+
+<dd>
+<p>Absolutely -- contributing bug reports and patches helps tremendously; so do
+contributions of international language text, etc.  Spare time would be great,
+but I'm not sure how you can donate that.  
+<a href="https://secure.newegg.com/app/giftcertificate.asp?GiftFormat=2&ReceiptEmailAddr=paul@roub.net&toName=Paul+Roub">newegg gift certificates</a>
+are extremely encouraging, and add that guilt factor that causes me to stay up
+all night adding new features.</p>
+
+</dd>
+</dl>

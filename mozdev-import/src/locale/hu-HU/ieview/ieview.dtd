@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Általános">
+<!ENTITY ieview.prefadvancedtab "Haladó">
+<!ENTITY ieview.popup-ieview-do-view "Oldal megtekintése IE-ben">
+<!ENTITY ieview.popup-ieview-do-viewlink "Link megnyitása IE-ben">
+<!ENTITY ieview.places-view-in-ie "Megnyitás Internet Explorerben">
+<!ENTITY ieview.popup-ieview-force-page "Oldal megtekintése mindig IE-ben">
+<!ENTITY ieview.edit-ieview-options "IE View beállítások szerkesztése">
+<!ENTITY ieview.label "IE View eltávolítása">
+<!ENTITY ieview.prefdialogtitle "IE View beállítások">
+<!ENTITY ieview.prefdialogloclabel "IE elérési út">
+<!ENTITY ieview.prefdialogarglabel "Paraméterek (opcionális)">
+<!ENTITY ieview.prefdialoglocchoose "Keresés">
+<!ENTITY ieview.prefdialoglocdesc1 "Az alábbi helyről amennyiben adott, az IE View indítja az IE-t.">
+<!ENTITY ieview.prefdialoglocdesc2 "Ha ez az mező üres, az IE View próbálta az IE helyét megkeresni.">
+<!ENTITY ieview.prefdialoglocgroup "IE elérési út">
+<!ENTITY ieview.prefdialogpatgroup "Mindig IE-ben nyíló oldalak">
+<!ENTITY ieview.prefdialogpatdesc "Az alábbi oldalakat rákattintáskor mindig IE-ben nyitja meg.">
+<!ENTITY ieview.prefdialogdeletebutton "Törlés">
+<!ENTITY ieview.prefdialogeditbutton "Szerkesztés">
+<!ENTITY ieview.prefdialogaddbutton "Hozzáadás">
+<!ENTITY ieview.prefdialogpatlabel "Oldal hozzáadása">
+<!ENTITY ieview.editAlwaysPrompt "Mindig IE-ben nyíló oldalak szerkesztése">
+<!ENTITY ieview.disable-always-ie "Link megnyitása mindig IE-ben tiltása">
+<!ENTITY ieview.disable-always-desc "Az opció kiválasztásával a &apos;Link megnyitása mindig IE-ben&apos; lehetőség letiltásra kerül.">
+<!ENTITY ieview.close-after-redir "Lap és ablak bezárása újratöltés után">
+<!ENTITY ieview.close-after-desc "Az opció kiválasztásával a &apos;ez az oldal újratöltésre került az Internet Explorer-ben&apos; oldal automatikusan bezárásra kerül, amikor az IE elindult.">

@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Главно">
+<!ENTITY ieview.prefadvancedtab "Напредно">
+<!ENTITY ieview.popup-ieview-do-view "Погледај страницу у ИЕ">
+<!ENTITY ieview.popup-ieview-do-viewlink "Отвори везу у ИЕ">
+<!ENTITY ieview.places-view-in-ie "Отвори у Интернет Експлореру">
+<!ENTITY ieview.popup-ieview-force-page "Увек погледај ову страницу у ИЕ">
+<!ENTITY ieview.edit-ieview-options "Уреди подешавања ИЕ погледа">
+<!ENTITY ieview.label "Деинсталација ИЕ погледа">
+<!ENTITY ieview.prefdialogtitle "поставке ИЕ погледа">
+<!ENTITY ieview.prefdialogloclabel "Место ИЕ-а">
+<!ENTITY ieview.prefdialogarglabel "Аргументи (опционо)">
+<!ENTITY ieview.prefdialoglocchoose "Пронађи">
+<!ENTITY ieview.prefdialoglocdesc1 "Доле изабрано место (ако га има) ће бити коришћено када ИЕ поглед покреће Интернет Експлорер.">
+<!ENTITY ieview.prefdialoglocdesc2 "Ако ово оставите празно, ИЕ поглед ће покушати да самостално пронађе Интернет Експлорер.">
+<!ENTITY ieview.prefdialoglocgroup "Интернет Експлорер место">
+<!ENTITY ieview.prefdialogpatgroup "Увек-у-ИЕ места">
+<!ENTITY ieview.prefdialogpatdesc "Овде су набројана места ће се увек учитавати у ИЕ-у када кликнете на везе до ових страница.">
+<!ENTITY ieview.prefdialogdeletebutton "Уклони">
+<!ENTITY ieview.prefdialogeditbutton "Уреди">
+<!ENTITY ieview.prefdialogaddbutton "Додај">
+<!ENTITY ieview.prefdialogpatlabel "Додај место">
+<!ENTITY ieview.editAlwaysPrompt "Уреди Увек-у-ИЕ места">
+<!ENTITY ieview.disable-always-ie "Искључи Увек-погледај-у-ИЕ">
+<!ENTITY ieview.disable-always-desc "Ако је ова опција укључена, „увек-погледај-у-ИЕ” ће бити искључено">
+<!ENTITY ieview.close-after-redir "Затвори језичак/прозор након учитавања">
+<!ENTITY ieview.close-after-desc "Ако је ова опција укључена, страница „ова страница је поново учитана у Интернет Експлореру” ће се аутоматски затворити након учитавања ИЕ-а.">

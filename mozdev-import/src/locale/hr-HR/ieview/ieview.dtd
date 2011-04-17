@@ -1,0 +1,28 @@
+<!ENTITY ieview.prefmaintab "Glavno">
+<!ENTITY ieview.prefadvancedtab "Napredno">
+<!ENTITY ieview.popup-ieview-do-view "Pogledaj ovu stranicu u IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Otvori ciljanu poveznicu u IE">
+<!ENTITY ieview.popup-ieview-force-page "Ovu stranicu uvijek pogledaj u IE">
+<!ENTITY ieview.edit-ieview-options "Uredi IE View postavke">
+<!ENTITY ieview.label "IE View deinstalacija">
+<!ENTITY ieview.prefdialogtitle "IE View postavke">
+<!ENTITY ieview.prefdialogloclabel "Lokacija IE">
+<!ENTITY ieview.prefdialogarglabel "Argumenti (opcionalno)">
+<!ENTITY ieview.prefdialoglocchoose "Pronađi">
+<!ENTITY ieview.prefdialoglocdesc1 "Lokacija koja je izabrana ispod (ako jest), bit će korištena kada IE View bude pokretao Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Ako bude ostavljena prazna, IE View će sam pokušati locirati Internet Explorer.">
+<!ENTITY ieview.prefdialoglocgroup "Lokacija Internet Explorera">
+<!ENTITY ieview.prefdialogpatgroup "Uvijek-u-IE stranice">
+<!ENTITY ieview.prefdialogpatdesc "Ovdje navedene stranice će uvijek biti učitane u IE kada kliknete na njih.">
+<!ENTITY ieview.prefdialogdeletebutton "Obriši">
+<!ENTITY ieview.prefdialogaddbutton "Dodaj">
+<!ENTITY ieview.prefdialogpatlabel "Dodaj stranicu">
+<!ENTITY ieview.disable-always-ie "Onemogući Uvijek-pogledaj-u-IE">
+<!ENTITY ieview.disable-always-desc "Ako je oznaćena ova opcija, osobina &apos;uvijek-pogledaj-u-IE&apos; će biti onemogućena.">
+<!ENTITY ieview.close-after-redir "Nakon ponovnog učitavanja zatvori karticu/prozor">
+<!ENTITY ieview.close-after-desc "Ako je označena ova opcija, stranica &apos;ova stranica je učitana u Internet Exploreru&apos; će se automatski zatvoriti nakon što je pokrenut IE.">
+
+<!ENTITY ieview.prefdialogeditbutton "Edit">
+<!ENTITY ieview.editAlwaysPrompt "Edit Always-in-IE entry">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+

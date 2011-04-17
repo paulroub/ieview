@@ -1,0 +1,8 @@
+<?php
+
+// hide from the front page
+// $local_conf2_last_updated = OFF
+
+// do not put anything after the php end tag
+
+?>

@@ -1,0 +1,3 @@
+#!/bin/sh
+PERL_UNICODE=Sio perl creditgen.pl install.rdf ../www/index.html > ../www/index.new
+mv -f ../www/index.new ../www/index.html

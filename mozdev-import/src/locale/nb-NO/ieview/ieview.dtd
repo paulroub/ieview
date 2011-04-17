@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Generelt">
+<!ENTITY ieview.prefadvancedtab "Avansert">
+<!ENTITY ieview.popup-ieview-do-view "Vis denne siden i IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Åpne lenkemål i IE">
+<!ENTITY ieview.places-view-in-ie "Åpne i Internet Explorer">
+<!ENTITY ieview.popup-ieview-force-page "Vis alltid denne siden i IE">
+<!ENTITY ieview.edit-ieview-options "Rediger IE View innstillinger">
+<!ENTITY ieview.label "IE View Avinstaller">
+<!ENTITY ieview.prefdialogtitle "Innstillinger - IE View">
+<!ENTITY ieview.prefdialogloclabel "IE plassering">
+<!ENTITY ieview.prefdialogarglabel "Argumenter (valgfritt)">
+<!ENTITY ieview.prefdialoglocchoose "Finn">
+<!ENTITY ieview.prefdialoglocdesc1 "Valgt plassering (hvis noen) vil bli brukt når IE View starter Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Dersom feltet forlates blankt vil IE View forsøke å finne Internet Explorer selv.">
+<!ENTITY ieview.prefdialoglocgroup "Internet Explorer plassering">
+<!ENTITY ieview.prefdialogpatgroup "«Alltid i IE» sider">
+<!ENTITY ieview.prefdialogpatdesc "Sider som listes her vil alltid åpne i IE.">
+<!ENTITY ieview.prefdialogdeletebutton "Slett">
+<!ENTITY ieview.prefdialogeditbutton "Rediger">
+<!ENTITY ieview.prefdialogaddbutton "Legg til">
+<!ENTITY ieview.prefdialogpatlabel "Legg til side">
+<!ENTITY ieview.editAlwaysPrompt "Rediger «Alltid i IE» oppføring">
+<!ENTITY ieview.disable-always-ie "Slå av «Vis alltid i IE»">
+<!ENTITY ieview.disable-always-desc "Slår av «Vis alltid i IE» funksjonene.">
+<!ENTITY ieview.close-after-redir "Lukk fane/vindu etter å ha lastet på nytt">
+<!ENTITY ieview.close-after-desc "Siden som viser «denne siden har blitt lastet på nytt i Internet Explorer» lukkes automatisk etter at IE har startet.">

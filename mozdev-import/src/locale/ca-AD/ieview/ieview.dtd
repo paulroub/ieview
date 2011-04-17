@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Principal">
+<!ENTITY ieview.prefadvancedtab "Avançat">
+<!ENTITY ieview.popup-ieview-do-view "Visualitza aquesta pàgina amb l&apos;IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Obre l&apos;enllaç a l&apos;IE">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+<!ENTITY ieview.popup-ieview-force-page "Obre sempre aquesta pàgina a IE">
+<!ENTITY ieview.edit-ieview-options "Edita la configuració de IE View">
+<!ENTITY ieview.label "Desinstal·la l&apos;IE View">
+<!ENTITY ieview.prefdialogtitle "Preferències de l&apos;IE View">
+<!ENTITY ieview.prefdialogloclabel "Localització de l&apos;IE">
+<!ENTITY ieview.prefdialogarglabel "Paràmetres (opcional)">
+<!ENTITY ieview.prefdialoglocchoose "Cerca">
+<!ENTITY ieview.prefdialoglocdesc1 "La localització escollida (si n&apos;hi ha cap) s&apos;utilitzarà quan l&apos;IE View executi l&apos;Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Si es deixa en blanc, l&apos;IE View intentarà trobar l&apos;Internet Explorer pel seu compte.">
+<!ENTITY ieview.prefdialoglocgroup "Localització de l&apos;Internet Explorer">
+<!ENTITY ieview.prefdialogpatgroup "Pàgines a obrir sempre amb IE">
+<!ENTITY ieview.prefdialogpatdesc "Les pàgines llistades es mostraran sempre utilitzant IE quan es cliquin es una pàgina">
+<!ENTITY ieview.prefdialogdeletebutton "Esborra">
+<!ENTITY ieview.prefdialogeditbutton "Edit">
+<!ENTITY ieview.prefdialogaddbutton "Afegeix">
+<!ENTITY ieview.prefdialogpatlabel "Afegeix Pàgina">
+<!ENTITY ieview.editAlwaysPrompt "Edit Always-in-IE entry">
+<!ENTITY ieview.disable-always-ie "Inhabilita Veure-sempre-en-IE">
+<!ENTITY ieview.disable-always-desc "Si aquesta opció està seleccionada, la característica veure sempre en IE estarà inhabilitada.">
+<!ENTITY ieview.close-after-redir "Tancar la pestanya/finestra al recarregar">
+<!ENTITY ieview.close-after-desc "Si aquesta opció està seleccionada, la pàgina &apos;aquesta pàgina s&apos;ha recarregat utilitzant Internet Explorer&apos; es tancarà automàticament després de llançar IE.">

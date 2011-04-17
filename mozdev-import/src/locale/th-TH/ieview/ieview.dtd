@@ -1,0 +1,29 @@
+<!ENTITY ieview.prefmaintab "Main">
+<!ENTITY ieview.prefadvancedtab "ขั้นสูง">
+<!ENTITY ieview.popup-ieview-do-view "เปิดหน้านี้ด้วย IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "เปิดลิงค์นี้ด้วย IE">
+<!ENTITY ieview.popup-ieview-force-page "เปิดหน้านี้ด้วย IE เสมอ">
+
+<!ENTITY ieview.edit-ieview-options "แก้ไขตัวเลือกของ IE View">
+<!ENTITY ieview.label "ถอดการติดตั้ง IE View">
+<!ENTITY ieview.prefdialogtitle "ตัวเลือกของ IE View">
+<!ENTITY ieview.prefdialogloclabel "ตำแหน่งของ IE">
+<!ENTITY ieview.prefdialogarglabel "อาร์กิวเมนต์ (optional)">
+<!ENTITY ieview.prefdialoglocchoose "ค้นหา">
+<!ENTITY ieview.prefdialoglocdesc1 "The Location chosen below (if any) will be used when IE View launches Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "ถ้าไม่ได้ตั้งค่า IE View จะพยายามค้นหาตำแหน่งของ Internet Explorer ด้วยตัวเอง">
+<!ENTITY ieview.prefdialoglocgroup "ตำแหน่งของ IE">
+<!ENTITY ieview.prefdialogpatgroup "เวบที่เปิดด้วย IE เสมอ">
+<!ENTITY ieview.prefdialogpatdesc "Sites listed here will always load in IE when clicked on a page.">
+<!ENTITY ieview.prefdialogdeletebutton "ลบ">
+<!ENTITY ieview.prefdialogaddbutton "เพิ่ม">
+<!ENTITY ieview.prefdialogpatlabel "เพิ่มเวบ">
+<!ENTITY ieview.disable-always-ie "ปิดการทำงาน เปิดด้วย IE เสมอ">
+<!ENTITY ieview.disable-always-desc "If this option is checked, the &apos;always-view-in-IE&apos; features will be disabled.">
+<!ENTITY ieview.close-after-redir "ปิดแท็บหรือหน้าต่างหลังจากรีโหลด">
+<!ENTITY ieview.close-after-desc "If this option is checked, the &apos;this page has been reloaded in Internet Explorer&apos; page will close automatically once IE has launched.">
+
+<!ENTITY ieview.prefdialogeditbutton "Edit">
+<!ENTITY ieview.editAlwaysPrompt "Edit Always-in-IE entry">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+

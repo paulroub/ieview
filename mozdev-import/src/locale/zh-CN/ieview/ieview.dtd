@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "常规">
+<!ENTITY ieview.prefadvancedtab "高级">
+<!ENTITY ieview.popup-ieview-do-view "使用 IE 浏览此页面">
+<!ENTITY ieview.popup-ieview-do-viewlink "使用 IE 打开此链接">
+<!ENTITY ieview.places-view-in-ie "在 Internet Explorer 中打开">
+<!ENTITY ieview.popup-ieview-force-page "始终用 IE 浏览此页面">
+<!ENTITY ieview.edit-ieview-options "编辑 IE View 设置">
+<!ENTITY ieview.label "卸载 IE View">
+<!ENTITY ieview.prefdialogtitle "IE View 选项">
+<!ENTITY ieview.prefdialogloclabel "IE 所在位置">
+<!ENTITY ieview.prefdialogarglabel "参数(可选)">
+<!ENTITY ieview.prefdialoglocchoose "查找">
+<!ENTITY ieview.prefdialoglocdesc1 "如果你在下面指定了路径, IE View 就会根据这个设定來启动 Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "如果你将此留白, IE View 便会自行寻找 Internet Explorer 的位置.">
+<!ENTITY ieview.prefdialoglocgroup "Internet Explorer 所在位置">
+<!ENTITY ieview.prefdialogpatgroup "始终用 IE 浏览的网站">
+<!ENTITY ieview.prefdialogpatdesc "点击页面中以下所列网址时将始终用 IE 打开">
+<!ENTITY ieview.prefdialogdeletebutton "删除">
+<!ENTITY ieview.prefdialogeditbutton "编辑">
+<!ENTITY ieview.prefdialogaddbutton "添加">
+<!ENTITY ieview.prefdialogpatlabel "添加网址">
+<!ENTITY ieview.editAlwaysPrompt "编辑[始终用 IE 浏览]的条目">
+<!ENTITY ieview.disable-always-ie "禁用[始终用 IE 浏览]">
+<!ENTITY ieview.disable-always-desc "选中此项将禁用[始终用 IE 浏览]功能。">
+<!ENTITY ieview.close-after-redir "重新载入后关闭标签或窗口">
+<!ENTITY ieview.close-after-desc "选中此项将会在 Firefox 中自动关闭那些已经在 IE 中打开的页面.">

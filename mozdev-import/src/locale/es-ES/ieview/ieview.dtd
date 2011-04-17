@@ -1,0 +1,28 @@
+<!ENTITY ieview.prefmaintab "Principal">
+<!ENTITY ieview.prefadvancedtab "Avanzadas">
+<!ENTITY ieview.popup-ieview-do-view "Ver esta página en IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Abrir enlace en IE">
+<!ENTITY ieview.popup-ieview-force-page "Ver siempre esta página con IE">
+<!ENTITY ieview.edit-ieview-options "Edita las opciones de IE View">
+<!ENTITY ieview.label "Desinstalar IE View">
+<!ENTITY ieview.prefdialogtitle "Preferencias de IE View">
+<!ENTITY ieview.prefdialogloclabel "Ubicacion de IE">
+<!ENTITY ieview.prefdialogarglabel "Parámetros (opcional)">
+<!ENTITY ieview.prefdialoglocchoose "Buscar">
+<!ENTITY ieview.prefdialoglocdesc1 "La ubicacion elegida abajo (si se elige) sera usada cuando IE View ejecute Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Si se deja en blanco, IE View intentara localizar Internet Explorer por si mismo.">
+<!ENTITY ieview.prefdialoglocgroup "Localización de Internet Explorer">
+<!ENTITY ieview.prefdialogpatgroup "Ver siempre con IE">
+<!ENTITY ieview.prefdialogpatdesc "Los sitios puestos aquí se verán siempre con IE">
+<!ENTITY ieview.prefdialogdeletebutton "Borrar">
+<!ENTITY ieview.prefdialogaddbutton "Añadir">
+<!ENTITY ieview.prefdialogpatlabel "Añadir sitio">
+<!ENTITY ieview.disable-always-ie "Desactivar ver siempre con IE">
+<!ENTITY ieview.disable-always-desc "Si esta opción esta marcada, desactivas ver siempre con IE">
+<!ENTITY ieview.close-after-redir "Cierra pestaña/ventana despues de recargarla">
+<!ENTITY ieview.close-after-desc "Si esta opción esta marcada, se cerrara la pestaña/ventana una vez cargada en el Internet Explorer.">
+
+<!ENTITY ieview.prefdialogeditbutton "Edit">
+<!ENTITY ieview.editAlwaysPrompt "Edit Always-in-IE entry">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+

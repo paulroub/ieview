@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Main">
+<!ENTITY ieview.prefadvancedtab "Advanced">
+<!ENTITY ieview.popup-ieview-do-view "View This Page in IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Open Link Target in IE">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+<!ENTITY ieview.popup-ieview-force-page "Always View This Page in IE">
+<!ENTITY ieview.edit-ieview-options "Edit IE View Settings">
+<!ENTITY ieview.label "IE View Uninstall">
+<!ENTITY ieview.prefdialogtitle "IE View Preferences">
+<!ENTITY ieview.prefdialogloclabel "IE Location">
+<!ENTITY ieview.prefdialogarglabel "Arguments (optional)">
+<!ENTITY ieview.prefdialoglocchoose "Find">
+<!ENTITY ieview.prefdialoglocdesc1 "The Location chosen below (if any) will be used when IE View launches Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "If this is left blank, IE View will attempt to locate Internet Explorer on its own.">
+<!ENTITY ieview.prefdialoglocgroup "Internet Explorer location">
+<!ENTITY ieview.prefdialogpatgroup "Always-in-IE sites">
+<!ENTITY ieview.prefdialogpatdesc "Sites listed here will always load in IE when clicked on a page.">
+<!ENTITY ieview.prefdialogdeletebutton "Delete">
+<!ENTITY ieview.prefdialogeditbutton "Edit">
+<!ENTITY ieview.prefdialogaddbutton "Add">
+<!ENTITY ieview.prefdialogpatlabel "Add Site">
+<!ENTITY ieview.editAlwaysPrompt "Edit Always-in-IE entry">
+<!ENTITY ieview.disable-always-ie "Disable Always-view-in-IE">
+<!ENTITY ieview.disable-always-desc "If this option is checked, the &apos;always-view-in-IE&apos; features will be disabled.">
+<!ENTITY ieview.close-after-redir "Close tab/window after reload">
+<!ENTITY ieview.close-after-desc "If this option is checked, the &apos;this page has been reloaded in Internet Explorer&apos; page will close automatically once IE has launched.">

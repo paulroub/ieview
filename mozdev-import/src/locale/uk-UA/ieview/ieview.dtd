@@ -1,0 +1,28 @@
+<!ENTITY ieview.prefmaintab "Основні">
+<!ENTITY ieview.prefadvancedtab "Додаткові">
+<!ENTITY ieview.popup-ieview-do-view "Переглянути сторінку у IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Відкрити посилання у IE">
+<!ENTITY ieview.popup-ieview-force-page "Завжди переглядати цю сторінку у IE">
+<!ENTITY ieview.edit-ieview-options "Редагувати налаштування IE View">
+<!ENTITY ieview.label "Деінсталяція IE View">
+<!ENTITY ieview.prefdialogtitle "Налаштування IE View">
+<!ENTITY ieview.prefdialogloclabel "Локальний шлях до IE">
+<!ENTITY ieview.prefdialogarglabel "Аргументи (опція)">
+<!ENTITY ieview.prefdialoglocchoose "Знайти">
+<!ENTITY ieview.prefdialoglocdesc1 "Шлях вибраний нижче, використовуватиметься IE View для відкриття сторінок у Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Для використання Internet Explorer за умовчанням, залиште дане поле порожнім.">
+<!ENTITY ieview.prefdialoglocgroup "Локальний шлях до Internet Explorer">
+<!ENTITY ieview.prefdialogpatgroup "Сайти Завжди-у-IE">
+<!ENTITY ieview.prefdialogpatdesc "Додані нижче сайти, завжди відкриватимуться у IE.">
+<!ENTITY ieview.prefdialogdeletebutton "Видалити">
+<!ENTITY ieview.prefdialogaddbutton "Додати">
+<!ENTITY ieview.prefdialogpatlabel "Додати сайт">
+<!ENTITY ieview.disable-always-ie "Відключити &apos;Сайти Завжди-у-IE&apos;">
+<!ENTITY ieview.disable-always-desc "Якщо ця опція відмічена, можливості функції &apos;Сайти Завжди-у-IE&apos; будуть відключені.">
+<!ENTITY ieview.close-after-redir "Закрити вкладку/вікно після завантаження у IE">
+<!ENTITY ieview.close-after-desc "Якщо ця опція відмічена, то сторінка &apos;IE View відкрив цю сторінку у Internet Explorer&apos; закриватиметься автоматично після завантаження Internet Explorer.">
+
+<!ENTITY ieview.prefdialogeditbutton "Edit">
+<!ENTITY ieview.editAlwaysPrompt "Edit Always-in-IE entry">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+

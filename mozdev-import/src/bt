@@ -1,0 +1,3 @@
+#!/bin/sh
+./bumpbuild
+make full test

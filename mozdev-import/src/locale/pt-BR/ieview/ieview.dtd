@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Principal">
+<!ENTITY ieview.prefadvancedtab "Avançado">
+<!ENTITY ieview.popup-ieview-do-view "Ver esta página no IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Abrir Link no IE">
+<!ENTITY ieview.places-view-in-ie "Abrir no Internet Explorer">
+<!ENTITY ieview.popup-ieview-force-page "Sempre ver esta página no IE">
+<!ENTITY ieview.edit-ieview-options "Configurar IE View">
+<!ENTITY ieview.label "Desinstalar IE View">
+<!ENTITY ieview.prefdialogtitle "Preferências do IE View">
+<!ENTITY ieview.prefdialogloclabel "Caminho para o IE">
+<!ENTITY ieview.prefdialogarglabel "Argumentos (opcional)">
+<!ENTITY ieview.prefdialoglocchoose "Localizar">
+<!ENTITY ieview.prefdialoglocdesc1 "O caminho escolhido abaixo (se for preenchido) será usando quando o IE View iniciar o Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Se este for deixado em branco, o IE View tentará localizar o Internet Explorer por si mesmo.">
+<!ENTITY ieview.prefdialoglocgroup "Caminho para o Internet Explorer">
+<!ENTITY ieview.prefdialogpatgroup "Sites para &quot;Sempre carregar no IE&quot;">
+<!ENTITY ieview.prefdialogpatdesc "Os sites listados aqui sempre serão carregados no IE quando forem clicados numa página.">
+<!ENTITY ieview.prefdialogdeletebutton "Excluir">
+<!ENTITY ieview.prefdialogeditbutton "Editar">
+<!ENTITY ieview.prefdialogaddbutton "Adicionar">
+<!ENTITY ieview.prefdialogpatlabel "Adicionar Site">
+<!ENTITY ieview.editAlwaysPrompt "Editar entradas &quot;Sempre no IE&quot;">
+<!ENTITY ieview.disable-always-ie "Desabilitar a opção &quot;Sempre carregar no IE&quot;">
+<!ENTITY ieview.disable-always-desc "Se esta opção estiver marcada, os recursos de &apos;sempre carregar no IE&apos; serão desabilitados.">
+<!ENTITY ieview.close-after-redir "Fechar a aba/janela após recarregar">
+<!ENTITY ieview.close-after-desc "Se esta opção estiver marcada, a página com o aviso de que &apos;esta página foi recarregada no Internet Explorer&apos; será fechada automaticamente quando o IE for iniciado.">

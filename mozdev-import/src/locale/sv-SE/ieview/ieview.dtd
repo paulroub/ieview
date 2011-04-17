@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Standard">
+<!ENTITY ieview.prefadvancedtab "Avancerat">
+<!ENTITY ieview.popup-ieview-do-view "Visa denna sida i IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Öppna denna länk i IE">
+<!ENTITY ieview.places-view-in-ie "Öppna i Internet Explorer">
+<!ENTITY ieview.popup-ieview-force-page "Visa alltid denna sida i IE">
+<!ENTITY ieview.edit-ieview-options "Redigera IE View inställningar">
+<!ENTITY ieview.label "Avinstallera IE View">
+<!ENTITY ieview.prefdialogtitle "IE View Inställningar">
+<!ENTITY ieview.prefdialogloclabel "Sökväg till IE">
+<!ENTITY ieview.prefdialogarglabel "Argument (valfritt)">
+<!ENTITY ieview.prefdialoglocchoose "Sök">
+<!ENTITY ieview.prefdialoglocdesc1 "Den valda sökvägen nedan (om någon) kommer att användas av IE View för att starta Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Om ingen sökväg anges så kommer IE View att försöka lokalisera Internet Explorer på egen hand.">
+<!ENTITY ieview.prefdialoglocgroup "Sökväg till Internet Explorer">
+<!ENTITY ieview.prefdialogpatgroup "Platser som alltid öppnas med IE">
+<!ENTITY ieview.prefdialogpatdesc "Platserna som visas här kommer alltid att öppnas i IE.">
+<!ENTITY ieview.prefdialogdeletebutton "Ta bort">
+<!ENTITY ieview.prefdialogeditbutton "Redigera">
+<!ENTITY ieview.prefdialogaddbutton "Lägg till">
+<!ENTITY ieview.prefdialogpatlabel "Lägg till plats">
+<!ENTITY ieview.editAlwaysPrompt "Visa alltid med IE">
+<!ENTITY ieview.disable-always-ie "Inaktivera visa alltid med IE">
+<!ENTITY ieview.disable-always-desc "Om rutan kryssas i, kommer &apos;visa alltid med IE&apos; att inaktiveras.">
+<!ENTITY ieview.close-after-redir "Stäng fliken/fönstret efter uppdatering">
+<!ENTITY ieview.close-after-desc "Om rutan kryssas i, kommer meddelandet &apos;denna sida har uppdaterats i Internet Explorer&apos; att stängas automatiskt när IE har startat.">

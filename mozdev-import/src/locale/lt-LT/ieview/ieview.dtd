@@ -1,0 +1,29 @@
+<!ENTITY ieview.prefmaintab "Bendra">
+<!ENTITY ieview.prefadvancedtab "Sudėtingiau">
+<!ENTITY ieview.popup-ieview-do-view "Rodyti šį tinklalapį IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Atverti saistomą objektą IE">
+<!ENTITY ieview.popup-ieview-force-page "Visada rodyti šį tinklalapį IE">
+
+<!ENTITY ieview.edit-ieview-options "Keisti „IE View“ nustatymus">
+<!ENTITY ieview.label "„IE View“ pašalinimas">
+<!ENTITY ieview.prefdialogtitle "„IE View“ savybės">
+<!ENTITY ieview.prefdialogloclabel "IE vieta">
+<!ENTITY ieview.prefdialogarglabel "Argumentai (pasirinktinai)">
+<!ENTITY ieview.prefdialoglocchoose "Rasti">
+<!ENTITY ieview.prefdialoglocdesc1 "Nurodyta vieta bus naudojama, kai „IE View“ bandys atverti „Internet Explorer“ naršyklę">
+<!ENTITY ieview.prefdialoglocdesc2 "Jei palikta tuščia, „IE View“ mėgins pats surasti „Internet Explorer“ naršyklę">
+<!ENTITY ieview.prefdialoglocgroup "„Internet Explorer“ vieta">
+<!ENTITY ieview.prefdialogpatgroup "Tinklalapiai, visada rodomi IE">
+<!ENTITY ieview.prefdialogpatdesc "Šie tinklalapiai bus visada įkelti IE naršyklėje, spragtelint ant tinklalapio.">
+<!ENTITY ieview.prefdialogdeletebutton "Ištrinti">
+<!ENTITY ieview.prefdialogaddbutton "Pridėti">
+<!ENTITY ieview.prefdialogpatlabel "Pridėti tinklalapį">
+<!ENTITY ieview.disable-always-ie "Išjungti nuolatinį rodymą IE naršyklėje">
+<!ENTITY ieview.disable-always-desc "Jei pasirinkta, nuolatinio rodymo IE naršyklėje savybės bus išjungtos.">
+<!ENTITY ieview.close-after-redir "Iš naujo įkėlus, užverti kortelę/langą">
+<!ENTITY ieview.close-after-desc "Jei pasirinkta, „this page has been reloaded in Internet Explorer“ puslapis bus automatiškai užvertas, kai pasileis IE.">
+
+<!ENTITY ieview.prefdialogeditbutton "Edit">
+<!ENTITY ieview.editAlwaysPrompt "Edit Always-in-IE entry">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+

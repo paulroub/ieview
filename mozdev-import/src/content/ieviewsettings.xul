@@ -1,0 +1,110 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://ieview/locale/ieview.dtd" >
+
+<dialog xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+      onload="IeView.initPath();"
+      ondialogaccept="IeView.setIeviewOptions();"
+      title="&ieview.prefdialogtitle;">
+
+<html:script language="javascript" src="chrome://ieview/content/ieviewOverlay.js" />
+
+<!-- r@bitwaste.com : mark that we want to save the search option into 
+     the preferences -->
+<script type="application/x-javascript">
+  <![CDATA[
+    var panel = "chrome://ieview/content/ieviewsettings.xul";
+    var _elementIDs = [ "ieloc" ];
+  ]]>
+</script>
+
+
+
+   <tabbox>
+      <tabs>
+        <tab label="&ieview.prefmaintab;" />
+        <tab label="&ieview.prefadvancedtab;" />
+      </tabs>
+ 
+      <tabpanels>
+       <tabpanel>
+        <vbox>
+	<groupbox>
+		<caption label="&ieview.prefdialoglocgroup;" />
+
+		<description>
+			&ieview.prefdialoglocdesc1;
+		</description>
+		<description>
+			&ieview.prefdialoglocdesc2;
+		</description>
+	
+		<hbox align="center"> 
+			<label control="ieloc" value="&ieview.prefdialogloclabel;"/>
+			
+			<textbox id="ieloc" 
+				pref="true"
+				preftype="string"
+				prefstring="ieview.ieapp"
+				size="50"
+			 /> 
+		
+			<button class="" 
+			 label="&ieview.prefdialoglocchoose;" 
+			 disabled="false"
+			 oncommand="IeView.pickIe();"/>
+		</hbox>
+                
+                <hbox align="center">
+                        <label control="ieargs" value="&ieview.prefdialogarglabel;"/>
+                        <textbox id="ieargs" pref="true" preftype="string" prefstring="ieview.ieargs" size="50" />
+                </hbox>
+	</groupbox>
+
+	<groupbox>
+		<caption label="&ieview.prefdialogpatgroup;" />
+
+		<description>
+			&ieview.prefdialogpatdesc;
+		</description>
+
+		<hbox align="center">
+			<listbox id="patlist" flex="1" disableKeyNavigation="true" seltype="multiple" onselect="IeView.updateDelButtonStatus();" ondblclick="IeView.editSelected('&ieview.editAlwaysPrompt;');" />
+			<vbox>
+			<button id="delpat" class="" label="&ieview.prefdialogdeletebutton;" disabled="true" oncommand="IeView.deleteSelected();" />
+			<button id="editpat" class="" label="&ieview.prefdialogeditbutton;" disabled="true" oncommand="IeView.editSelected('&ieview.editAlwaysPrompt;');" />
+			</vbox>
+		</hbox>
+
+        <hbox align="center"> 
+			<label control="newpat" value="&ieview.prefdialogpatlabel;"/>
+		
+			<textbox id="newpat" pref="false" size="50" oninput="IeView.updateButtonStatus();" /> 
+	
+			<button class="" id="addpat"
+				 label="&ieview.prefdialogaddbutton;" 
+				 disabled="true"
+				 oncommand="IeView.addNewPat();"/>
+		</hbox>
+	</groupbox>
+        </vbox>
+     </tabpanel>
+     <tabpanel>
+	       <vbox>
+             <groupbox width="450">
+		       <caption label="&ieview.prefdialogpatgroup;" />
+               <checkbox id="disableAlways" label="&ieview.disable-always-ie;" />
+               <description style="margin-left: 20px;">&ieview.disable-always-desc;</description>           
+               <checkbox id="closeAfterRedir" label="&ieview.close-after-redir;" />
+               <description style="margin-left: 20px;">&ieview.close-after-desc;</description>
+	         </groupbox>  
+           </vbox>
+     </tabpanel>
+    </tabpanels>
+   </tabbox>
+
+
+</dialog>
+

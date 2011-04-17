@@ -1,0 +1,182 @@
+@import url("/hide_from_ns4.css");
+
+.project-name {
+  background: inherit;
+  color:#900;
+  font-family: helvetica,arial,san-serif, serif;
+  padding: 0;
+}
+.project-name:after {
+  content: url(http://www.mozdev.org/sharedimages/boxes.gif);
+  padding-left: 1.1em;
+}
+
+.page-header {
+  background: inherit;
+  color:#000;
+  font-family: helvetica,arial,san-serif, serif;
+  padding: 0;
+}
+
+.project-navigations {
+  margin-bottom: 2em;
+  border: none; /* work around weird ns4 bug */
+  font-size: smaller;
+}
+
+#project-navigation .navigation-list {
+
+}
+
+#project-navigation th {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  background: #FFFFFF no-repeat url("http://www.mozdev.org/sharedimages/nav-icon.png");
+  padding-left: 18px;
+  font-family: helvetica,arial,san-serif, serif;
+  color:#990000;
+  vertical-align: top;
+}
+
+
+#infoTabs {
+  float: right;
+}
+
+.infoTab {
+  margin: 10px;
+  width: 170px;
+}
+
+.infoTab .infoHeader {
+  background: #ff9900 no-repeat url("http://www.mozdev.org/sharedimages/infotab_top.png");
+  color: white;
+  text-align: center;
+  font-family: Helvetica, Arial,san-serif, serif;
+  font-weight: bold;
+}
+
+#main-content-no-nav ul,
+#main-content ul {
+  font-size: smaller;
+  list-style-type: square;
+  list-style-image: url("http://www.mozdev.org/sharedimages/bullet.gif");
+  list-style-position: inside;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#main-content-no-nav li,
+#main-content li {
+  padding-bottom: 15px;
+}
+
+
+.infoTab .infoItems {
+  font-size: smaller;
+}
+
+.infoTab .infoItems div {
+  background: white no-repeat url("http://www.mozdev.org/sharedimages/bullet.gif");
+  color: inherit;
+  padding-left: 16px;
+  padding-bottom: 5px;
+}
+
+
+img.shot {
+    border: 1px dotted #000000;
+    padding: 3px;
+}
+
+
+div#main-content {
+  font-family: georgia, verdana, arial, "bistream vera sans", helvetica, sans-serif;
+    
+}
+
+div#main-content p {
+  font-size: small;
+}
+
+div#main-content dl {
+  font-size: small;
+}
+
+
+div#main-content dt {
+  font-style: italic;
+}
+
+dd {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 125%;
+    font-weight: normal;
+    border-bottom: 1px dotted #FF9900;
+}
+
+h3 {
+    font-size: 110%;
+    font-weight: normal;
+    border-bottom: 1px dotted #FFFF33;
+}
+
+.urgent {
+	color: #F00;
+}
+
+li p {
+  margin-bottom: 0px;
+}
+
+.contrib th {
+	text-align: left;
+}
+
+div.adblock {
+	font-size: smaller;
+	border: 1px solid #00F;
+	padding: 3px;
+	background-color: #FFF;
+}
+
+
+div.adblock a {
+	text-decoration: none;
+}
+
+
+div.adblock a#hover {
+  	text-decoration: underline;
+}
+
+td.navigation-list img {
+  border: none;
+}
+
+a.perma {
+	text-decoration: none;
+}
+
+code {
+        margin: 5px;
+        padding: 5px;
+        display: block;
+        background-color: #F0F0F0;
+        font-family: "lucida console", "courier new", courier, monospace;
+        font-size: 1em;
+}
+
+pre {
+        margin: 5px;
+        padding: 5px;
+        background-color: #F0F0F0;
+        font-family: "lucida console", "courier new", courier, monospace;
+        font-size: 1em;
+}
+

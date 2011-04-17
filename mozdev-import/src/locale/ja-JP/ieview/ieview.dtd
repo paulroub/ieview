@@ -1,0 +1,27 @@
+<!ENTITY ieview.prefmaintab "一般">
+<!ENTITY ieview.prefadvancedtab "詳細">
+<!ENTITY ieview.popup-ieview-do-view "このページを IE で開く">
+<!ENTITY ieview.popup-ieview-do-viewlink "このリンクを IE で開く">
+<!ENTITY ieview.popup-ieview-force-page "このページを常に IE で開く">
+<!ENTITY ieview.edit-ieview-options "IE View の設定を変更">
+<!ENTITY ieview.label "IE View を削除">
+<!ENTITY ieview.prefdialogtitle "IE View の設定">
+<!ENTITY ieview.prefdialogloclabel "IE の保存場所">
+<!ENTITY ieview.prefdialogarglabel "引数 (オプション)">
+<!ENTITY ieview.prefdialoglocchoose "検索">
+<!ENTITY ieview.prefdialoglocdesc1 "下記に指定したプログラムで IE View はリンク先を開きます。">
+<!ENTITY ieview.prefdialoglocdesc2 "もしもこの項目が空白の場合。IE View は Internet Explorer を自動的に探すよう設定されています。">
+<!ENTITY ieview.prefdialoglocgroup "Internet Explorer の保存場所">
+<!ENTITY ieview.prefdialogpatgroup "常に IE で開くサイト">
+<!ENTITY ieview.prefdialogpatdesc "この一覧に登録されたサイトを開く時は常に IE で表示されます。">
+<!ENTITY ieview.prefdialogdeletebutton "削除">
+<!ENTITY ieview.prefdialogeditbutton "編集">
+<!ENTITY ieview.prefdialogaddbutton "追加">
+<!ENTITY ieview.prefdialogpatlabel "サイトを追加">
+<!ENTITY ieview.editAlwaysPrompt "常に IE で開くの編集">
+<!ENTITY ieview.disable-always-ie "常に IE で開くを無効">
+<!ENTITY ieview.disable-always-desc "このオプションを有効にすると &apos;常に IE で表示&apos; 機能は使用できません。">
+<!ENTITY ieview.close-after-redir "読み込み後にタブ/ウィンドウを閉じる">
+<!ENTITY ieview.close-after-desc "このオプションを有効にすると &apos;このページは Internet Explorer で読み込まれました&apos; ページを自動的に閉じます。">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+

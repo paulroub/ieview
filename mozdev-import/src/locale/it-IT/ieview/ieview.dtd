@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Principale">
+<!ENTITY ieview.prefadvancedtab "Avanzate">
+<!ENTITY ieview.popup-ieview-do-view "Apri questa pagina con IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Apri il collegamento selezionato con IE">
+<!ENTITY ieview.places-view-in-ie "Apri in Internet Explorer">
+<!ENTITY ieview.popup-ieview-force-page "Apri sempre questa pagina con IE">
+<!ENTITY ieview.edit-ieview-options "Modifica preferenze di IE View">
+<!ENTITY ieview.label "Disinstalla IE View">
+<!ENTITY ieview.prefdialogtitle "Preferenze di IE View">
+<!ENTITY ieview.prefdialogloclabel "Percorso di IE">
+<!ENTITY ieview.prefdialogarglabel "Argomenti (optzionale)">
+<!ENTITY ieview.prefdialoglocchoose "Cerca">
+<!ENTITY ieview.prefdialoglocdesc1 "Il percorso scelto di seguito (se presente) verrà usato da IE View per avviare Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Se questa verrà lasciata vuota, IE View localizzerà automaticamente il percorso di Internet Explorer.">
+<!ENTITY ieview.prefdialoglocgroup "Percorso di Internet Explorer">
+<!ENTITY ieview.prefdialogpatgroup "Siti da visualizzare sempre-in-IE">
+<!ENTITY ieview.prefdialogpatdesc "I siti di questa lista verranno aperti sempre con IE quando si farà clic su di una pagina.">
+<!ENTITY ieview.prefdialogdeletebutton "Elimina">
+<!ENTITY ieview.prefdialogeditbutton "Modifica">
+<!ENTITY ieview.prefdialogaddbutton "Aggiungi">
+<!ENTITY ieview.prefdialogpatlabel "Aggiungi sito">
+<!ENTITY ieview.editAlwaysPrompt "Modifica elemento &apos;sempre-in-IE&apos;">
+<!ENTITY ieview.disable-always-ie "Disabilita &apos;Apri sempre questa pagina con IE&apos;">
+<!ENTITY ieview.disable-always-desc "Se questa opzione è selezionata, la funzione &apos;Apri sempre questa pagina con IE&apos;, verrà disabilitata.">
+<!ENTITY ieview.close-after-redir "Chiudi scheda/finestra dopo il ricaricamento">
+<!ENTITY ieview.close-after-desc "Se questa opzione è selezionata, la scheda/finestra di Firefox/Mozilla la quale avverte che &apos;Questa pagina è stata ricaricata con Internet Explorer&apos; verrà chiusa automaticamente una volta che IE sarà stato avviato.">

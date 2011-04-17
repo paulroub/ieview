@@ -1,0 +1,27 @@
+<!ENTITY ieview.prefmaintab "Genel">
+<!ENTITY ieview.prefadvancedtab "Gelişmiş">
+<!ENTITY ieview.popup-ieview-do-view "Bu sayfayı IE&apos;de göster">
+<!ENTITY ieview.popup-ieview-do-viewlink "Hedef bağlantıyı IE&apos;de aç">
+<!ENTITY ieview.popup-ieview-force-page "Bu sayfayı her zaman IE&apos;de aç">
+<!ENTITY ieview.edit-ieview-options "IE View Ayarlarını Düzenle">
+<!ENTITY ieview.label "IE View&apos;ı Kaldır">
+<!ENTITY ieview.prefdialogtitle "IE View Tercihleri">
+<!ENTITY ieview.prefdialogloclabel "IE Konumu">
+<!ENTITY ieview.prefdialogarglabel "Ek komutlar (isteğe bağlı)">
+<!ENTITY ieview.prefdialoglocchoose "Bul">
+<!ENTITY ieview.prefdialoglocdesc1 "Aşağıda seçtiğiniz konum, Internet Explorer uygulamasını çalıştırırken kullanılacak.">
+<!ENTITY ieview.prefdialoglocdesc2 "Boş bırakırsanız, IE View, Internet Explorer&apos;ın konumunu kendisi bulmaya çalışacak.">
+<!ENTITY ieview.prefdialoglocgroup "Internet Explorer konumu">
+<!ENTITY ieview.prefdialogpatgroup "Her-Zaman-IE&apos;de-Göster siteleri">
+<!ENTITY ieview.prefdialogpatdesc "Aşağıda listelenen siteler, bir sayfadan tıklandığında her zaman IE&apos;de açılacak.">
+<!ENTITY ieview.prefdialogdeletebutton "Sil">
+<!ENTITY ieview.prefdialogeditbutton "Düzenle">
+<!ENTITY ieview.prefdialogaddbutton "Ekle">
+<!ENTITY ieview.prefdialogpatlabel "Site Ekle">
+<!ENTITY ieview.editAlwaysPrompt "Her-Zaman-IE&apos;de-Göster sitesini düzenle">
+<!ENTITY ieview.disable-always-ie "Her-Zaman-IE&apos;de-Göster kapalı">
+<!ENTITY ieview.disable-always-desc "Bu seçenek işaretlenirse, &quot;Her-Zaman-IE&apos;de-Göster&quot; özelliği kullanılmayacak.">
+<!ENTITY ieview.close-after-redir "IE&apos;de açıldığında sekmeyi/pencereyi kapat">
+<!ENTITY ieview.close-after-desc "Bu seçenek işaretlenirse, IE çalıştırıldığında &quot;Bu sayfa Internet Explorer&apos;da yeniden yüklendi&quot; sayfası otomatik olarak kapatılacak.">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+

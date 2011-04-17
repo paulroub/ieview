@@ -1,0 +1,27 @@
+<!ENTITY ieview.prefmaintab "Yleisasetukset">
+<!ENTITY ieview.prefadvancedtab "Lisäasetukset">
+<!ENTITY ieview.popup-ieview-do-view "Näytä sivu IE:ssä">
+<!ENTITY ieview.popup-ieview-do-viewlink "Avaa linkki IE:ssä">
+<!ENTITY ieview.popup-ieview-force-page "Näytä tämä sivu aina IE:ssä">
+<!ENTITY ieview.edit-ieview-options "Muokkaa IE Viewin asetuksia">
+<!ENTITY ieview.label "Poista IE Viewin asennus">
+<!ENTITY ieview.prefdialogtitle "IE Viewin asetukset">
+<!ENTITY ieview.prefdialogloclabel "IE:n sijainti">
+<!ENTITY ieview.prefdialogarglabel "Argumentit (valinnainen)">
+<!ENTITY ieview.prefdialoglocchoose "Etsi">
+<!ENTITY ieview.prefdialoglocdesc1 "Alla valittua sijaintia käytetään, kun IE View käynnistää Internet Explorerin.">
+<!ENTITY ieview.prefdialoglocdesc2 "Jos tämä on jätetty tyhjäksi, IE View yrittää paikantaa Internet Explorerin itse.">
+<!ENTITY ieview.prefdialoglocgroup "Internet Explorerin sijainti">
+<!ENTITY ieview.prefdialogpatgroup "Aina IE:ssä avattavat sivut">
+<!ENTITY ieview.prefdialogpatdesc "Tänne on luetteloitu sivut, jotka avataan aina IE:ssä.">
+<!ENTITY ieview.prefdialogdeletebutton "Poista">
+<!ENTITY ieview.prefdialogeditbutton "Edit">
+<!ENTITY ieview.prefdialogaddbutton "Lisää">
+<!ENTITY ieview.prefdialogpatlabel "Lisää sivu">
+<!ENTITY ieview.editAlwaysPrompt "Muokkaa IE:ssä avattavia kohteita">
+<!ENTITY ieview.disable-always-ie "Poista käytöstä automaattisesti IE:ssä aukeavat sivut">
+<!ENTITY ieview.disable-always-desc "Tätä valintaa painamalla mitkään sivut eivät aukea automaattisesti IE:ssä.">
+<!ENTITY ieview.close-after-redir "Sulje välilehti/ikkuna uudelleenlatauksen jälkeen">
+<!ENTITY ieview.close-after-desc "Kun tämä on valittu, &quot;Tämä sivu on ladattu Internet Explorerissa&quot; -sivu sulkeutuu itsestään IE:n käynnistyttyä.">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+

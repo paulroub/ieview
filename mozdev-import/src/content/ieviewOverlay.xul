@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://ieview/skin/ieview-toolbar-button.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://ieview/locale/ieview.dtd" >
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1/GPL 2.0/LGPL 2.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Initial Developer of the Original Code is Fabricio Campos Zuardi
+   - Portions created by the Initial Developer are Copyright (C) 2001-2002
+   - the Initial Developer. All Rights Reserved.
+   -
+   - Contributor(s):
+   -  Ted Mielczarek <luser_mozilla@perilith.com>
+   -  Paul Roub <paul@roub.net>
+   -
+   - Alternatively, the contents of this file may be used under the terms of
+   - either the GNU General Public License Version 2 or later (the "GPL"), or
+   - the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+   - in which case the provisions of the GPL or the LGPL are applicable instead
+   - of those above. If you wish to allow use of your version of this file only
+   - under the terms of either the GPL or the LGPL, and not to allow others to
+   - use your version of this file under the terms of the MPL, indicate your
+   - decision by deleting the provisions above and replace them with the notice
+   - and other provisions required by the LGPL or the GPL. If you do not delete
+   - the provisions above, a recipient may use your version of this file under
+   - the terms of any one of the MPL, the GPL or the LGPL.
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+<overlay id="ieviewOverlay"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<stringbundleset id="stringbundleset">
+		<stringbundle id="bundle_ieview" src="chrome://ieview/locale/ieview.properties"/>
+	</stringbundleset>
+ 
+	<script type="application/x-javascript" src="chrome://ieview/content/ieviewOverlay.js"/>
+
+	<menupopup id="menu_ToolsPopup">
+		<menuitem id="ieview-do-forcepage-menu" label="&ieview.popup-ieview-force-page;" oncommand="IeView.forcePage()" insertbefore="ieviewSepFF,menu_preferences" />
+		<menuseparator  id="ieviewSepFF" insertbefore="menu_preferences" />
+	</menupopup>
+
+	<menupopup id="taskPopup">
+		<menuitem id="ieview-do-forcepage-menu-moz" label="&ieview.popup-ieview-force-page;" oncommand="IeView.forcePage()" />
+		<menuitem id="ieview-open-options" label="&ieview.edit-ieview-options;" oncommand="ieviewLaunchOptions()" />
+		<menuseparator  id="ieviewSepMoz" />
+	</menupopup>
+
+	<popupset id="mainPopupSet">
+		<menupopup id="ieviewTabContext">
+			<menuitem id="context-ieViewTab" label="&ieview.places-view-in-ie;" oncommand="IeView.loadTabInIE();" />
+			<menuseparator id="context-ieViewTabsep" /> 
+		</menupopup>
+	</popupset>
+
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton id="ieview-button" class="toolbarbutton-1"
+			label="IE View" tooltiptext="&ieview.popup-ieview-do-view;"
+			oncommand="IeView.ieView(event);"/>
+	</toolbarpalette>
+
+	<popup id="contentAreaContextMenu">
+		<menuitem 
+			id="ieview-do-view" 
+			label="&ieview.popup-ieview-do-view;" 
+			oncommand="IeView.ieView()"/>
+		<menuitem 
+			id="ieview-do-viewlink" 
+			label="&ieview.popup-ieview-do-viewlink;" 
+			oncommand="IeView.ieViewLink()"/>
+	</popup>
+
+	<popup id="placesContext">
+		<menuitem
+			id="ieview-do-places-view"
+			label="&ieview.places-view-in-ie;"
+			oncommand="IeView.placesView()"
+			insertafter="placesContext_open:newtab"/>
+	  	<menuseperator id="ieviewPlacesSep" insertafter="ieview-do-places-view" />
+	</popup>
+
+</overlay>

@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "一般">
+<!ENTITY ieview.prefadvancedtab "進階">
+<!ENTITY ieview.popup-ieview-do-view "使用 IE 檢視此網頁">
+<!ENTITY ieview.popup-ieview-do-viewlink "使用 IE 開啟此鏈結">
+<!ENTITY ieview.places-view-in-ie "使用 Internet Explorer 開啟">
+<!ENTITY ieview.popup-ieview-force-page "永遠以 IE 檢視此網頁">
+<!ENTITY ieview.edit-ieview-options "編輯 IE View 的設定">
+<!ENTITY ieview.label "解除安裝 IE View">
+<!ENTITY ieview.prefdialogtitle "IE View 選項">
+<!ENTITY ieview.prefdialogloclabel "IE 所在位置">
+<!ENTITY ieview.prefdialogarglabel "參數（非必要的）">
+<!ENTITY ieview.prefdialoglocchoose "尋找">
+<!ENTITY ieview.prefdialoglocdesc1 "如果您填寫了下面這個欄位，IE View 就會根據這個欄位的設定來啟動 Internet Explorer，">
+<!ENTITY ieview.prefdialoglocdesc2 "倘若您將此欄位留白，IE View 便會自行尋找 Internet Explorer 的位置。">
+<!ENTITY ieview.prefdialoglocgroup "Internet Explorer 執行檔所在位置">
+<!ENTITY ieview.prefdialogpatgroup "永遠以 IE 開啟的網站">
+<!ENTITY ieview.prefdialogpatdesc "以下所列出的網頁或網站將永遠以 IE 開啟">
+<!ENTITY ieview.prefdialogdeletebutton "刪除">
+<!ENTITY ieview.prefdialogeditbutton "編輯">
+<!ENTITY ieview.prefdialogaddbutton "新增">
+<!ENTITY ieview.prefdialogpatlabel "網址：">
+<!ENTITY ieview.editAlwaysPrompt "編輯「永遠以 IE 開啟的網站」項目">
+<!ENTITY ieview.disable-always-ie "關閉「永遠以 IE 開啟的網站」功能">
+<!ENTITY ieview.disable-always-desc "勾選這個項目以關閉「指定以 IE 開啟特定網站」的功能">
+<!ENTITY ieview.close-after-redir "自動關閉「已重新載入」訊息視窗或分頁">
+<!ENTITY ieview.close-after-desc "勾選這個項目後會自動關閉被 IE 取代開啟的視窗或分頁">

@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Principales">
+<!ENTITY ieview.prefadvancedtab "Avancées">
+<!ENTITY ieview.popup-ieview-do-view "Voir cette page dans IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Ouvrir la cible du lien dans IE">
+<!ENTITY ieview.places-view-in-ie "Ouvrir dans Internet Explorer">
+<!ENTITY ieview.popup-ieview-force-page "Toujours ouvrir cette page dans IE">
+<!ENTITY ieview.edit-ieview-options "Modifier les paramètres de IE View">
+<!ENTITY ieview.label "Désinstaller IE">
+<!ENTITY ieview.prefdialogtitle "Préférences de IE View">
+<!ENTITY ieview.prefdialogloclabel "Emplacement de IE :">
+<!ENTITY ieview.prefdialogarglabel "Paramètres (facultatif)">
+<!ENTITY ieview.prefdialoglocchoose "Chercher">
+<!ENTITY ieview.prefdialoglocdesc1 "L&apos;emplacement indiqué ci-dessous sera utilisé lorsque IE View lance Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Si le champ est laissé vide, IE View tentera de trouver Internet Explorer par lui-même.">
+<!ENTITY ieview.prefdialoglocgroup "Emplacement d&apos;Internet Explorer :">
+<!ENTITY ieview.prefdialogpatgroup "Sites à ouvrir dans IE :">
+<!ENTITY ieview.prefdialogpatdesc "Les sites ci-dessous s&apos;ouvriront toujours dans IE lors d&apos;un clic dans une page.">
+<!ENTITY ieview.prefdialogdeletebutton "Supprimer">
+<!ENTITY ieview.prefdialogeditbutton "Éditer">
+<!ENTITY ieview.prefdialogaddbutton "Ajouter">
+<!ENTITY ieview.prefdialogpatlabel "Ajouter le site :">
+<!ENTITY ieview.editAlwaysPrompt "Modification de l&apos;adresse à toujours ouvrir dans IE">
+<!ENTITY ieview.disable-always-ie "Désactiver &apos;Toujours ouvrir cette page dans IE&apos;">
+<!ENTITY ieview.disable-always-desc "Si cette case est cochée, les fonctionnalités de &apos;Toujours ouvrir cette page dans IE&apos; seront désactivées.">
+<!ENTITY ieview.close-after-redir "Fermer l&apos;onglet/la fenêtre après chargement">
+<!ENTITY ieview.close-after-desc "Si cette case est cochée, la page &apos;cette page a été rechargée dans IE&apos; sera automatiquement fermée une fois que IE aura été ouvert.">

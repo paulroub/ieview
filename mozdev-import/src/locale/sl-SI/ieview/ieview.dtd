@@ -1,0 +1,29 @@
+<!ENTITY ieview.prefmaintab "Glavno">
+<!ENTITY ieview.prefadvancedtab "Napredno">
+<!ENTITY ieview.popup-ieview-do-view "Pokaži to stran v IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Odpri povezavo v IE">
+<!ENTITY ieview.popup-ieview-force-page "Vedno pokaži to stran v IE">
+
+<!ENTITY ieview.edit-ieview-options "Uredi nastavitve IE View">
+<!ENTITY ieview.label "Odstrani IE View">
+<!ENTITY ieview.prefdialogtitle "Možnosti IE View">
+<!ENTITY ieview.prefdialogloclabel "Mesto IE">
+<!ENTITY ieview.prefdialogarglabel "Arguments (optional)">
+<!ENTITY ieview.prefdialoglocchoose "Najdi">
+<!ENTITY ieview.prefdialoglocdesc1 "Spodaj izbrano mesto bo uporabljeno ob zagonu Internet Explorerja z IE View.">
+<!ENTITY ieview.prefdialoglocdesc2 "Če to pustite prazno, bo IE View poiskal Internet Explorer sam.">
+<!ENTITY ieview.prefdialoglocgroup "Mesto Internet Explorerja">
+<!ENTITY ieview.prefdialogpatgroup "Mesta vedno-v-IE">
+<!ENTITY ieview.prefdialogpatdesc "Spodaj našteta mesta se bodo vedno naložila v IE ob kliku na stran.">
+<!ENTITY ieview.prefdialogdeletebutton "Izbriši">
+<!ENTITY ieview.prefdialogaddbutton "Dodaj">
+<!ENTITY ieview.prefdialogpatlabel "Dodaj mesto">
+<!ENTITY ieview.disable-always-ie "Onemogoči vedno-pokaži-v-IE">
+<!ENTITY ieview.disable-always-desc "Če aktivirate to možnost, bodo onemogočene možnosti &apos;vedno-pokaži-v-IE&apos;.">
+<!ENTITY ieview.close-after-redir "Zapri zavihek/okno po ponovnem nalaganju">
+<!ENTITY ieview.close-after-desc "Če aktivirate to možnost, se bo stran &apos;ta stran se je ponovno naložila v Internet Explorerju&apos; samodejno zaprla, ko se zažene IE.">
+
+<!ENTITY ieview.prefdialogeditbutton "Edit">
+<!ENTITY ieview.editAlwaysPrompt "Edit Always-in-IE entry">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+

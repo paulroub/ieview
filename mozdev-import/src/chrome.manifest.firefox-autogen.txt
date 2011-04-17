@@ -1,0 +1,55 @@
+
+overlay	chrome://navigator/content/navigatorOverlay.xul	chrome://ieview/content/ieviewOverlay.xul
+overlay	chrome://browser/content/browser.xul	chrome://ieview/content/ieviewOverlay.xul
+content	ieview	jar:chrome/ieview.jar!/content/
+
+skin	ieview	classic/1.0	jar:chrome/ieview.jar!/skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://ieview/skin/ieview-toolbar-button.css
+
+locale	ieview	en-US	jar:chrome/ieview.jar!/locale/en-US/ieview/
+
+locale	ieview	fr-FR	jar:chrome/ieview.jar!/locale/fr-FR/ieview/
+
+locale	ieview	de-DE	jar:chrome/ieview.jar!/locale/de-DE/ieview/
+
+locale	ieview	de-AT	jar:chrome/ieview.jar!/locale/de-AT/ieview/
+
+locale	ieview	ru-RU	jar:chrome/ieview.jar!/locale/ru-RU/ieview/
+
+locale	ieview	zh-TW	jar:chrome/ieview.jar!/locale/zh-TW/ieview/
+
+locale	ieview	zh-CN	jar:chrome/ieview.jar!/locale/zh-CN/ieview/
+
+locale	ieview	es-ES	jar:chrome/ieview.jar!/locale/es-ES/ieview/
+
+locale	ieview	it-IT	jar:chrome/ieview.jar!/locale/it-IT/ieview/
+
+locale	ieview	pl-PL	jar:chrome/ieview.jar!/locale/pl-PL/ieview/
+
+locale	ieview	nl-NL	jar:chrome/ieview.jar!/locale/nl-NL/ieview/
+
+locale	ieview	ca-AD	jar:chrome/ieview.jar!/locale/ca-AD/ieview/
+
+locale	ieview	ja-JP	jar:chrome/ieview.jar!/locale/ja-JP/ieview/
+
+locale	ieview	pt-PT	jar:chrome/ieview.jar!/locale/pt-PT/ieview/
+
+locale	ieview	pt-BR	jar:chrome/ieview.jar!/locale/pt-BR/ieview/
+
+locale	ieview	he-IL	jar:chrome/ieview.jar!/locale/he-IL/ieview/
+
+locale	ieview	sv-SE	jar:chrome/ieview.jar!/locale/sv-SE/ieview/
+
+locale	ieview	ko-KR	jar:chrome/ieview.jar!/locale/ko-KR/ieview/
+
+locale	ieview	da-DK	jar:chrome/ieview.jar!/locale/da-DK/ieview/
+
+locale	ieview	cs-CZ	jar:chrome/ieview.jar!/locale/cs-CZ/ieview/
+
+locale	ieview	fi-FI	jar:chrome/ieview.jar!/locale/fi-FI/ieview/
+
+locale	ieview	hu-HU	jar:chrome/ieview.jar!/locale/hu-HU/ieview/
+
+locale	ieview	sr-YU	jar:chrome/ieview.jar!/locale/sr-YU/ieview/
+
+locale	ieview	tr-TR	jar:chrome/ieview.jar!/locale/tr-TR/ieview/

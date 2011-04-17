@@ -1,0 +1,29 @@
+<!ENTITY ieview.prefmaintab "Main">
+<!ENTITY ieview.prefadvancedtab "Advanced">
+<!ENTITY ieview.popup-ieview-do-view "Zobrazit tuto stránku v IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Otevřít odkaz v IE">
+<!ENTITY ieview.popup-ieview-force-page "Vždy zobrazuj tuto stránku v IE">
+
+<!ENTITY ieview.edit-ieview-options "Změna nastavení IE View">
+<!ENTITY ieview.label "Odinstalovat IE View">
+<!ENTITY ieview.prefdialogtitle "Nastavení IE View">
+<!ENTITY ieview.prefdialogloclabel "Cesta k IE">
+<!ENTITY ieview.prefdialogarglabel "Arguments (optional)">
+<!ENTITY ieview.prefdialoglocchoose "Najít">
+<!ENTITY ieview.prefdialoglocdesc1 "Cesta níže (pokud je vyplněna) bude použita, když IE View spouští Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Pokud ponecháte prázdné, IE View se pokusí nalézt Internet Explorer automaticky.">
+<!ENTITY ieview.prefdialoglocgroup "Cesta k aplikaci Internet Explorer">
+<!ENTITY ieview.prefdialogpatgroup "Vždy-v-IE stránky">
+<!ENTITY ieview.prefdialogpatdesc "Zvolené stránky se budou vždy spouštět v IE.">
+<!ENTITY ieview.prefdialogdeletebutton "Smazat">
+<!ENTITY ieview.prefdialogaddbutton "Přidat">
+<!ENTITY ieview.prefdialogpatlabel "Přidat stránku">
+<!ENTITY ieview.disable-always-ie "Zakázat používání &apos;Vždy-v-IE&apos;">
+<!ENTITY ieview.disable-always-desc "Pokud je toto políčko zaškrtnuto, funkce &apos;Vždy-v-IE&apos; bude vypnuta.">
+<!ENTITY ieview.close-after-redir "Zavřít panel/okno po načtení">
+<!ENTITY ieview.close-after-desc "Pokud je toto políčko zaškrtnuto, stránka s textem &apos;tato stránka byla zobrazena v Internet Exploreru&apos; se zavře automaticky, jen co se spustí IE.">
+
+<!ENTITY ieview.prefdialogeditbutton "Edit">
+<!ENTITY ieview.editAlwaysPrompt "Edit Always-in-IE entry">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+

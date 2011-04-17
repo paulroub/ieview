@@ -1,0 +1,65 @@
+<?php
+    $purl = "";
+
+    if ($_SERVER['REQUEST_URI'])
+    {
+        $purl = strtolower($_SERVER['REQUEST_URI']);
+    }
+
+    function showNav($title, $link, $class = false, $desc = false)
+    {
+        global $purl;
+
+        $ttl = htmlspecialchars($title);
+        $ln  = htmlspecialchars($link);
+
+        $t = "";
+        $cl = "";
+
+        if ($class)
+        {
+            $cl = " class='$class' ";
+        }
+        if ($desc)
+        {
+            $t = ' title="' . htmlspecialchars($desc) . '" ';
+        }
+
+        if ($purl == $link)
+        {
+            print "<a id='curlink' $cl>$ttl</a>\n";
+        }
+        else
+        {
+            print "<a href='$ln' $cl $t>$ttl</a>\n";    
+        }
+        
+    }
+ ?>
+<h4 class="project-name" id="content">ieview</h4>
+
+<table id="project-navigation">
+
+  <tbody id="resources" class="project-navigations">
+  <tr>
+  <th scope="row">resources:</th>
+  <td class="navigation-list">
+      <?php
+        showNav("Home", "/index.html", "first-item");
+        showNav("Mailing List", "/list.html");
+        showNav("Installation", "/installation.html"); 
+        showNav("Source Code", "/source.html");
+        showNav("Members", "/members.html");
+        showNav("Bugs", "/bugs.html");
+        showNav("Screenshots", "/screenshots.html");
+        showNav("FAQ", "/faq.html", false, "Frequently Asked Questions");
+        showNav("History", "/history.html");
+       ?>
+
+  <a type="application/atom+xml" href="http://roub.net/blahg/archives/categories/ieview/atom.xml" title="IE View blog updates">
+    <img src="feed-icon-14x14.png" title="IE View blog updates" alt="IE View blog updates" /> Feed
+  </a>
+  </td>
+  </tr>
+  </tbody>
+</table>

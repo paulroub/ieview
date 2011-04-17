@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Tổng quát">
+<!ENTITY ieview.prefadvancedtab "Nâng cao">
+<!ENTITY ieview.popup-ieview-do-view "Xem Trang Này trong IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Mở Liên Kết Đích trong IE">
+<!ENTITY ieview.places-view-in-ie "Mở trong Internet Explorer">
+<!ENTITY ieview.popup-ieview-force-page "Luôn Xem Trang Này trong IE">
+<!ENTITY ieview.edit-ieview-options "Chỉnh sửa Thiết lập IE View">
+<!ENTITY ieview.label "Gỡ bỏ IE View">
+<!ENTITY ieview.prefdialogtitle "Tùy chỉnh IE View">
+<!ENTITY ieview.prefdialogloclabel "Vị trí của IE">
+<!ENTITY ieview.prefdialogarglabel "Tham số (phụ)">
+<!ENTITY ieview.prefdialoglocchoose "Tìm">
+<!ENTITY ieview.prefdialoglocdesc1 "Vị trí được chọn bên dưới (nếu có) sẽ được dùng khi IE View cho chạy Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Nếu để trống, IE View sẽ cố gắng tự xác định vị trí Internet Explorer.">
+<!ENTITY ieview.prefdialoglocgroup "Vị trí Internet Explorer">
+<!ENTITY ieview.prefdialogpatgroup "Các trang Luôn-mở-trong-IE">
+<!ENTITY ieview.prefdialogpatdesc "Các trang liệt kê ở đây sẽ luôn được mở trong IE khi chúng được nhấp chuột lên.">
+<!ENTITY ieview.prefdialogdeletebutton "Xóa">
+<!ENTITY ieview.prefdialogeditbutton "Chỉnh sửa">
+<!ENTITY ieview.prefdialogaddbutton "Thêm">
+<!ENTITY ieview.prefdialogpatlabel "Thêm trang">
+<!ENTITY ieview.editAlwaysPrompt "Chỉnh sửa mục Luôn-mở-trong-IE">
+<!ENTITY ieview.disable-always-ie "Tắt Luôn-mở-trong-IE">
+<!ENTITY ieview.disable-always-desc "Nếu mục này được chọn, tính năng &apos;Luôn-mở-trong-IE&apos; sẽ bị tắt.">
+<!ENTITY ieview.close-after-redir "Đóng thẻ/cửa sổ sau khi tải lại">
+<!ENTITY ieview.close-after-desc "Nếu mục này được chọn, trang &apos;trang này đã được tải lại trong Internet Explorer&apos; sẽ tự động đóng khi IE chạy.">

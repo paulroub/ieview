@@ -1,0 +1,150 @@
+<!-- ***************** INFO/NEWS *************** -->
+
+<div id="infoTabs">
+<div class="infoTab" id="whats-new">
+<h5 class="infoHeader">What's New</h5>
+<ul>
+<li><a href="installation.html" title="Install IE View">v1.4.5.1</a> released 
+    (Jan 21, 2010).</li>
+</ul>
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-0381746669982362";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_channel = "7968539211";
+google_ad_type = "text_image";
+google_color_border = "000000";
+google_color_bg = "F0F0F0";
+google_color_link = "0000FF";
+google_color_url = "008000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+
+
+</div>
+
+</div>
+<!-- ***************** INFO/NEWS *************** -->
+
+<!-- MAIN CONTENT -->
+<h2>Introduction</h2>
+
+<p>IE View is a simple Mozilla and 
+<a href="http://www.mozilla.org/products/firefox/">Mozilla Firefox</a> 
+extension (for Microsoft Windows systems), which
+allows the current page or a selected link to be opened in Internet Explorer.  I use Firefox 99.99% of the time,
+but there are those moments -- particularly when testing new pages, or when viewing that rare
+IE-only page that's actually interesting -- when I need to see what things look like in IE.  </p>
+
+<p>IE View adds menu items to the page context menu, and the link context menu.  Right-clicking
+a link now includes an <em>"Open link target in IE"</em> menu item.  Right-clicking elsewhere in the main body of the page (not 
+within an image, text box, etc.) gives <em>"View this page in IE."</em></p>
+
+<p>You can also add sites to an "always-view-in-IE" list.  These sites, when reached in Firefox, 
+will automatically reopen in Internet Explorer.  The site you are currently viewing can be added via the
+Firefox <code>Tools</code> menu, or by opening the <code>Tools | Add-ons | IE View | Options</code> window 
+(<a href="/screenshots.html">screenshots</a>).</p>
+
+<h2 id="knownissues">Known Issues</h2>
+
+<ol>
+    <li><p>Recent IE View versions don't get along well with the TabBrowser Extensions package.  Unfortunately,
+        <em>many</em> extensions do not get along well with TBE.  For more information, see 
+	the <a href="/faq.html">FAQ</a> for information on disabling Always-View-in-IE.
+        </p>
+	<p>User Jim Courtney reports better luck using <a href="http://tab-mix.info.tm/">TabMix</a> in place of TabBrowser extensions - TabMix
+	has many of the functions of TBE, as well as additional functionality of its own, and plays
+	well with others.</p>
+    </li>
+
+    <li><p>Users of Agnitum Outpost firewall software will likely have problems using IE View.
+        Outpost (unlike any other firewall product of which I'm aware) considers the Internet Explorer
+        process launched by IE View and Firefox to be "hidden", and denies it internet access.
+        See 
+        <a href="http://bugzilla.mozdev.org/show_bug.cgi?id=5939" title="Mozdev Bug 5939 - Outpost Firewall Blocks Access to IE when Launched with IE View">bug 5939</a> 
+        for more discussion.</p></li>
+
+    <li><p>There is no automatic uninstaller for Mozilla.  Under Firefox, we just work with the built-in
+        extension uninstaller, and eventually Mozilla should catch up.  In the meantime, if you want
+        to remove IE View, I'd suggest you use Jeremy Gillick's
+	<a href="http://www.roundtwo.com/product/extensionuninstaller" title="Extension Uninstaller for Mozilla">Extension Uninstaller</a>.  
+        Works like a charm.</p></li>
+
+    <li><p>At the moment, this works under <strong>Windows only</strong>.  A technique for getting it to work
+        under Mac OSX can be found in the <a href="faq.html#macieview">FAQ</a>.  Linux instructions can 
+        be found on the <a href="ieview-linux.html">IE View on Linux</a> page.</p>
+
+</li>
+
+</ol>    
+
+<h2>Credits</h2>
+
+<p>Being new to XUL, I spent a good amount of time wandering through the collected docs at 
+<a href="http://www.xulplanet.com/references/" title="Language References - XulPlanet" rel="bookmark" hreflang="en">XulPlanet</a>.</p>
+
+<p>Through the wonders of the MPL, I was able to crib some of the context-menu addition code from Ted Mielczarek's
+<a href="http://ted.mielczarek.org/code/mozilla/">Nuke Image</a> extension.  Parts of the actual run-an-external-app
+footwork were taken from Torisugari's 
+<a href="http://cgi29.plala.or.jp/~mozzarel/addon/firebird/externalapp/">External Application Buttons</a> extension.</p>
+
+<h3>Contributors:</h3>
+<table class="contrib">
+<!-- begin credits -->
+<tr><th>3ARRANO.com:</th><td>Basque translation</td></tr>
+<tr><th>acushnir:</th><td>Spanish (Argentina) translation</td></tr>
+<tr><th>AlleyKat:</th><td>Danish translation</td></tr>
+<tr><th>Andreas Boettcher:</th><td>German translation</td></tr>
+<tr><th>Andrew Kota:</th><td>Hungarian translation</td></tr>
+<tr><th>Aycan Demirel:</th><td>Turkish translation</td></tr>
+<tr><th>Bart:</th><td>German translation</td></tr>
+<tr><th>Bartosz Piec:</th><td>Polish translation</td></tr>
+<tr><th>BatBat:</th><td>French translation</td></tr>
+<tr><th>Chankyu Park:</th><td>Korean translation</td></tr>
+<tr><th>Duriel:</th><td>Chinese (Simplified) translation</td></tr>
+<tr><th>Eduardo Rapaport:</th><td>Portuguese (Portugal) translation</td></tr>
+<tr><th>Eduardo Rapoport:</th><td>Portuguese (Brazilian) translation</td></tr>
+<tr><th>Fulya Koksal:</th><td>Turkish translation</td></tr>
+<tr><th>Gert-Paul van der Beek:</th><td>Dutch translation</td></tr>
+<tr><th>Ghandi2:</th><td>Norwegian translation</td></tr>
+<tr><th>Giuliano Masseroni:</th><td>Italian translation</td></tr>
+<tr><th>J.I. Plaza:</th><td>Spanish (Spain) translation</td></tr>
+<tr><th>Jarno Kiuttu:</th><td>Finnish translation</td></tr>
+<tr><th>Joao Santos:</th><td>Portuguese (Portugal) translation</td></tr>
+<tr><th>Kim Ludvigsen:</th><td>Danish translation</td></tr>
+<tr><th>lcraFTl:</th><td>Russian translation</td></tr>
+<tr><th>Leszek(teo)Życzkowski:</th><td>Polish translation</td></tr>
+<tr><th>Ljubisa Radovanovic:</th><td>Serbian translation</td></tr>
+<tr><th>micmic:</th><td>Spanish (Spain) translation</td></tr>
+<tr><th>miles:</th><td>Slovenian translation</td></tr>
+<tr><th>moZes:</th><td>Frisian translation</td></tr>
+<tr><th>NGUYỄN Mạnh Hùng:</th><td>Vietnamese translation</td></tr>
+<tr><th>Norah Models:</th><td>Japanese translation</td></tr>
+<tr><th>Pavel Penaz:</th><td>Czech translation</td></tr>
+<tr><th>Phireak:</th><td>Khmer (Cambodian) translation</td></tr>
+<tr><th>raryelcsouza:</th><td>Portuguese (Brazilian) translation</td></tr>
+<tr><th>Rotem Liss:</th><td>Hebrew translation</td></tr>
+<tr><th>Silvio Santos:</th><td>Portuguese (Brazilian) translation</td></tr>
+<tr><th>Sonickydon:</th><td>Greek translation</td></tr>
+<tr><th>sushizang:</th><td>Korean translation</td></tr>
+<tr><th>Team erweiterungen.de:</th><td>German translation</td></tr>
+<tr><th>Thomas Bertels:</th><td>French translation</td></tr>
+<tr><th>Thomas Nilsson:</th><td>Swedish translation</td></tr>
+<tr><th>Toni Barrera Arboix:</th><td>Catalan translation</td></tr>
+<tr><th>Toni Hermoso Pulido:</th><td>Catalan translation</td></tr>
+<tr><th>WangKing:</th><td>Chinese (Simplified) translation</td></tr>
+<tr><th>Willy Young:</th><td>Chinese (Traditional) translation</td></tr>
+<tr><th>Wladow:</th><td>Slovak translation</td></tr>
+<tr><th>yoneh:</th><td>Finnish translation</td></tr>
+<!-- end credits -->
+</table>
+
+
+</div>
+

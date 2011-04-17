@@ -1,0 +1,28 @@
+<!ENTITY ieview.prefmaintab "Главен">
+<!ENTITY ieview.prefadvancedtab "За Напреднали">
+<!ENTITY ieview.popup-ieview-do-view "Разгледай тази страница в IE">
+<!ENTITY ieview.popup-ieview-do-viewlink "Отвори този линк в IE">
+<!ENTITY ieview.popup-ieview-force-page "Винаги разглеждай тази страница в IE">
+<!ENTITY ieview.edit-ieview-options "Промени IE View настройките">
+<!ENTITY ieview.label "Деинсталирай IE View">
+<!ENTITY ieview.prefdialogtitle "Настройки IE View">
+<!ENTITY ieview.prefdialogloclabel "Местоположение на IE">
+<!ENTITY ieview.prefdialogarglabel "Аргументи (по избор)">
+<!ENTITY ieview.prefdialoglocchoose "Намери">
+<!ENTITY ieview.prefdialoglocdesc1 "Избраното от вас местоположение (ако има такова) ще бъде използвано винаги когато IE View стартира Internet Explorer.">
+<!ENTITY ieview.prefdialoglocdesc2 "Ако оставите празни, IE View ще се опита сам да намери Internet Explorer.">
+<!ENTITY ieview.prefdialoglocgroup "Местоположение на IE">
+<!ENTITY ieview.prefdialogpatgroup "Винаги-в-IE сайтове">
+<!ENTITY ieview.prefdialogpatdesc "Сайтовете изброени тук винаги ще се зареждат в IE.">
+<!ENTITY ieview.prefdialogdeletebutton "Изтрий">
+<!ENTITY ieview.prefdialogaddbutton "Добави">
+<!ENTITY ieview.prefdialogpatlabel "Добави Сайт">
+<!ENTITY ieview.disable-always-ie "Изключи Винаги-в-IE">
+<!ENTITY ieview.disable-always-desc "Ако тази опция">
+<!ENTITY ieview.close-after-redir "Затвори таба/прозореца след презареждане">
+<!ENTITY ieview.close-after-desc "Ако тази опция е избрана, тогава &quot;тази страница бе презаредена в IE&quot; страницата ще се затвори автоматически когато IE се задейства.">
+
+<!ENTITY ieview.prefdialogeditbutton "Edit">
+<!ENTITY ieview.editAlwaysPrompt "Edit Always-in-IE entry">
+<!ENTITY ieview.places-view-in-ie "Open in Internet Explorer">
+

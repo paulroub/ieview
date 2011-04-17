@@ -1,0 +1,26 @@
+<!ENTITY ieview.prefmaintab "Allgemein">
+<!ENTITY ieview.prefadvancedtab "Erweitert">
+<!ENTITY ieview.popup-ieview-do-view "Seite im Internet Explorer anzeigen">
+<!ENTITY ieview.popup-ieview-do-viewlink "Link im Internet Explorer öffnen">
+<!ENTITY ieview.places-view-in-ie "Im Internet Explorer öffnen">
+<!ENTITY ieview.popup-ieview-force-page "Diese Seite immer im Internet Explorer anzeigen">
+<!ENTITY ieview.edit-ieview-options "IE-View-Einstellungen bearbeiten">
+<!ENTITY ieview.label "IE View deinstallieren">
+<!ENTITY ieview.prefdialogtitle "IE View - Einstellungen">
+<!ENTITY ieview.prefdialogloclabel "Pfad:">
+<!ENTITY ieview.prefdialogarglabel "Parameter (optional):">
+<!ENTITY ieview.prefdialoglocchoose "Durchsuchen...">
+<!ENTITY ieview.prefdialoglocdesc1 "Der unten gewählte Pfad (falls angegeben) wird genutzt, um den Internet Explorer zu starten.">
+<!ENTITY ieview.prefdialoglocdesc2 "Wird dieses Feld leer gelassen, versucht IE View, den Internet Explorer selbst zu finden.">
+<!ENTITY ieview.prefdialoglocgroup "Pfad zum Internet Explorer">
+<!ENTITY ieview.prefdialogpatgroup "Immer im Internet Explorer anzeigen">
+<!ENTITY ieview.prefdialogpatdesc "Websites, die hier aufgeführt sind, werden immer im Internet Explorer geöffnet:">
+<!ENTITY ieview.prefdialogdeletebutton "Entfernen">
+<!ENTITY ieview.prefdialogeditbutton "Bearbeiten">
+<!ENTITY ieview.prefdialogaddbutton "Hinzufügen">
+<!ENTITY ieview.prefdialogpatlabel "Website hinzufügen:">
+<!ENTITY ieview.editAlwaysPrompt "&quot;Immer im Internet Explorer anzeigen&quot;-Einträge bearbeiten">
+<!ENTITY ieview.disable-always-ie "&quot;Immer im Internet Explorer anzeigen&quot; deaktivieren">
+<!ENTITY ieview.disable-always-desc "Diese Option schaltet die Funktion &quot;Immer im Internet Explorer anzeigen&quot; ab.">
+<!ENTITY ieview.close-after-redir "Tab/Fenster nach dem Laden im Internet Explorer schließen">
+<!ENTITY ieview.close-after-desc "Diese Option schließt die Seite &quot;IE View hat diese Seite neu im Internet Explorer geladen&quot; automatisch, nachdem der Internet Explorer gestartet wurde.">
