@@ -1,0 +1,1378 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE bugzilla SYSTEM "https://www.mozdev.org/bugs/bugzilla.dtd">
+
+<bugzilla version="3.0.9"
+          urlbase="https://www.mozdev.org/bugs/"
+          maintainer="webmaster@mozdev.org"
+>
+
+    <bug>
+          <bug_id>5837</bug_id>
+          
+          <creation_ts>2004-02-24 15:16</creation_ts>
+          <short_desc>Add keyboard shortcut to IEView</short_desc>
+          <delta_ts>2005-01-25 07:02:13</delta_ts>
+
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+          <component>Misc</component>
+
+          <version>unspecified</version>
+          <rep_platform>PC</rep_platform>
+          <op_sys>Windows XP</op_sys>
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          
+          <priority>P5</priority>
+          <bug_severity>enhancement</bug_severity>
+
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter>dnorton@mailinator.com</reporter>
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="dnorton@mailinator.com">dnorton@mailinator.com</who>
+
+            <bug_when>2004-02-24 15:16:07</bug_when>
+            <thetext>Please add a keyboard shortcut that opens the current page in IE.  I don&apos;t know
+what to use, but any keyboard shortcut would be wonderful.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>6702</bug_id>
+          
+          <creation_ts>2004-07-06 01:53</creation_ts>
+
+          <short_desc>Can&apos;t use custom command line for ieapp</short_desc>
+          <delta_ts>2005-01-25 07:02:12</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+
+          <product>ieview</product>
+          <component>ieLaunch</component>
+          <version>unspecified</version>
+          <rep_platform>PC</rep_platform>
+          <op_sys>Windows XP</op_sys>
+          <bug_status>ASSIGNED</bug_status>
+
+          
+          
+          
+          
+          
+          <priority>P5</priority>
+          <bug_severity>enhancement</bug_severity>
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Claus Hoefele">Claus.Hoefele@web.de</reporter>
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+
+          
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="Claus Hoefele">Claus.Hoefele@web.de</who>
+            <bug_when>2004-07-06 01:53:26</bug_when>
+            <thetext>I have to start Internet Explorer with a custom command line because I need to
+run it with Japanese system locale (using an MS tool called app switcher).
+
+I&apos;m trying to use the following commandline: C:\WINDOWS\AppPatch\AppLoc.exe
+&quot;C:\Program Files\Internet Explorer\IEXPLORE.EXE&quot; &quot;/L0411&quot;.
+
+This works fine in a DOS box, but not when I use it as a value in the properties
+of ieview. The error message is 
+
+&quot;[Exception... &quot;Component returned failure ccde: 0x80520001
+(NS_ERROR_FILE_UNRECOGNIZED_PATH) [nsILocalFile.initWithPath]&quot; nsresult:
+
+&quot;0x80520001 (NS_ERROR_FILE_UNRECOGNIZED_PATH)&quot; location: &quot;JS frame ::
+chrome://ieview/content/ieviewOverlay.js :: ieViewLaunch :: line 265&quot; data: no&quot;
+
+At the moment I use a batch file with my command line as work around.
+
+Thanks,
+Claus</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Paul Roub">paul@roub.net</who>
+
+            <bug_when>2004-09-16 14:10:39</bug_when>
+            <thetext>I&apos;ll file this as an enhancement request -- there&apos;s a bit of scary coding
+involved here, to parse the app name out from the parameters.  Your batch file
+approach is the best workaround for now.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Claus Hoefele">Claus.Hoefele@web.de</who>
+            <bug_when>2004-09-16 23:20:25</bug_when>
+
+            <thetext>The problem is that the URL parameter mustn&apos;t appended to the end but instead 
+in the middle of the command line. This is in my batch file:
+
+start C:\WINDOWS\AppPatch\AppLoc.exe &quot;C:\Program Files\Internet 
+Explorer\IEXPLORE.EXE&quot; &quot;%1&quot; &quot;/L0411&quot;
+
+I think the best solution would be to define a place holder for the URL that 
+can be used in the command line. Something like &quot;iexplore.exe ${URL}&quot;. Then 
+everybody can build it&apos;s own command.
+</thetext>
+          </long_desc>
+
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>10035</bug_id>
+          
+          <creation_ts>2005-04-29 17:06</creation_ts>
+          <short_desc>Allow save/restore of IE-Always list</short_desc>
+          <delta_ts>2005-08-16 13:34:14</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+          <component>Misc</component>
+          <version>unspecified</version>
+
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          
+          <priority>P5</priority>
+          <bug_severity>enhancement</bug_severity>
+          <target_milestone>---</target_milestone>
+
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Paul Roub">paul@roub.net</reporter>
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="Paul Roub">paul@roub.net</who>
+            <bug_when>2005-04-29 17:06:04</bug_when>
+
+            <thetext>Allow the always-in-IE list to be saved/restore as an external file.  Allows for
+backup, multi-machine installs, etc.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Paul Roub">paul@roub.net</who>
+            <bug_when>2005-05-18 22:59:48</bug_when>
+            <thetext>no changes, just taking it off the &quot;new&quot; list</thetext>
+
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>10170</bug_id>
+          
+          <creation_ts>2005-05-09 21:58</creation_ts>
+          <short_desc>Make it possible to have more than one browser path</short_desc>
+          <delta_ts>2009-04-11 19:57:07</delta_ts>
+
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+          <component>Misc</component>
+
+          <version>unspecified</version>
+          <rep_platform>PC</rep_platform>
+          <op_sys>Windows XP</op_sys>
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          
+          <priority>P5</priority>
+          <bug_severity>enhancement</bug_severity>
+
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Stephen de Kok">sdekok@impactcomputing.com</reporter>
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          <cc>m.wege@web.de</cc>
+
+      
+
+      
+          <long_desc isprivate="0">
+
+            <who name="Stephen de Kok">sdekok@impactcomputing.com</who>
+            <bug_when>2005-05-09 21:58:22</bug_when>
+            <thetext>Being a webdeveloper and having used ieview since v0.4, there is one feature I
+would like to see.  It would be nice to be able to add multiple browsers and
+then assign a keystroke to each browser to open it.  While clicking on ieview
+would still only open the page in the default browser, using the keystrok or
+clicking on the browser name under the tools menu would open it in these
+alternative browsers.  This would keep ieview simple, elegent, but more powerful.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Paul Roub">paul@roub.net</who>
+            <bug_when>2005-05-10 08:51:07</bug_when>
+
+            <thetext>A few people have requested something along those lines.  Interesting idea,
+although not likely in the near term. </thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Paul Roub">paul@roub.net</who>
+            <bug_when>2009-04-11 19:57:07</bug_when>
+            <thetext>*** Bug 20793 has been marked as a duplicate of this bug. ***</thetext>
+          </long_desc>
+
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>11518</bug_id>
+          
+          <creation_ts>2005-09-10 01:39</creation_ts>
+          <short_desc>Run IE with mimised priveleges</short_desc>
+          <delta_ts>2005-09-14 02:44:01</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+          <component>ieLaunch</component>
+          <version>unspecified</version>
+
+          <rep_platform>PC</rep_platform>
+          <op_sys>Windows XP</op_sys>
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          <bug_file_loc>http://msdn.microsoft.com/library/en-us/dncode/html/secure11152004.asp</bug_file_loc>
+          
+          
+          <priority>P2</priority>
+          <bug_severity>enhancement</bug_severity>
+
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Mike Pittman">junk@tpc.org.au</reporter>
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="Mike Pittman">junk@tpc.org.au</who>
+
+            <bug_when>2005-09-10 01:39:28</bug_when>
+            <thetext>Hi,
+
+I&apos;m wondering if it&apos;s possible to run IE with minimised security priveleges,
+since  I don&apos;t trust it. You will find the following link very helpful
+
+http://msdn.microsoft.com/library/en-us/dncode/html/secure11152004.asp
+
+
+The above link is a program (Drop My Rights) written by a MS security expert to
+allow you to run any program with reduced priveleges. There is source code that
+you might be able to use to directly integrate this into IE View without the
+third party software. You could put a tickbox in the options.
+
+I&apos;m currently using &quot;Drop My Rights&quot; in all of my own Windows XP shortcuts, so
+that all my net programs have reduced priveleges, but when I try to integrate it
+into the IE View extension, it says &quot;Unable to locate Internet Explorer&quot;. I
+insert the IE location into IE View as &quot;C:\Program
+Files\Security\DropMyRights\DropMyRights.exe C:\Program Files\Internet
+Explorer\IEXPLORE.EXE&quot; - have also tried with inverted commas around each path
+separately, but with no joy.
+
+Thanks for checking this out,
+
+Mike Pittman.</thetext>
+
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Paul Roub">paul@roub.net</who>
+            <bug_when>2005-09-10 09:51:28</bug_when>
+            <thetext>This has come up before.  IE View takes the entire string you enter as the IE
+location, and tries to execute that &quot;filename&quot; as a program.  Obviously, the
+program + parameters command line doesn&apos;t work well in this situation. 
+
+In the meantime, your best bet is probably to create a batch file, along the
+lines of:
+
+   &quot;C:\Program
+Files\Security\DropMyRights\DropMyRights.exe&quot; &quot;C:\Program Files\Internet
+Explorer\IEXPLORE.EXE&quot; %1 %2 %3 %4
+
+And point IE View at *that*.</thetext>
+
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mike Pittman">junk@tpc.org.au</who>
+            <bug_when>2005-09-10 10:36:12</bug_when>
+            <thetext>Hi Paul,
+
+Thanks - that works perfectly. It did cross my mind, but I thought it was a long
+shot. I should have tried.
+
+I&apos;ve also changed my primary login from admin to non-admin, and run only what
+needs to be admin that way using &quot;Run As&quot; from the context (right-click) menu
+(can be run from the command line also with many options). Having said that, I&apos;m
+still interested in restricting IE completely if possible, so could you still
+look into this if it&apos;s not too hard?
+
+I&apos;m sure that 95% of Windows XP users default to admin, as I did - and they
+reckon XP SP2 is so secure! Perhaps restricting IE should be the default for
+IEview, with a button to remove the restriction?
+
+
+</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Paul Roub">paul@roub.net</who>
+            <bug_when>2005-09-10 16:58:26</bug_when>
+            <thetext>That would actually require some significant windows-only code changes to
+Firefox itself; it&apos;s not something that can be done at IE View&apos;s level.  
+
+Of course, if *Firefox* were running at a non-admin level, I believe and IE
+instance it spawned would run that way as well.
+</thetext>
+          </long_desc>
+
+          <long_desc isprivate="0">
+            <who name="Mike Pittman">junk@tpc.org.au</who>
+            <bug_when>2005-09-11 12:13:58</bug_when>
+            <thetext>What I was thinking was something much simpler. It seems to me (a
+non-programmer, but have worked in IT support) that IEview must make some system
+call to spawn IE. The idea with the DropMyRights software is that such system
+calls attach a &quot;token&quot; with restricted priveleges (restricted tokens work from
+Windows XP/2003 on). So I was thinking that IEview could do its normal system
+call to spawn IE, but attach such a token to that call. In my understanding this
+shouldn&apos;t require any changes to Firefox, only to the system call made by IEview.
+
+The link in my original email has the source code (seems to be C#) for
+&quot;DropMyRights&quot;. It seems that similar code could be easily added to IEview.
+
+Platform compatibility shouldn&apos;t be a great problem, since people would most
+often use this in Windows. But if it is a problem, it shouldn&apos;t be too hard to
+check the OS and only add the token if it&apos;s Windows XP/2003 or greater.
+
+I have tested running DropMyRights and IEview (referring to the batch file - see
+above), logged in as Admin, and it spawns IE as a non-admin user - tested by
+trying to save a file to the admin home directory. This was on the basic
+restriction, but the tighter restrictions will also block access to the windows
+registry and the normal user&apos;s home directory completely so that nothing can be
+written to disk at all.</thetext>
+
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Paul Roub">paul@roub.net</who>
+            <bug_when>2005-09-11 15:50:53</bug_when>
+            <thetext>(In reply to comment #4)
+&gt; What I was thinking was something much simpler. It seems to me (a
+&gt; non-programmer, but have worked in IT support) that IEview must make some system
+&gt; call to spawn IE. 
+
+Nope.  IE View calls a javascript function in Firefox, and Firefox launches the
+program.  So FF is where the changes would be needed.
+
+</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mike Pittman">junk@tpc.org.au</who>
+            <bug_when>2005-09-14 02:44:01</bug_when>
+            <thetext>I&apos;ve actually realised that the batch file doesn&apos;t work. I only tested it using
+my home page, but it doesn&apos;t seem to be passing the website details on to IE.
+I&apos;ve removed the batch file link and am just running in a non-admin login now to
+solve the security problem.
+
+I still can&apos;t understand how, even if you&apos;re calling a javascript function, that
+some other variables cannot be passed along with the call. I would guess there&apos;s
+already at least one variable being passed - the site link.
+
+In any case, I think you understand a lot more than I do about what the
+internals of IEview and Firefox are and it may well be too hard at this level.
+If that&apos;s the case, I guess you might as well close this (or should I?). Thanks
+for thinking about it.</thetext>
+
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>11551</bug_id>
+          
+          <creation_ts>2005-09-14 21:15</creation_ts>
+          <short_desc>middle clicking link does not lanuch IE</short_desc>
+          <delta_ts>2005-11-20 17:10:42</delta_ts>
+
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+          <component>ieLaunch</component>
+
+          <version>unspecified</version>
+          <rep_platform>PC</rep_platform>
+          <op_sys>Windows XP</op_sys>
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          
+          <priority>P2</priority>
+          <bug_severity>normal</bug_severity>
+
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="ohman">tkantani@gmail.com</reporter>
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="ohman">tkantani@gmail.com</who>
+
+            <bug_when>2005-09-14 21:15:08</bug_when>
+            <thetext>middle clicking a link that is set to always open in IE, opens in new tab in
+Firefox and does not reload in IE.
+
+to reproduce:
+1) add msdn.microsoft.com to &quot;Always open in IE&quot; list
+2) search on google for some msdn item, for example &quot;Windows Update Agent API&quot;.
+3) middle click on result pointing to msnd site. a new tab will open with the page.
+
+note that middle clicking bookmark works correctly.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="ohman">tkantani@gmail.com</who>
+
+            <bug_when>2005-09-14 21:21:09</bug_when>
+            <thetext>forgot to give following info:
+
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.10) Gecko/20050716
+Firefox/1.0.6
+
+i have following in my user.js file (from Firefox tips &amp; tricks page)
+
+// Reveal more tab/window options:
+user_pref(&quot;browser.tabs.showSingleWindowModePrefs&quot;, true);
+
+/* Force New Windows Restrictions
+    0: Default - Divert *all* new windows to current tab/window or new tab
+    1: Don&apos;t divert *any* windows spawned by JS
+    2: Don&apos;t divert JS windows that include size/placement/toolbar info */
+user_pref(&quot;browser.link.open_newwindow.restriction&quot;, 2);</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+
+            <who name="Paul Roub">paul@roub.net</who>
+            <bug_when>2005-10-26 09:44:39</bug_when>
+            <thetext>Still looking into this; looks like the code that tries to catch when a document is being loaded in a frame is getting confused by the middle-click (long story).
+
+The workaround, of course, is to left-click the link.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="ColdFusion650">mozillafirebird@gmail.com</who>
+            <bug_when>2005-11-20 17:10:42</bug_when>
+
+            <thetext>this problem doesn&apos;t exist with ie view lite, an extension i developed with the approval of paul.
+
+check it out: http://miavsd.servehttp.com/rubicon/extension/</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>11834</bug_id>
+          
+          <creation_ts>2005-10-14 11:57</creation_ts>
+          <short_desc>ieview launches 64-bit IE on x64</short_desc>
+
+          <delta_ts>2010-08-30 11:40:49</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+
+          <component>ieLaunch</component>
+          <version>unspecified</version>
+          <rep_platform>PC</rep_platform>
+          <op_sys>Windows XP</op_sys>
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          
+          <priority>P2</priority>
+
+          <bug_severity>normal</bug_severity>
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Michael Messmore">mmessmore@gmail.com</reporter>
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          <cc>jn2@navasgroup.com</cc>
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="Michael Messmore">mmessmore@gmail.com</who>
+            <bug_when>2005-10-14 11:57:53</bug_when>
+            <thetext>On Windows XP Professional x64 Edition (thats a mouthful) ieview spaws the 64bit version of Internet Explorer instead of the 32bit version.
+
+My typical use of ieview is to open up a page that requires some IE specific nonsense.  This usually involves an ActiveX control, Windows Media junk, etc.  The problem is that, for the most part, only the 32bit version of IE can load these, and ieview spawns 64bit IE -- a crippled version of an already handicapped browser ;). So I&apos;m stuck back with the copy URL, open IE from the start menu, paste URL method that now seems such a chore since using your wonderful extension.
+
+The location of 32bit IE on x64 is &quot;C:\Program Files (x86)\Internet Explorer\IEXPLORE.EXE&quot; or &quot;%PROGRAMFILES%\Internet Explorer\IEXPLORE.EXE&quot; if you&apos;re using environment variables.  
+
+If there&apos;s any other information I can provide for you (since I know not that many people are running x64) please let me know.</thetext>
+
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Paul Roub">paul@roub.net</who>
+            <bug_when>2005-10-14 12:02:57</bug_when>
+            <thetext>I&apos;ll look into working around this -- we may have a problem with the fact that IE View tries to resolve shortcuts first (which may point to the 64-bit version) before it starts nosing around in directories.
+
+As a workaround, of course, you can use the IEView Options dialog to point to the 32-bit IE.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+
+            <who name="John Navas">jn2@navasgroup.com</who>
+            <bug_when>2010-08-30 11:40:49</bug_when>
+            <thetext>This issue has bitten me as well, costing me a large amount of time to figure out that a resulting problem was caused by the x64 version of IE getting launched.
+
+I think it might be best if ieview launched 32-bit IE from 32-bit Firefox, and only 64-bit IE from 64-bit Firefox (when available).
+
+Or have ieview check for both 32-bit and 64-bit IE at first use, and ask (once) which version to use, with the choice of 32-bit IE or 64-bit IE being a simple radio-button selection in Options.  (Paths aren&apos;t meaningful to most users.)
+
+Thanks mucho for ieview!
+John</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>11860</bug_id>
+
+          
+          <creation_ts>2005-10-18 13:58</creation_ts>
+          <short_desc>Mozilla Suite 1.7.12 can not install IE View</short_desc>
+          <delta_ts>2007-08-21 07:33:32</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+          <component>Installation</component>
+          <version>unspecified</version>
+          <rep_platform>PC</rep_platform>
+          <op_sys>Windows 98</op_sys>
+
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          
+          <priority>P4</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="WitchFive">s793016@gmail.com</reporter>
+
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="WitchFive">s793016@gmail.com</who>
+            <bug_when>2005-10-18 13:58:19</bug_when>
+            <thetext>Sorry my English is very very poor.
+
+IE View 1.2.6.x can not install at Mozilla suite 1.7.12.  If you install on it, soon it will show some error message, the screen shot is here:
+
+http://xthost.info/unicode/err.rar
+
+Test at Win98 with Clean Installed Mozilla Suite 1.7.12.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+
+            <who name="Paul Roub">paul@roub.net</who>
+            <bug_when>2005-10-18 14:32:43</bug_when>
+            <thetext>Unable to reproduce this, but then I don&apos;t have anything like a Win98 test environment.  Not sure what I can do at this point, but I&apos;ll look into it.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+
+          <bug_id>11900</bug_id>
+          
+          <creation_ts>2005-10-23 02:44</creation_ts>
+          <short_desc>IE View cannot find IE 5.2.2 (5010.1) on Macintosh</short_desc>
+          <delta_ts>2007-08-21 07:55:52</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+          <component>ieLaunch</component>
+          <version>unspecified</version>
+          <rep_platform>Macintosh</rep_platform>
+
+          <op_sys>Mac OS X 10.0</op_sys>
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          <bug_file_loc>http://www.cooper.edu/~lent/random/ieview_fails_on_mac.pdf</bug_file_loc>
+          
+          
+          <priority>P3</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>---</target_milestone>
+
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Chris Lent">chrislent+bugzilla20051023@gmail.com</reporter>
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          <cc>chrislent+bugzilla20051023@gmail.com</cc>
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="Chris Lent">chrislent+bugzilla20051023@gmail.com</who>
+
+            <bug_when>2005-10-23 02:44:35</bug_when>
+            <thetext>Maybe moot as I gather IE on the Mac is &quot;dead&quot; according to Microsoft, but...
+
+I get the following error when trying to specify the path to IE or even a path
+a IE launching shell script containing
+
+[10.0.1.251]lent:~/bin lent$ cat /Users/lent/bin/ie
+#!/bin/bash
+open /Applications/Internet\ Explorer.app/
+[10.0.1.251]lent:~/bin lent$ 
+
+So if the IE Location is specified as:
+/Users/lent/bin/ie
+
+Then when we enter a &quot;Always-in-IE-site&quot; URL we get...
+
+[Exception... &quot;Component returned failure code:
+0x80004001 (NS_ERROR_NOT_IMPLEMENTED)
+[nslLocalFile.target]&quot; nsresult: &quot;0x80004001
+(NS_ERROR_NOT_IMPLEMENTED&quot; location &quot;JS
+frame ::
+chrome://ieview/content/ieviewOverlay.js ::
+anonymous :: line 532&quot; data: no]
+
+And an &quot;OK&quot; button.
+
+Once you press &quot;OK&quot;, the following URL is loaded (properly)
+chrome://ieview/content/reloaded.html
+
+Thanks,
+Chris Lent
+This was on Mac OS X 10.3.9</thetext>
+
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Paul Roub">paul@roub.net</who>
+            <bug_when>2007-08-21 07:55:52</bug_when>
+            <thetext>I realize this is an ancient bug report, but I was wondering if the problem still occurs with the latest IE View?</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+
+    <bug>
+          <bug_id>12156</bug_id>
+          
+          <creation_ts>2005-11-17 10:07</creation_ts>
+          <short_desc>Closing window vs. session saving problem.</short_desc>
+          <delta_ts>2005-11-17 14:47:10</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+          <component>Misc</component>
+          <version>unspecified</version>
+
+          <rep_platform>PC</rep_platform>
+          <op_sys>Windows XP</op_sys>
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          
+          <priority>P1</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>---</target_milestone>
+
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Peter">petko.chess@seznam.cz</reporter>
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="Peter">petko.chess@seznam.cz</who>
+            <bug_when>2005-11-17 10:07:31</bug_when>
+
+            <thetext>I have &quot;close tab/window after loading the page&quot; feature on. I also have auto-session-loading feature from some other extension (Tab Mix Plus). When I go in only tab I have open to some page which should always open in IE, then this closes FF. After running FF again, Tab Mix opens again that page and it again opens in IE and FF closes again. This means that manual editing of preferences file was needed to solve this situation and I had to turn &quot;close tab/window&quot; feature off.
+
+I would suggest checking if the tab to be closed is the last one and if it is then not to close FF. Alternatively, it could be as an option in IEview preferences (e.g. &quot;Close tab....&quot; as one option and &quot;Close FF if only one tab is open&quot; as another&quot;</thetext>
+          </long_desc>
+
+          <long_desc isprivate="0">
+            <who name="Paul Roub">paul@roub.net</who>
+            <bug_when>2005-11-17 10:19:25</bug_when>
+            <thetext>I&apos;ll look into adding such an option.  I don&apos;t see a way around it, for people who use TabMix/SessionSaver/etc.  I would suggest that the TabMix saver probably should *not* save when the last open tab is a &quot;chrome:&quot; window (as is the case here).
+
+Thanks for the suggestion, sorry for the inconvenience.</thetext>
+          </long_desc>
+
+          <long_desc isprivate="0">
+            <who name="Peter">petko.chess@seznam.cz</who>
+            <bug_when>2005-11-17 11:00:25</bug_when>
+            <thetext>It could be also a TabMix problem. In fact, I want sometimes to have opened chrome: pages across sessions. I would really appreciate that option I suggested not only because it partially solves the problem, but also because closing tab is one thing and closing window is quite another. I am used not to close FF during the day, for example.
+
+But I understand that I am only one user out of many happy users.
+
+Another good solution could be to remove &quot;close window&quot; feature (or remove it only for links opened in IE automatically) and leave only close tab there (if tab is last one, then it wont be closed).
+
+Sorry for so long &quot;wanna-be&quot; analysis. Anyway, thanks for your work here.</thetext>
+
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Paul Roub">paul@roub.net</who>
+            <bug_when>2005-11-17 12:50:52</bug_when>
+            <thetext>(In reply to comment #2)
+&gt; Another good solution could be to remove &quot;close window&quot; feature (or remove it
+
+&gt; only for links opened in IE automatically) and leave only close tab there (if
+&gt; tab is last one, then it wont be closed).
+&gt; 
+
+The problem there is that this feature is invoked when people double-click a link from other applications, the desktop, etc.  A new Firefox (often) opens, with just the one tab, and we&apos;d be leaving that &quot;orphan&quot; window around.  This is exactly the reason that this feature was requested in the first place.
+
+The answer *may* simply be that this feature is not compatible with Session Saver-type extensions.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Peter">petko.chess@seznam.cz</who>
+
+            <bug_when>2005-11-17 14:47:10</bug_when>
+            <thetext>Now I understand it better, thank you for explanation. It is probably really needed.
+
+Answer you suggested is surely true. Nevertheless I would appreciate some kind of solution.
+Aside from that problem, even if i hadn&apos;t any session saver I wouldn&apos;t be quite happy if FF window was closed in any case by any extension.
+
+From my point of view, if it is not too much work for you, maybe the option like (&quot;Dont close FF window if only one tab is open&quot;) would be the best solution.
+
+If it was there, I would check it and people who use it as you described it would leave it unchecked.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>12944</bug_id>
+
+          
+          <creation_ts>2006-01-23 05:29</creation_ts>
+          <short_desc>ieview: Missing export/import buttons of &apos;always in IE sites&apos;</short_desc>
+          <delta_ts>2006-01-23 09:24:36</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+          <component>Misc</component>
+          <version>unspecified</version>
+          <rep_platform>PC</rep_platform>
+          <op_sys>Windows XP</op_sys>
+
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          
+          <priority>P5</priority>
+          <bug_severity>enhancement</bug_severity>
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Walter">waltervandenb@freeler.nl</reporter>
+
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="Walter">waltervandenb@freeler.nl</who>
+            <bug_when>2006-01-23 05:29:47</bug_when>
+            <thetext>I would like to be able to move my ieview settings to another firefox profile. Other extensions like forecastfox, adblock and noscript contain export and import buttons to accomplish this via files.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+
+            <who name="Paul Roub">paul@roub.net</who>
+            <bug_when>2006-01-23 09:24:36</bug_when>
+            <thetext>Good idea.  The workaround is to cut and paste the contents of the single config value ieview.forceielist -- not terribly user-friendly, but will get the job done in the meantime.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>13157</bug_id>
+
+          
+          <creation_ts>2006-02-11 05:35</creation_ts>
+          <short_desc>Bug with &quot;Disable Always view-in-IE</short_desc>
+          <delta_ts>2006-02-13 15:23:25</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+          <component>Misc</component>
+          <version>unspecified</version>
+          <rep_platform>PC</rep_platform>
+          <op_sys>Windows XP</op_sys>
+
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          
+          <priority>P2</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Carsten Hjorthøj">lilacsoul@gmail.com</reporter>
+
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="Carsten Hjorthøj">lilacsoul@gmail.com</who>
+            <bug_when>2006-02-11 05:35:29</bug_when>
+            <thetext>When activating the &quot;Disable Always view-in-IE box in the advanced options, it appears that bookmarked links are not disabled. I have a website that I always view in IE (my bank). I tried &quot;Disable Always...&quot;, and clicked the bookmarked link. It still opened in internet explorer. I then tried simply copying the URL from the bookmark, pasting it into Firefox&apos;s address bar, and it opened the site in Firefox as it should when &quot;Disable Always...&quot; is checked.
+
+I use version 1.2.7 of IEView, and version 1.5.0.1 of Firefox on Windows XP Professional, SP2.</thetext>
+
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Paul Roub">paul@roub.net</who>
+            <bug_when>2006-02-13 09:22:15</bug_when>
+            <thetext>Hmm.  Definitely not the expected behavior.
+
+Did this continue after restarting Firefox?  The bookmark handler is set at startup, and may require a restart before it goes away.  It&apos;s still a bug, in that case, I&apos;m just trying to narrow it down.</thetext>
+          </long_desc>
+
+          <long_desc isprivate="0">
+            <who name="Carsten Hjorthøj">lilacsoul@gmail.com</who>
+            <bug_when>2006-02-13 15:23:25</bug_when>
+            <thetext>Thanks for your reply. The behaviour is fixed by restarting Firefox.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+
+          <bug_id>13811</bug_id>
+          
+          <creation_ts>2006-04-18 21:03</creation_ts>
+          <short_desc>feature request: page level ieView/page or overide function</short_desc>
+          <delta_ts>2007-04-27 13:33:17</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+          <component>Update</component>
+          <version>unspecified</version>
+          <rep_platform>PC</rep_platform>
+
+          <op_sys>Windows XP</op_sys>
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          
+          <priority>P5</priority>
+          <bug_severity>enhancement</bug_severity>
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+
+          <reporter name="Lim">lim.wong@buseco.monash.edu.au</reporter>
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="Lim">lim.wong@buseco.monash.edu.au</who>
+            <bug_when>2006-04-18 21:03:59</bug_when>
+            <thetext>Hi
+
+Great feature.  
+
+I have a site that needs to be in opened in IE but the help docs on the same site (different page) can be opened in Firefox.  Would be good to have either:
+1. a page level exceptions list or
+2. modifier key (eg CTRL or SHIFT) to overide the IEView functionality (that way you can also test if the site ever gets friendly with firefox without much fuss)
+
+Regards Lim</thetext>
+
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>13901</bug_id>
+          
+          <creation_ts>2006-04-28 16:37</creation_ts>
+          <short_desc>Unable to open a &quot;file://...&quot; location with russian characters in its name</short_desc>
+
+          <delta_ts>2007-04-27 13:34:00</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+
+          <component>ieLaunch</component>
+          <version>unspecified</version>
+          <rep_platform>PC</rep_platform>
+          <op_sys>Windows XP</op_sys>
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          
+          <priority>P2</priority>
+
+          <bug_severity>normal</bug_severity>
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Антон">hacker-ant@yandex.ru</reporter>
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          
+
+      
+
+      
+          <long_desc isprivate="0">
+
+            <who name="Антон">hacker-ant@yandex.ru</who>
+            <bug_when>2006-04-28 16:37:42</bug_when>
+            <thetext>When I click &quot;Open in IE&quot; on a link like &quot;file://somelocalhost/####&quot;, where # - are some russian characters the IE shows a message box saying that the page could not be opened. And all russian characters in the message look like %XX, where XX are numbers (unicode codes of characters I guess). If a link on the same host doesn&apos;t contain any russian characters it works fine.</thetext>
+          </long_desc>
+
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>16683</bug_id>
+          
+          <creation_ts>2007-03-24 03:21</creation_ts>
+          <short_desc>&quot;Close tab/window after reload&quot; option problem</short_desc>
+          <delta_ts>2011-03-10 07:43:28</delta_ts>
+
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+          <component>Misc</component>
+
+          <version>unspecified</version>
+          <rep_platform>PC</rep_platform>
+          <op_sys>Windows XP</op_sys>
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          
+          <priority>P5</priority>
+          <bug_severity>minor</bug_severity>
+
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Robert Bendett">rbendett@gmail.com</reporter>
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="Robert Bendett">rbendett@gmail.com</who>
+
+            <bug_when>2007-03-24 03:21:26</bug_when>
+            <thetext>When &quot;Close tab/window after reload&quot; is selected in IE View Advanced Options the entire browser closes if only 1 tab is open when a Bookmark which has set as an Always in IE site is accessed.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Jerome">bdjjl@yahoo.com</who>
+            <bug_when>2011-03-10 07:43:28</bug_when>
+
+            <thetext>I noticed a similar issue with ieView using Firefox 4.0b12.  In Firefox 3.6 when I open a bookmark to a site that is marked &apos;always view in IE&apos; ieView would open a new tab before sending the page to IE, then close the new tab.
+
+In FF 4.0b12, ieview uses the current tab so when it is done, that window is closed and if it is the only tab then FF closes.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>20077</bug_id>
+          
+          <creation_ts>2008-10-13 08:45</creation_ts>
+
+          <short_desc>Don&apos;t see &quot;View in IE&quot; for bookmark (with TMP)</short_desc>
+          <delta_ts>2008-10-13 09:09:24</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+          <component>ieLaunch</component>
+          <version>unspecified</version>
+          <rep_platform>PC</rep_platform>
+          <op_sys>Windows XP</op_sys>
+
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          
+          <priority>P2</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Bill Onymous">notonymous@hotmail.com</reporter>
+
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="Bill Onymous">notonymous@hotmail.com</who>
+            <bug_when>2008-10-13 08:45:43</bug_when>
+            <thetext>Just installed v1.3.9 but I don&apos;t see the &quot;View in IE&quot; option when I right-click on a bookmark. You noted in your blog that there were previous problems with TBE; I don&apos;t have TBE installed but I do have TabMix Plus installed.
+----------
+
+User Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3, Build ID: 2008092417
+
+Enabled Extensions: [29]: Adblock Plus 0.7.5.5, Add Bookmark Here2 3.0.20081005, Cookie Manager Button 1.0.1.3, Copy URL + 1.3.3, Digger 3.0, DownThemAll! 1.0.3, Extended Link Properties 1.2.5, Find All 1.1, Fission 1.0, Flashblock 1.5.6, Forecastfox l10n 0.7.2008080701, GDirections 3.0.2, Go Parent Folder 1.6, Hide Unvisited 3, IE View 1.3.9, Link Alert 0.8.2.1, MR Tech Toolkit (formerly Local Install) 6.0.1, Nuke Anything Enhanced 0.68.1, Personal Menu 4.1pre, PrefBar 4.1.2, Sage-Too 1.0.1, Save Link in Folder 1.4.2, ScrapBook 1.3.3.7, Secure Login 0.9.2.9, Show Parent Folder 1.3, Stop Autoplay 0.7.5, Tab Mix Plus 0.3.7.2, Text Link 2.0.2008052801, WebMail Notifier 1.1.5</thetext>
+
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Paul Roub">paul@roub.net</who>
+            <bug_when>2008-10-13 09:09:24</bug_when>
+            <thetext>I haven&apos;t tested with TabMixPlus recently, so it&apos;s possible there&apos;s a conflict.
+
+So, you right-click on a bookmark (in the toolbar or from the Bookmarks menu, shouldn&apos;t matter) and you don&apos;t see &quot;Open in Internet Explorer&quot; below &quot;Open in a New Tab?&quot;  (as pictured here: http://ieview.mozdev.org/screenshots/bmmenushot.png )
+
+Note that this should only happen for web page and local file bookmarks, not for javascript bookmarklets, folders, etc.</thetext>
+
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>20081</bug_id>
+          
+          <creation_ts>2008-10-13 18:02</creation_ts>
+          <short_desc>Add bookmark sidebar integration</short_desc>
+          <delta_ts>2008-10-13 18:02:21</delta_ts>
+
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+          <component>ff3</component>
+
+          <version>unspecified</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          <priority>P2</priority>
+          <bug_severity>enhancement</bug_severity>
+
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Paul Roub">paul@roub.net</reporter>
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="Paul Roub">paul@roub.net</who>
+
+            <bug_when>2008-10-13 18:02:21</bug_when>
+            <thetext>Add &quot;Open in IE&quot; to bookmark sidebar context menu, as in the Bookmarks menu.  
+
+Probably FF3 only.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>22587</bug_id>
+
+          
+          <creation_ts>2010-03-10 02:19</creation_ts>
+          <short_desc>IEView causes shift-middle-click on bookmarks to misbehave</short_desc>
+          <delta_ts>2010-03-10 02:19:11</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+          <component>Misc</component>
+          <version>unspecified</version>
+          <rep_platform>PC</rep_platform>
+          <op_sys>Windows XP</op_sys>
+
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          <priority>P2</priority>
+          <bug_severity>minor</bug_severity>
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Raj Bhaskar">r.bhaskar@compserv.gla.ac.uk</reporter>
+
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="Raj Bhaskar">r.bhaskar@compserv.gla.ac.uk</who>
+            <bug_when>2010-03-10 02:19:11</bug_when>
+            <thetext>Without IEView (1.4.5.1) installed (on SeaMonkey 2) if I shift-middle-click a bookmark in my personal toolbar or bookmarks sidebar, it will open in a new foreground tab (by default, middle-clicking is set to open bookmarks in a new background tab).  However, with IEView installed, this behaviour is 
+ignored and bookmarks always open in background tabs.
+
+My settings in prefs -&gt; browser -&gt; tabbed browsing are:
+* Switch to new tabs opened from links [UNCHECKED]
+* open tabs instead of windows for [BOTH OPTIONS CHECKED]
+* Link open behaviour/links from other applications [BOTH SET TO &apos;NEW TAB IN CURRENT WINDOW]
+
+Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1.8) Gecko/20100205 SeaMonkey/2.0.3</thetext>
+
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>22649</bug_id>
+          
+          <creation_ts>2010-03-22 04:03</creation_ts>
+          <short_desc>Spurious divider on tab&apos;s context menu</short_desc>
+          <delta_ts>2010-03-22 10:56:04</delta_ts>
+
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>ieview</product>
+          <component>Misc</component>
+
+          <version>unspecified</version>
+          <rep_platform>PC</rep_platform>
+          <op_sys>Windows XP</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          <priority>P2</priority>
+          <bug_severity>normal</bug_severity>
+
+          <target_milestone>---</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Matt">mozdev000.matt2988@spamgourmet.com</reporter>
+          <assigned_to name="Paul Roub">paul@roub.net</assigned_to>
+          <cc>mozdev000.matt2988@spamgourmet.com</cc>
+
+      
+
+      
+          <long_desc isprivate="0">
+
+            <who name="Matt">mozdev000.matt2988@spamgourmet.com</who>
+            <bug_when>2010-03-22 04:03:34</bug_when>
+            <thetext>Just a cosmetic issue.
+
+If an extension is installed that utilizes a sub-menu in a tab&apos;s context menu, selecting that sub-menu causes a spurious divider to appear in the main menu as shown in the link below:
+
+http://www.freeimagehosting.net/image.php?0c56d128e5.png
+
+In testing, the extension responsible for the sub-menu (Tab Mix Plus) did not cause the issue with a new profile, but only when IEView is installed.
+
+FF 3.6
+IEView 1.4.5.1</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Matt">mozdev000.matt2988@spamgourmet.com</who>
+
+            <bug_when>2010-03-22 10:56:04</bug_when>
+            <thetext>FYI, I initially logged this bug with Tab Mix Plus. After telling them that the problem seemed to be caused by IEView I received this suggestion of a fix at both ends:
+
+&quot;i also have a fix to this on my side. i will include it in the next version
+
+the problem in IEView is that they un-hide the separator when a sub menu is open they only have to do it when the main menu is showing
+(onpopupshowing or onpopupshown events)&quot;
+</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+
+</bugzilla>
