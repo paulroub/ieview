@@ -1,5 +1,5 @@
 ---
-title: IE View
+title: Home
 layout: wikistyle
 ---
 
@@ -18,6 +18,10 @@ GPL
 Authors
 ------
 Paul Roub (paul@roub.net)
+
+Source and Bug Tracking
+-------------------
+The code and its issue tracker live at http://github.com/paulroub/ieview
 
 Download
 --------
