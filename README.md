@@ -1,33 +1,31 @@
-To install the latest release version of IE View, visit the [Firefox Add-Ons site](https://addons.mozilla.org/en-US/firefox/addon/ie-view/).
+To install the latest release version of IE View, visit the [Firefox Add-Ons site][addon].
 
-Currently in the process of moving the project to github from [Mozdev](http://ieview.mozdev.org/).
-
-For the moment, I'd look there for [IE View bug tracking](http://ieview.mozdev.org/bugs.html), etc.
+Currently in the process of moving the project to github from [Mozdev][mozdev].
 
 Introduction
 ----------
 
-IE View is a simple [Firefox](http://www.mozilla.org/products/firefox/) extension (for Microsoft Windows systems), which allows the current page or a selected link to be opened in Internet Explorer.  I use Firefox 99.99% of the time, but there are those moments -- particularly when testing new pages, or when viewing that rare IE-only page that's actually interesting -- when I need to see what things look like in IE. 
+IE View is a simple [Firefox][firefox] extension (for Microsoft Windows systems), which allows the current page or a selected link to be opened in Internet Explorer.  I use Firefox 99.99% of the time, but there are those moments -- particularly when testing new pages, or when viewing that rare IE-only page that's actually interesting -- when I need to see what things look like in IE. 
 
 IE View adds menu items to the page context menu, and the link context menu.  Right-clicking a link now includes an `"Open link target in IE"` menu item.  Right-clicking elsewhere in the main body of the page (not within an image, text box, etc.) gives `"View this page in IE."`
 
-You can also add sites to an "always-view-in-IE" list.  These sites, when reached in Firefox,  will automatically reopen in Internet Explorer.  The site you are currently viewing can be added via the Firefox `Tools` menu, or by opening the `Tools | Add-ons | IE View | Options` window \([screenshots](http://ieview.mozdev.org/screenshots.html)\)
+You can also add sites to an "always-view-in-IE" list.  These sites, when reached in Firefox,  will automatically reopen in Internet Explorer.  The site you are currently viewing can be added via the Firefox `Tools` menu, or by opening the `Tools | Add-ons | IE View | Options` window \([screenshots][screenshots]\)
 
 Known Issues
 
-1.  Recent IE View versions don't get along well with the TabBrowser Extensions package.  Unfortunately, *many* extensions do not get along well with TBE.  For more information, see [FAQ](http://ieview.mozdev.org/faq.html) for information on disabling Always-View-in-IE.
+1.  Recent IE View versions don't get along well with the TabBrowser Extensions package.  Unfortunately, *many* extensions do not get along well with TBE.  For more information, see [FAQ][faq] for information on disabling Always-View-in-IE.
     
-    User Jim Courtney reports better luck using <a href="http://tab-mix.info.tm/">TabMix</a> in place of TabBrowser extensions - TabMix  has many of the functions of TBE, as well as additional functionality of its own, and plays    well with others.
+    User Jim Courtney reports better luck using [TabMix][tabmix] in place of TabBrowser extensions - TabMix  has many of the functions of TBE, as well as additional functionality of its own, and plays    well with others.
 2. Users of Agnitum Outpost firewall software will likely have problems using IE View.     Outpost (unlike any other firewall product of which I'm aware) considers the Internet Explorer process launched by IE View and Firefox to be "hidden", and denies it internet access. 
-3. At the moment, this works under __Windows only__.  A technique for getting it to work under Mac OS X can be found in the [FAQ](http://ieview.mozdev.org/faq.html).  Linux instructions can be found on the [IE View on Linux](http://ieview.mozdev.org/ieview-linux.html) page.
+3. At the moment, this works under __Windows only__.  A technique for getting it to work under Mac OS X can be found in the [FAQ][faq].  Linux instructions can be found on the [IE View on Linux][ieviewlinux] page.
 
 
 Credits
 ------
 
-Through the wonders of the MPL, I was able to crib some of the context-menu addition code from Ted Mielczarek's [Nuke Image](http://ted.mielczarek.org/code/mozilla/) extension.  
+Through the wonders of the MPL, I was able to crib some of the context-menu addition code from Ted Mielczarek's [Nuke Image][nukeimage] extension.  
 
-Parts of the actual run-an-external-app footwork were taken from Torisugari's [Externak Application Buttons](http://cgi29.plala.or.jp/~mozzarel/addon/firebird/externalapp/) extension.
+Parts of the actual run-an-external-app footwork were taken from Torisugari's External Application Buttons extension.
 
 Contributors
 ----------
@@ -79,3 +77,14 @@ Contributors
 <tr><th>Wladow:</th><td>Slovak translation</td></tr>
 <tr><th>yoneh:</th><td>Finnish translation</td></tr>
 </table>
+
+[addon]: https://addons.mozilla.org/en-US/firefox/addon/ie-view/ "IE View at the Mozilla Add-Ons site"
+[mozdev]: http://ieview.mozdev.org/ "Former home of IE View at mozdev.org"
+[firefox]: http://www.mozilla.org/products/firefox/
+[screenshots]: http://ieview.mozdev.org/screenshots.html
+[faq]: http://ieview.mozdev.org/faq.html "IE View Frequently Asked Questions list"
+[ieviewlinux]: http://ieview.mozdev.org/ieview-linux.html
+[nukeimage]: http://ted.mielczarek.org/code/mozilla/
+[tabmix]: https://addons.mozilla.org/en-US/firefox/addon/tab-mix-plus/
+
+
