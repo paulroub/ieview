@@ -17,11 +17,11 @@ GPL
 
 Authors
 ------
-Paul Roub (paul@roub.net)
+Paul Roub (<paul@roub.net>)
 
 Source and Bug Tracking
 -------------------
-The code and its issue tracker live at http://github.com/paulroub/ieview
+The code and its issue tracker live at [github.com/paulroub/ieview][ieviewgithub] 
 
 Download
 --------
@@ -43,3 +43,5 @@ try {
 var pageTracker = _gat._getTracker("UA-701076-10");
 pageTracker._trackPageview();
 } catch(err) {}</script>
+
+[ieviewgithub]: http://github.com/paulroub/ieview
