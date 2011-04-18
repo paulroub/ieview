@@ -3,18 +3,10 @@ title: IE View
 layout: wikistyle
 ---
 
-<a href="http://github.com/paulroub/ieview"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+IE View
+====
 
-
-<div class="download">
-<a href="http://github.com/paulroub/ieview/zipball/master"><img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-<a href="http://github.com/paulroub/ieview/tarball/master"><img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-</div>
-
-<h1><a href="http://github.com/paulroub/ieview">ieview</a> <span
-class="small">by <a href="http://github.com/paulroub">Paul Roub</a></span></h1>
-
-<div class="description">IE View Firefox extension - load pages in IE with one click, or automatically</div>
+IE View Firefox extension - load pages in IE with one click, or automatically
 
 IE View is a simple [Firefox](http://www.mozilla.org/products/firefox/) extension (for Microsoft Windows systems), which allows the current page or a selected link to be opened in Internet Explorer.  I use Firefox 99.99% of the time, but there are those moments -- particularly when testing new pages, or when viewing that rare IE-only page that's actually interesting -- when I need to see what things look like in IE. 
 
@@ -38,9 +30,6 @@ You can also clone the project with [git](http://git-scm.com/) by running:
 
     $ git clone git://github.com/paulroub/ieview
 
-<div class="footer">
-get the source code on GitHub : <a href="http://github.com/paulroub/ieview">paulroub/ieview</a>
-</div>
 
 
 
