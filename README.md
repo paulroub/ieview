@@ -83,7 +83,7 @@ Contributors
 [firefox]: http://www.mozilla.org/products/firefox/
 [screenshots]: http://ieview.mozdev.org/screenshots.html
 [faq]: http://ieview.mozdev.org/faq.html "IE View Frequently Asked Questions list"
-[ieviewlinux]: http://ieview.mozdev.org/ieview-linux.html
+[ieviewlinux]: https://github.com/paulroub/ieview/wiki/IE-View-on-Linux
 [nukeimage]: http://ted.mielczarek.org/code/mozilla/
 [tabmix]: https://addons.mozilla.org/en-US/firefox/addon/tab-mix-plus/
 
