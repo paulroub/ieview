@@ -6,6 +6,7 @@
     <em:id>{6e84150a-d526-41f1-a480-a67d3fed910d}</em:id>
     <em:name>IE View</em:name>
     <em:version>__FULLVERSION__</em:version>
+    <em:type>2</em:type>
     <em:description>Open pages in IE via Firefox menus</em:description>
     <em:creator>Paul Roub</em:creator>
     
@@ -41,7 +42,7 @@
   <Description>
     <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
     <em:minVersion>2.0a1</em:minVersion>
-    <em:maxVersion>2.0.*</em:maxVersion>
+    <em:maxVersion>2.8a1</em:maxVersion>
   </Description>
 </em:targetApplication>
 
