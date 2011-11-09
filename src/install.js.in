@@ -1,5 +1,3 @@
-// $Header: /home/silfreed/src/mozdev/community/cvsroot/ieview/ieview/install.js.in,v 1.11 2005-06-20 21:23:17 roub Exp $
-
 const APP_DISPLAY_NAME    = "IE View";
 const APP_NAME            = "ieview";
 const APP_PACKAGE         = "/PaulRoub/ieview";

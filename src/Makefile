@@ -1,10 +1,10 @@
 #	Makefile for the IE View extension
-#	http://ieview.mozdev.org/
+#	http://ieview.roub.net/
 #	author: Paul Roub <paul@roub.net>
 #
 
 MAJOR_VERSION = 1
-MINOR_VERSION = 4.5.1
+MINOR_VERSION = 4.5.2
 
 FULL_VERSION = $(MAJOR_VERSION).$(MINOR_VERSION)
 

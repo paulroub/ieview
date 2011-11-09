@@ -159,7 +159,7 @@ while (<INF>)
         <em:name>IE View</em:name>
         <em:description>$desc</em:description>
         <em:creator>Paul Roub</em:creator>
-	    <em:homepageURL>http://ieview.mozdev.org/</em:homepageURL>
+	    <em:homepageURL>http://ieview.roub.net/</em:homepageURL>
 $translators
       </Description>
     </em:localized>
