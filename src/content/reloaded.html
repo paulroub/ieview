@@ -45,7 +45,8 @@
 	       {
 	         try
 		 {
-		   window.setTimeout("window.close()", 10);
+			var win = window;
+			window.setTimeout( function() { win.close(); }, 10 );
                  }
 		 catch(e)
 		 {
