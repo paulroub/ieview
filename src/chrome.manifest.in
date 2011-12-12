@@ -1,9 +1,0 @@
-
-overlay	chrome://navigator/content/navigatorOverlay.xul	chrome://ieview/content/ieviewOverlay.xul
-overlay	chrome://browser/content/browser.xul	chrome://ieview/content/ieviewOverlay.xul
-content	ieview	jar:chrome/ieview.jar!/content/
-
-skin	ieview	classic/1.0	jar:chrome/ieview.jar!/skin/
-style	chrome://global/content/customizeToolbar.xul	chrome://ieview/skin/ieview-toolbar-button.css
-
-
