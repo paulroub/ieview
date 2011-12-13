@@ -1,57 +1,57 @@
 <?xml version="1.0"?>
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
-  <Description about="urn:mozilla:install-manifest">
-  
-    <em:id>{6e84150a-d526-41f1-a480-a67d3fed910d}</em:id>
-    <em:name>IE View</em:name>
-    <em:version>__FULLVERSION__</em:version>
-    <em:type>2</em:type>
-    <em:description>Open pages in IE via Firefox menus</em:description>
-    <em:creator>Paul Roub</em:creator>
-    
+	<Description about="urn:mozilla:install-manifest">
+	
+		<em:id>{6e84150a-d526-41f1-a480-a67d3fed910d}</em:id>
+		<em:name>IE View</em:name>
+		<em:version>__FULLVERSION__</em:version>
+		<em:type>2</em:type>
+		<em:description>Open pages in IE via Firefox menus</em:description>
+		<em:creator>Paul Roub</em:creator>
+		
 
-    
-    <em:homepageURL>http://ieview.roub.net/</em:homepageURL>
-    <em:optionsURL>chrome://ieview/content/ieviewsettings.xul</em:optionsURL>  
-    <em:iconURL>chrome://ieview/skin/ieview-icon.png</em:iconURL>
+		
+		<em:homepageURL>http://ieview.roub.net/</em:homepageURL>
+		<em:optionsURL>chrome://ieview/content/ieviewsettings.xul</em:optionsURL>  
+		<em:iconURL>chrome://ieview/skin/ieview-icon.png</em:iconURL>
 
-    __LOCALDESCS__
+		__LOCALDESCS__
 
-    <em:targetApplication>
-      <Description>
-        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>2.0</em:minVersion>
-        <em:maxVersion>10.*</em:maxVersion>
-      </Description>
-    </em:targetApplication>
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>2.0</em:minVersion>
+				<em:maxVersion>10.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
 
 <!-- seamonkey -->
 <em:targetApplication>
 
-  <Description>
-    <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
-    <em:minVersion>2.0a1</em:minVersion>
-    <em:maxVersion>2.8a1</em:maxVersion>
-  </Description>
+	<Description>
+		<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+		<em:minVersion>2.0a1</em:minVersion>
+		<em:maxVersion>2.8a1</em:maxVersion>
+	</Description>
 </em:targetApplication>
 
 	<!-- flock -->
-    <em:targetApplication>
-      <Description> 
-        <em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id>
-        <em:minVersion>0.4+</em:minVersion>
-        <em:maxVersion>2.0.*</em:maxVersion>
-      </Description>
-    </em:targetApplication> 
+		<em:targetApplication>
+			<Description> 
+				<em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id>
+				<em:minVersion>0.4+</em:minVersion>
+				<em:maxVersion>2.0.*</em:maxVersion>
+			</Description>
+		</em:targetApplication> 
 
-    <em:targetApplication> 
-      <Description> 
-        <em:id>{3db10fab-e461-4c80-8b97-957ad5f8ea47}</em:id>
-        <em:minVersion>8.0</em:minVersion>
-        <em:maxVersion>8.1.2</em:maxVersion>
-      </Description>    
-    </em:targetApplication> 
-  </Description>      
+		<em:targetApplication> 
+			<Description> 
+				<em:id>{3db10fab-e461-4c80-8b97-957ad5f8ea47}</em:id>
+				<em:minVersion>8.0</em:minVersion>
+				<em:maxVersion>8.1.2</em:maxVersion>
+			</Description>    
+		</em:targetApplication> 
+	</Description>      
 </RDF>
 

@@ -1,9 +1,8 @@
 /*
  *
- * Copyright (c) 2003-2008  Paul Roub <paul@roub.net>
+ * Copyright (c) 2003-2008 Paul Roub <paul@roub.net>
  *
- * Portions based on GPLed code by
- *     Ted Mielczarek
+ * Portions based on GPLed code by Ted Mielczarek
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -18,25 +17,9 @@
  * You should have received a copy of the GNU Lesser General Public
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- * *****
- *
- * Notes:
- *
- *    Since we can't know ahead of time where IE will be installed, we Kiboze the
- *    Start Menu tree.  If the shortcut has been renamed (i.e. it is no longer
- *    titled "Internet Explorer"), we're out of luck.  The only option at that
- *    point would be to open and dereference every symlink we find, and see if the
- *    target leaf name is "iexplore.exe".  Not doing that at the moment, since
- *    it just seems insane.
  */
 
-var    gIeViewBundle;
-
-function ieviewAlert(msg)
-{
-	// alert(msg);
-}
+var gIeViewBundle;
 
 var IeView = {
 
@@ -123,7 +106,7 @@ var IeView = {
 			{
 				menuitem = document.getElementById(this.ieviewMenuItems[i]);
 
-				if (menuitem)      // click-on-page item
+				if (menuitem)	// click-on-page item
 				{
 					menuitem.hidden = (gContextMenu.isTextSelected || gContextMenu.onLink || gContextMenu.onImage || gContextMenu.onTextInput ) ||
 				((! this.enableForceIE()) && (this.ieviewMenuItems[i].indexOf("force") >= 0));
@@ -134,9 +117,9 @@ var IeView = {
 			{
 				menuitem = document.getElementById(this.ieviewLinkMenuItems[i]);
 
-				if (menuitem)      // click-on-link item
+				if (menuitem)	// click-on-link item
 				{
-					menuitem.hidden = (! gContextMenu.onLink)  || // no link, no link item
+					menuitem.hidden = (! gContextMenu.onLink) ||	// no link, no link item
 										((! this.enableForceIE()) && (this.ieviewMenuItems[i].indexOf("force") >= 0));
 
 					// disable the link if it's javascript
@@ -187,7 +170,7 @@ var IeView = {
 	//
 	contextLinkURL: function()
 	{
-	  	if (gContextMenu && gContextMenu.getLinkURL)
+		if (gContextMenu && gContextMenu.getLinkURL)
 		{
 			return(gContextMenu.getLinkURL());
 		}
@@ -423,8 +406,8 @@ var IeView = {
 		return(result);
 	},
 
-    expandEnv: function(st) 
-    {
+	expandEnv: function(st) 
+	{
 	var result = st;
 
 	var env = Components.classes['@mozilla.org/process/environment;1'].createInstance(Components.interfaces.nsIEnvironment);
@@ -433,14 +416,14 @@ var IeView = {
 
 	while (reg.test(result))
 	{
-	    var matches = reg.exec(result);
+		var matches = reg.exec(result);
 
-	    result = matches[1] + env.get(matches[2]) + matches[3];
+		result = matches[1] + env.get(matches[2]) + matches[3];
 
 	}
 
 	return(result);
-    },
+	},
 
 	parseArgs: function(argstring)
 	{
@@ -612,7 +595,7 @@ var IeView = {
 			{
 				ieloc = this.deQuote(prefs.getCharPref("ieview.ieapp"));
 
-			    ieloc = this.expandEnv(ieloc);
+				ieloc = this.expandEnv(ieloc);
 
 				if (this.trim(ieloc) == "")
 				{
@@ -620,8 +603,8 @@ var IeView = {
 				}
 			}
 
-			var   natTarget = null;
-			var   usePath = null;
+			var natTarget = null;
+			var usePath = null;
 
 			if (ieloc != null)
 			{
@@ -631,7 +614,7 @@ var IeView = {
 			{
 				var dsprops = Components.classes['@mozilla.org/file/directory_service;1'].getService(Components.interfaces.nsIProperties);
 
-				usePath = this.tryDir(dsprops, this.userPrograms);    // try user-specific program menu first
+				usePath = this.tryDir(dsprops, this.userPrograms);	// try user-specific program menu first
 
 				var file = null;
 
@@ -642,7 +625,7 @@ var IeView = {
 
 				if (! file)
 				{
-					usePath = this.tryDir(dsprops, this.allUserPrograms);   // no joy?  try "all users" program menu
+					usePath = this.tryDir(dsprops, this.allUserPrograms);	// no joy? try "all users" program menu
 
 					if (usePath != "")
 					{
@@ -652,17 +635,17 @@ var IeView = {
 
 				if (! file)
 				{
-					usePath = this.tryDir(dsprops, this.applicationData);   // last resort, check the "quick start" bar
+					usePath = this.tryDir(dsprops, this.applicationData);	// last resort, check the "quick start" bar
 
 					if (usePath != "")
 					{
-						var   quickPath = "\\microsoft\\internet explorer\\quick launch";
+						var	quickPath = "\\microsoft\\internet explorer\\quick launch";
 
 						usePath = usePath + quickPath;
 
 						file = this.searchPath(usePath, path);
 
-						if (! file)    // check alternate QuickLaunch bar title
+						if (! file)	// check alternate QuickLaunch bar title
 						{
 							var launchLink = "Launch Internet Explorer Browser.lnk";
 
@@ -731,17 +714,17 @@ var IeView = {
 			return false;
 		}
 
-		return false;     // avoid JavaScript Error.
+		return false;
 	},
 
 
 	ieviewInit: function()
 	{
-		var   i;
+		var i;
 
 		gIeViewBundle = document.getElementById("bundle_ieview");
 
-		var   docHref = this.getDocHref();
+		var docHref = this.getDocHref();
 
 		if (docHref == "")
 		{
@@ -758,9 +741,9 @@ var IeView = {
 
 		if (typeof(getBrowser) != 'undefined')
 		{
-			var tabContextMenu = document.getAnonymousElementByAttribute(getBrowser(), "anonid", "tabContextMenu");
+			var tabContextMenu = gBrowser.tabContextMenu || document.getAnonymousElementByAttribute(getBrowser(), "anonid", "tabContextMenu");
 	
-			if ((typeof(tabContextMenu) != 'undefined'))
+			if ((typeof(tabContextMenu) != 'undefined') && tabContextMenu)
 			{
 				var ourContext = document.getElementById("context-ieViewTab");
 				var ourSep = document.getElementById("context-ieViewTabsep");
@@ -794,7 +777,7 @@ var IeView = {
 			menu.addEventListener("popupshowing", ieviewContextListener,false);
 		}
 
-		var appcontent = document.getElementById("appcontent");   // browser
+		var appcontent = document.getElementById("appcontent");	// browser
 		if (appcontent)
 		{
 			appcontent.addEventListener("load", ieviewLoadListener, true);
@@ -878,7 +861,7 @@ var IeView = {
 			}
 		}
 
-		if (menuitem)      // click-on-page item
+		if (menuitem)	// click-on-page item
 		{
 			var enabled = this.enableForceIE() && this.isForceable(href);
 
@@ -914,7 +897,7 @@ var IeView = {
 
 		for (i = 0; i < links.length; ++i)
 		{
-			var   ln = links[i];
+			var ln = links[i];
 
 			if (ln && ln.href && this.isForceable(ln.href))
 			{
@@ -928,7 +911,7 @@ var IeView = {
 	isFramed: function(aEvent)
 	{
 		var cwin = aEvent.originalTarget.defaultView;
-		var framed = cwin &&  (cwin.parent != cwin) && (cwin.parent.frames.length > 0);
+		var framed = cwin && (cwin.parent != cwin) && (cwin.parent.frames.length > 0);
 
 		return(framed);
 	},
@@ -1001,7 +984,7 @@ var IeView = {
 			return(false);
 		}
 
-		var     repat = pattern;
+		var repat = pattern;
 
 		repat = repat.replace(/\\/, "\\\\");
 		repat = repat.replace(/\./g, "\\.");
@@ -1013,9 +996,9 @@ var IeView = {
 		repat = repat.replace(/\.\*\\\./g, ".*\\.?\\b");
 		repat = "^" + repat;
 
-		var     reg = new RegExp(repat);
+		var reg = new RegExp(repat);
 
-		var     matched = (reg.test(url));
+		var matched = (reg.test(url));
 
 		return(matched);
 	},
@@ -1028,7 +1011,6 @@ var IeView = {
 		{
 			if (this.isMatch(href, skipList[i]))
 			{
-				ieviewAlert(href + " matches " + skipList[i]);
 				return(true);
 			}
 		}
@@ -1051,7 +1033,7 @@ var IeView = {
 		}
 
 		if (IeView.forceIe(link.href) ||
-		    (link.target && (link.target.toLowerCase() == "_blank_ie"))
+			(link.target && (link.target.toLowerCase() == "_blank_ie"))
 		   )
 		{
 			aEvent.preventDefault();
@@ -1188,7 +1170,7 @@ var IeView = {
 
 		var i;
 
-		for ( i  = 0; i < selected.length; ++i )
+		for ( i = 0; i < selected.length; ++i )
 		{
 			var item = selected[i];
 
@@ -1236,7 +1218,7 @@ var IeView = {
 			newstr = "http://" + newstr;
 		}
 
-		var        listbox = document.getElementById('patlist');
+		var listbox = document.getElementById('patlist');
 
 		listbox.appendItem(this.trim(newstr));
 
@@ -1249,7 +1231,7 @@ var IeView = {
 	{
 		var result = "";
 
-		var        listbox = document.getElementById('patlist');
+		var listbox = document.getElementById('patlist');
 		var rows = listbox.getRowCount();
 		var i;
 

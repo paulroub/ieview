@@ -149,21 +149,21 @@ while (<INF>)
   		
 			  		for my $trans (@{$lcontribs{$loc}})
   					{
-						$translators .= "        <em:translator>$trans</em:translator>\n";
+						$translators .= "\t<em:translator>$trans</em:translator>\n";
   					}
   				}
 		    
 		    print <<EODESC;
-    <em:localized>
-      <Description>
-        <em:locale>$loc</em:locale>
-        <em:name>IE View</em:name>
-        <em:description>$desc</em:description>
-        <em:creator>Paul Roub</em:creator>
-	    <em:homepageURL>http://ieview.roub.net/</em:homepageURL>
+	<em:localized>
+		<Description>
+			<em:locale>$loc</em:locale>
+			<em:name>IE View</em:name>
+			<em:description>$desc</em:description>
+			<em:creator>Paul Roub</em:creator>
+			<em:homepageURL>http://ieview.roub.net/</em:homepageURL>
 $translators
-      </Description>
-    </em:localized>
+		</Description>
+	</em:localized>
 EODESC
 		  }
       }

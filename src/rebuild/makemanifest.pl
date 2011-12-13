@@ -26,6 +26,6 @@ print "\n";
 
 foreach my $loc (@locales)
 {
-    print "locale\tieview\t$loc\tchrome/locale/$loc\n";
+    print "locale\tieview\t$loc\tchrome/locale/$loc/\n";
 }
 
