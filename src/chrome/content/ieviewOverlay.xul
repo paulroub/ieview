@@ -53,7 +53,7 @@
 
 	<menupopup id="taskPopup">
 		<menuitem id="ieview-do-forcepage-menu-moz" label="&ieview.popup-ieview-force-page;" oncommand="IeView.forcePage()" />
-		<menuitem id="ieview-open-options" label="&ieview.edit-ieview-options;" oncommand="ieviewLaunchOptions()" />
+		<menuitem id="ieview-open-options" label="&ieview.edit-ieview-options;" oncommand="IeView.launchOptions()" />
 		<menuseparator  id="ieviewSepMoz" />
 	</menupopup>
 

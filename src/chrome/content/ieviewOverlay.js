@@ -19,8 +19,6 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  */
 
-var gIeViewBundle;
-
 var IeView = {
 
 	ieviewMenuItems: new Array("ieview-do-view", "ieview-do-forcepage"),
@@ -28,6 +26,7 @@ var IeView = {
 	userPrograms: "Progs",
 	allUserPrograms: "CmPrgs",
 	applicationData: "AppData",
+	bundle: null,
 
 	isJsLink: function(href)
 	{
@@ -198,7 +197,7 @@ var IeView = {
 
 		try
 		{
-			alwaysMessage = gIeViewBundle.getString("ieview.alwaysopenwith");
+			alwaysMessage = IeView.bundle.getString("ieview.alwaysopenwith");
 		}
 		catch(e)
 		{
@@ -572,7 +571,7 @@ var IeView = {
 
 		try
 		{
-			cantMessage = gIeViewBundle.getString("ieview.cantFindExplorer");
+			cantMessage = IeView.bundle.getString("ieview.cantFindExplorer");
 		}
 		catch(e)
 		{
@@ -722,7 +721,7 @@ var IeView = {
 	{
 		var i;
 
-		gIeViewBundle = document.getElementById("bundle_ieview");
+		IeView.bundle = document.getElementById("bundle_ieview");
 
 		var docHref = this.getDocHref();
 
@@ -733,7 +732,7 @@ var IeView = {
 
 		if (docHref.substring(0, 7) != 'chrome:')
 		{
-			if (! gIeViewBundle)
+			if (! IeView.bundle)
 			{
 				return;
 			}
@@ -767,26 +766,26 @@ var IeView = {
 					tabContextMenu.insertBefore(ourContext, loadBefore);
 				}
 	
-				tabContextMenu.addEventListener("popupshowing", ieviewTabPopupShowing, false);
+				tabContextMenu.addEventListener("popupshowing", IeView.tabPopupShowing, false);
 			}
 		}
 
 		var menu = document.getElementById("contentAreaContextMenu");
 		if (menu)
 		{
-			menu.addEventListener("popupshowing", ieviewContextListener,false);
+			menu.addEventListener("popupshowing", IeView.contextListener,false);
 		}
 
 		var appcontent = document.getElementById("appcontent");	// browser
 		if (appcontent)
 		{
-			appcontent.addEventListener("load", ieviewLoadListener, true);
+			appcontent.addEventListener("load", IeView.loadListener, true);
 		}
 
 		var ieviewPlacesContext = document.getElementById('placesContext');
 		if ((typeof(ieviewPlacesContext) != 'undefined') && ieviewPlacesContext)
 		{
-			ieviewPlacesContext.addEventListener('popupshowing', placesContextListener, false);
+			ieviewPlacesContext.addEventListener('popupshowing', IeView.placesContextListener, false);
 			ieviewPlacesContext = null;
 		}
 
@@ -964,7 +963,7 @@ var IeView = {
 
 			if (head)
 			{
-				head.innerHTML = "<title>IE View " + gIeViewBundle.getString("ieview.reloaded") + "</title>";
+				head.innerHTML = "<title>IE View " + IeView.bundle.getString("ieview.reloaded") + "</title>";
 			}
 
 			this.ieViewLaunch("Internet Explorer.lnk", doc.location.href);
@@ -1292,90 +1291,80 @@ var IeView = {
 		}
 
 		return(href);
+	},
+
+	launchOptions: function()
+	{
+		window.openDialog("chrome://ieview/content/ieviewsettings.xul", "ieviewsettings", "resizable,centerscreen,modal");
+	},
+
+	contextListener: function(aEvent)
+	{
+		return(IeView.ieviewContext(aEvent));
+	},
+
+	placesContextListener: function(aEvent)
+	{
+		return( IeView.placesContext(aEvent) );
+	},
+
+	loadListener: function(aEvent)
+	{
+		IeView.hideMenu(aEvent);
+
+		return(IeView.grabLinks(aEvent));
+	},
+
+	checkForcedListener: function(aEvent)
+	{
+		IeView.checkForced(aEvent);
+	},
+
+	initListener: function(aEvent)
+	{
+		return(IeView.ieviewInit(aEvent));
+	},
+
+	tabPopupShowing: function(aEvent)
+	{
+		return(IeView.tabContextShowing(aEvent));
+	},
+
+	load: function(initWith)
+	{
+		initWith.addEventListener("load", IeView.initListener, false);
+
+		initWith.addEventListener("DOMContentLoaded", IeView.checkForcedListener, false);
+
+		if (typeof(BookmarksCommand) != "undefined")
+		{
+			if (BookmarksCommand.openOneBookmark && (! BookmarksCommand.oldOpenOneBookmark) && IeView.enableForceIE())
+			{
+				BookmarksCommand.oldOpenOneBookmark = BookmarksCommand.openOneBookmark;
+
+				BookmarksCommand.openOneBookmark = function(aURI, aTargetBrowser, aDS) {
+					var namespaceVar = null;
+					if (typeof(gNC_NS) != "undefined")
+						namespaceVar = gNC_NS;
+					else if (typeof(NC_NS) != "undefined")
+						namespaceVar = NC_NS;
+					else
+						alert('no namespace var');
+
+					var url = BookmarksUtils.getProperty(aURI, namespaceVar+"URL", aDS);
+
+					if (IeView.forceIe(url))
+					{
+						IeView.ieViewLaunch("Internet Explorer.lnk", url);
+					}
+					else
+					{
+						BookmarksCommand.oldOpenOneBookmark(aURI, aTargetBrowser, aDS);
+					}
+				};
+			}
+		}
 	}
 };
 
-
-function ieviewLaunchOptions()
-{
-	window.openDialog("chrome://ieview/content/ieviewsettings.xul", "ieviewsettings",
-		"resizable,centerscreen,modal");
-}
-
-function ieviewContextListener(aEvent)
-{
-	return(IeView.ieviewContext(aEvent));
-}
-
-function placesContextListener(aEvent)
-{
-	return(IeView.placesContext(aEvent));
-}
-
-function ieviewLoadListener(aEvent)
-{
-	IeView.hideMenu(aEvent);
-
-	return(IeView.grabLinks(aEvent));
-}
-
-function ieviewCheckForcedListener(aEvent)
-{
-	IeView.checkForced(aEvent);
-}
-
-function ieviewInitListener(aEvent)
-{
-	return(IeView.ieviewInit(aEvent));
-}
-
-function ieviewTabPopupShowing(aEvent)
-{
-	return(IeView.tabContextShowing(aEvent));
-}
-
-// do the init on load
-
-var initWith = window;
-
-initWith.addEventListener("load", ieviewInitListener, false);
-
-window.addEventListener("DOMContentLoaded", ieviewCheckForcedListener, false);
-
-if (typeof(BookmarksCommand) != "undefined")
-{
-	if (BookmarksCommand.openOneBookmark && (! BookmarksCommand.oldOpenOneBookmark) && IeView.enableForceIE())
-	{
-		BookmarksCommand.oldOpenOneBookmark = BookmarksCommand.openOneBookmark;
-
-		BookmarksCommand.openOneBookmark = function(aURI, aTargetBrowser, aDS) {
-
-			var namespaceVar = null;
-
-			if (typeof(gNC_NS) != "undefined")
-			{
-				namespaceVar = gNC_NS;
-			}
-			else if (typeof(NC_NS) != "undefined")
-			{
-				namespaceVar = NC_NS;
-			}
-			else
-			{
-				alert('no namespace var');
-			}
-
-			var url = BookmarksUtils.getProperty(aURI, namespaceVar+"URL", aDS);
-
-			if (IeView.forceIe(url))
-			{
-				IeView.ieViewLaunch("Internet Explorer.lnk", url);
-				return;
-			}
-			else
-			{
-				BookmarksCommand.oldOpenOneBookmark(aURI, aTargetBrowser, aDS);
-			}
-		};
-	}
-}
+IeView.load(window);
