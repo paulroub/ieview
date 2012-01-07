@@ -47,7 +47,7 @@
 			<textbox id="ieloc" 
 				pref="true"
 				preftype="string"
-				prefstring="ieview.ieapp"
+				prefstring="extensions.ieview.ieapp"
 				size="50"
 			 /> 
 		
@@ -59,7 +59,7 @@
                 
                 <hbox align="center">
                         <label control="ieargs" value="&ieview.prefdialogarglabel;"/>
-                        <textbox id="ieargs" pref="true" preftype="string" prefstring="ieview.ieargs" size="50" />
+                        <textbox id="ieargs" pref="true" preftype="string" prefstring="extensions.ieview.ieargs" size="50" />
                 </hbox>
 	</groupbox>
 

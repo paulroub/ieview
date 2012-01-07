@@ -26,6 +26,7 @@ var IeView = {
 	userPrograms: "Progs",
 	allUserPrograms: "CmPrgs",
 	applicationData: "AppData",
+	prefs: null,
 	bundle: null,
 
 	isJsLink: function(href)
@@ -33,11 +34,22 @@ var IeView = {
 		return(! this.isForceable(href));
 	},
 
+	getPrefs: function()
+	{
+		if (! IeView.prefs)
+		{
+			var ps = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
+			IeView.prefs = ps.getBranch("");
+		}
+			
+		return( IeView.prefs );
+	},
+
 	enableForceIE: function()
 	{
 		var	enabled = true;
 
-		if (this.getBoolPref("ieview.disableForce", false))
+		if (this.getBoolPref("disableForce", false))
 		{
 			enabled = false;
 		}
@@ -47,7 +59,7 @@ var IeView = {
 
 	closeAfterRedirect: function()
 	{
-		var	closeAfter = this.getBoolPref("ieview.closeReloadPage", false);
+		var	closeAfter = this.getBoolPref("closeReloadPage", false);
 
 		return(closeAfter);
 	},
@@ -183,12 +195,7 @@ var IeView = {
 
 	saveIeLoc: function(path)
 	{
-			var prefService = Components.classes["@mozilla.org/preferences-service;1"]
-										.getService(Components.interfaces.nsIPrefService);
-
-			var prefs = prefService.getBranch("");
-
-			prefs.setCharPref("ieview.ieapp", path);
+		this.setCharPref("ieapp", path);
 	},
 
 	confirmAdd: function(href)
@@ -269,12 +276,7 @@ var IeView = {
 		
 		var forceStr = forces.join(" ");
 
-		var prefService = Components.classes["@mozilla.org/preferences-service;1"]
-									.getService(Components.interfaces.nsIPrefService);
-
-		var prefs = prefService.getBranch("");
-
-		prefs.setCharPref("ieview.forceielist", forceStr);
+		this.setCharPref("forceielist", forceStr);
 
 		return(true);
 	},
@@ -482,12 +484,13 @@ var IeView = {
 		return(res);
 	},
 
-	getCharPref: function(prefName, defval)
+	getCharPref: function(pn, defval)
 	{
 		var	result = defval;
 
-		var prefservice = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
-		var prefs = prefservice.getBranch("");
+		var prefs = IeView.getPrefs();
+
+		var prefName = "extensions.ieview." + pn;
 
 		if (prefs.getPrefType(prefName) == prefs.PREF_STRING)
 		{
@@ -497,12 +500,20 @@ var IeView = {
 		return(result);
 	},
 
-	getBoolPref: function(prefName, defval)
+	setCharPref: function(pn, val)
+	{
+		var prefName = "extensions.ieview." + pn;
+
+		this.getPrefs().setCharPref(prefName, val);
+	},
+
+	getBoolPref: function(pn, defval)
 	{
 		var	result = defval;
 
-		var prefservice = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
-		var prefs = prefservice.getBranch("");
+		var prefName = "extensions.ieview." + pn;
+
+		var prefs = IeView.getPrefs();
 
 		if (prefs.getPrefType(prefName) == prefs.PREF_BOOL)
 		{
@@ -512,36 +523,30 @@ var IeView = {
 		return(result);
 	},
 
+	setBoolPref: function(pn, val)
+	{
+		var prefName = "extensions.ieview." + pn;
+
+		this.getPrefs().setBoolPref(prefName, val);
+	},
+
 	ieargs: function()
 	{
-		return(this.getCharPref("ieview.ieargs", ""));
+		return(this.getCharPref("ieargs", ""));
 	},
 
 	getForceList: function()
 	{
-		var prefservice = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
+		var fl = this.getCharPref("forceielist", "");
 
-		var prefs = prefservice.getBranch("");
+		var prefs = IeView.getPrefs();
 		var forces = new Array();
 
-		if (prefs.getPrefType("ieview.forceielist") == prefs.PREF_STRING)
-		{
-			var forceList = this.deQuote(prefs.getCharPref("ieview.forceielist"));
-			forces = forceList.split(" ");
-
-			var msg = "force list:\r\n";
-
-			var i;
-
-			for (i = 0; i < forces.length; ++i )
-			{
-				msg += forces[i] + "\r\n";
-			}
-		}
+		var forceList = this.deQuote(fl);
+		forces = forceList.split(" ");
 
 		return(forces);
 	},
-
 
 	getTabUrl: function()
 	{
@@ -578,22 +583,15 @@ var IeView = {
 			alert(e);
 		}
 
-		var prefservice = Components.classes["@mozilla.org/preferences-service;1"].
-								getService(Components.interfaces.nsIPrefService);
-
-		var prefs = prefservice.getBranch("");
-
 		try
 		{
 			if (path=="")
 				return(false);
 
-			var ieloc = null;
+			var ieloc = this.getCharPref("ieapp", null);
 
-			if (prefs.getPrefType("ieview.ieapp") == prefs.PREF_STRING)
+			if (ieloc)
 			{
-				ieloc = this.deQuote(prefs.getCharPref("ieview.ieapp"));
-
 				ieloc = this.expandEnv(ieloc);
 
 				if (this.trim(ieloc) == "")
@@ -1046,21 +1044,15 @@ var IeView = {
 
 	setIeviewOptions: function()
 	{
-		var prefService = Components.classes["@mozilla.org/preferences-service;1"]
-									.getService(Components.interfaces.nsIPrefService);
-
-		var prefs = prefService.getBranch("");
-
-		prefs.setCharPref("ieview.ieapp", document.getElementById('ieloc').value);
-		prefs.setCharPref("ieview.ieargs", document.getElementById('ieargs').value);
-
-		prefs.setCharPref("ieview.forceielist", this.getPrefListString());
+		this.setCharPref("ieapp", document.getElementById('ieloc').value);
+		this.setCharPref("ieargs", document.getElementById('ieargs').value);
+		this.setCharPref("forceielist", this.getPrefListString());
 
 		var disableAlways = document.getElementById('disableAlways');
 		var closeAfter = document.getElementById('closeAfterRedir');
 	
-		prefs.setBoolPref("ieview.disableForce", disableAlways.checked);
-		prefs.setBoolPref("ieview.closeReloadPage", closeAfter.checked);
+		this.setBoolPref("disableForce", disableAlways.checked);
+		this.setBoolPref("closeReloadPage", closeAfter.checked);
 
 		window.close();
 	},
@@ -1081,8 +1073,8 @@ var IeView = {
 
 	initPath: function()
 	{
-		document.getElementById('ieloc').value = this.getCharPref("ieview.ieapp", "");
-		document.getElementById('ieargs').value = this.getCharPref("ieview.ieargs", "");
+		document.getElementById('ieloc').value = this.getCharPref("ieapp", "");
+		document.getElementById('ieargs').value = this.getCharPref("ieargs", "");
 
 		var skips = this.getForceList();
 
@@ -1330,8 +1322,42 @@ var IeView = {
 		return(IeView.tabContextShowing(aEvent));
 	},
 
+	migratePrefs: function()
+	{
+		var pl = ["ieapp", "ieargs", "disableForce", "closeReloadPage", "forceielist", "ieloc"];
+
+		var prefs = IeView.getPrefs();
+
+		for ( var i = 0; i < pl.length; ++i )
+		{
+			var oldname = "ieview." + pl[i];
+			var newname = "extensions.ieview." + pl[i];
+
+			if (prefs.getPrefType(oldname) == prefs.PREF_STRING)
+			{
+				var oldval = prefs.getCharPref(oldname);
+
+				if (prefs.getPrefType(newname) != prefs.PREF_STRING)
+					prefs.setCharPref(newname, oldval);
+
+				prefs.clearUserPref(oldname);
+			}
+			else if (prefs.getPrefType(oldname) == prefs.PREF_BOOL)
+			{
+				var oldval = prefs.getBoolPref(oldname);
+
+				if (prefs.getPrefType(newname) != prefs.PREF_BOOL)
+					prefs.setBoolPref(newname, oldval);
+
+				prefs.clearUserPref(oldname);
+			}
+		}
+	},
+
 	load: function(initWith)
 	{
+		IeView.migratePrefs();
+
 		initWith.addEventListener("load", IeView.initListener, false);
 
 		initWith.addEventListener("DOMContentLoaded", IeView.checkForcedListener, false);

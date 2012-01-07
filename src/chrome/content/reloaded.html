@@ -6,14 +6,15 @@
 	  function getBoolPref(prefName, defval)
 	  {	  
 	    var	result = defval;
+	    var newPrefName = "extensions." + prefName;
 
 	    var prefservice = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
 	    var prefs = prefservice.getBranch("");
 
 	    if (prefs.getPrefType(prefName) == prefs.PREF_BOOL)
-	    {
 	      result = prefs.getBoolPref(prefName);
-	    }
+	    else if (prefs.getPrefType(newPrefName) == prefs.PREF_BOOL)
+	      result = prefs.getBoolPref(newPrefName);
 
 	    return(result);
 	  }
