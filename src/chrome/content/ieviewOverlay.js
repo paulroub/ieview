@@ -317,14 +317,30 @@ var IeView = {
 		}
 	},
 
+	fileIFace: function()
+	{
+		var appInfo = Components.classes["@mozilla.org/xre/app-info;1"]  
+            .getService(Components.interfaces.nsIXULAppInfo);
+
+		var platformVer = parseInt(appInfo.platformVersion);
+
+		var iface = Components.interfaces.nsILocalFile;
+
+		if (platformVer >= 14)
+			iface = Components.interfaces.nsIFile;
+
+		return(iface);
+	},
 
 	searchPath: function(path, fname)
 	{
 		var result = null;
 
+		var iface = this.fileIFace();
+
 		try
 		{
-			var f = Components.classes['@mozilla.org/file/local;1'].createInstance(Components.interfaces.nsILocalFile);
+			var f = Components.classes['@mozilla.org/file/local;1'].createInstance(iface);
 
 			f.initWithPath(path);
 
@@ -349,7 +365,7 @@ var IeView = {
 					{
 						if (ent.leafName.toLowerCase() == fname.toLowerCase())
 						{
-							result = Components.classes['@mozilla.org/file/local;1'].createInstance(Components.interfaces.nsILocalFile);
+							result = Components.classes['@mozilla.org/file/local;1'].createInstance(iface);
 							result.followLinks = true;
 							result.initWithPath(ent.path);
 
@@ -367,7 +383,7 @@ var IeView = {
 					{
 						if (ent.leafName.toLowerCase() == fname.toLowerCase())
 						{
-							result = Components.classes['@mozilla.org/file/local;1'].createInstance(Components.interfaces.nsILocalFile);
+							result = Components.classes['@mozilla.org/file/local;1'].createInstance(iface);
 							result.initWithPath(ent.path);
 							break;
 						}
@@ -677,7 +693,7 @@ var IeView = {
 				this.saveIeLoc(natTarget);
 			}
 
-			var targetFile = Components.classes['@mozilla.org/file/local;1'].createInstance(Components.interfaces.nsILocalFile);
+			var targetFile = Components.classes['@mozilla.org/file/local;1'].createInstance( this.fileIFace() );
 
 			try
 			{
@@ -793,7 +809,7 @@ var IeView = {
 		{
 			BookmarksEventHandler.oldBmehOnCommand = BookmarksEventHandler.onCommand;
 
-			BookmarksEventHandler.onCommand = function(bmocEvent) {
+			BookmarksEventHandler.onCommand = function(bmocEvent, placesView) {
 				var target = bmocEvent.originalTarget;
 
 				if (target.node && target.node.uri && IeView.forceIe(target.node.uri))
@@ -802,7 +818,7 @@ var IeView = {
 					return;
 				}
 
-				return( BookmarksEventHandler.oldBmehOnCommand(bmocEvent) );
+				return( BookmarksEventHandler.oldBmehOnCommand(bmocEvent, placesView) );
 			};
 		}
 	},
