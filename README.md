@@ -1,7 +1,5 @@
 To install the latest release version of IE View, visit the [Firefox Add-Ons site][addon].
 
-Currently in the process of moving the project to github from [Mozdev][mozdev].
-
 Introduction
 ----------
 
