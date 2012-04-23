@@ -1,4 +1,4 @@
-IEVIEW_VERSION = 1.5.0.2
+IEVIEW_VERSION = 1.5.1
 LOCALES := en-US  da-DK  de-AT de-DE fr-FR ko-KR ru-RU zh-TW es-ES it-IT pl-PL nl-NL ca-AD ja-JP pt-PT he-IL sv-SE zh-CN pt-BR cs-CZ fi-FI  hu-HU sr-YU tr-TR  eu-ES sl-SI   bg-BG  el-GR hr-HR lt-LT th-TH uk-UA km-KH nb-NO sk-SK es-AR fy-NL sr-RS vi-VN eu
 PROPS := $(foreach loc, $(LOCALES), chrome/locale/$(loc)/ieview.properties)
 DTDS := $(foreach loc, $(LOCALES), chrome/locale/$(loc)/ieview.dtd)
@@ -19,7 +19,7 @@ ieview.xpi:	chrome.manifest install.rdf \
 
 manis:	chrome.manifest install.rdf
 
-install.rdf:	install.rdf.in inslocales.pl chrome/locale/de-AT/ieview.properties chrome/locale/de-AT/ieview.dtd
+install.rdf:	install.rdf.in inslocales.pl chrome/locale/de-AT/ieview.properties chrome/locale/de-AT/ieview.dtd Makefile
 	perl inslocales.pl install.rdf.in $(IEVIEW_VERSION) $(LOCALES) > $@
 
 chrome.manifest:	chrome.manifest.in makemanifest.pl chrome/locale/de-AT/ieview.properties chrome/locale/de-AT/ieview.dtd
