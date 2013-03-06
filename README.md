@@ -1,4 +1,10 @@
-To install the latest release version of IE View, visit the [Firefox Add-Ons site][addon].
+__Notice:__ I'm no longer the developer/owner of IE View.  The last version I created was v1.5.1, available from the
+IE View Versions page at [addons.mozilla.org/en-us/firefox/addon/ie-view/versions/][ieviewaddon].  I can't offer
+support on more-recent versions; please contact the new developers through the [IE View addon page](https://addons.mozilla.org/en-us/firefox/addon/ie-view/).
+The source code here is for v1.5.1.  It is MPL-licensed, forkable, and 
+free to modify and redistribute.
+
+
 
 Introduction
 ----------
@@ -85,4 +91,5 @@ Contributors
 [nukeimage]: http://ted.mielczarek.org/code/mozilla/
 [tabmix]: https://addons.mozilla.org/en-US/firefox/addon/tab-mix-plus/
 
+[ieviewaddon]: https://addons.mozilla.org/en-us/firefox/addon/ie-view/versions/?page=1#version-1.5.1 "IE View 1.5.1 at Mozilla Add-Ons"
 
