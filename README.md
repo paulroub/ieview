@@ -4,6 +4,7 @@ support on more-recent versions; please contact the new developers through the [
 The source code here is for v1.5.1.  It is MPL-licensed, forkable, and 
 free to modify and redistribute.
 
+[IE View Lite][ieviewlite], based on IE View, is still supported by its original developer.
 
 
 Introduction
@@ -92,4 +93,5 @@ Contributors
 [tabmix]: https://addons.mozilla.org/en-US/firefox/addon/tab-mix-plus/
 
 [ieviewaddon]: https://addons.mozilla.org/en-us/firefox/addon/ie-view/versions/?page=1#version-1.5.1 "IE View 1.5.1 at Mozilla Add-Ons"
+[ieviewlite]: https://addons.mozilla.org/en-us/firefox/addon/ie-view-lite/ "IE View Lite - a minimal version of IE View"
 
